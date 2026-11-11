@@ -1,0 +1,225 @@
+{
+ "note": "Players and staff who came through this org, and where they are now. Sources: OWTV, Esports Insider, esports.gg, Dot Esports and Liquipedia.",
+ "people": [
+  {
+   "name": "SeonJun",
+   "role": "DPS",
+   "era": "2024 · OWCS NA Stage 1 runners-up",
+   "now": "Dallas Fuel",
+   "tier": "T1",
+   "hi": "2026 World Cup champion with South Korea. Won NA Stage 3 2026 with Dallas.",
+   "url": "https://owtv.gg/news/dallas-fuel-announce-roster-for-owcs-2026",
+   "star": true,
+   "teams": [
+    "timeless",
+    "tsm"
+   ]
+  },
+  {
+   "name": "Lukemino",
+   "role": "Support",
+   "era": "2024–25 · FACEIT S2 champion",
+   "now": "Dallas Fuel",
+   "tier": "T1",
+   "hi": "Played the 2026 Midseason Championship at EWC Paris. NA Stage 3 2026 champion.",
+   "url": "https://esports.gg/news/overwatch/lukemino-at-owcs-msc-2026-i-want-to-play-versus-vp/",
+   "star": true,
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "aramori",
+   "role": "Support → Strategist",
+   "era": "Hour Zero · Kaizen",
+   "now": "Sentinels (Marvel Rivals)",
+   "tier": "Other game",
+   "hi": "Sentinels' first female pro. Won Marvel Rivals Championship Season 1 NA, played Ignite 2025 Mid-Season Finals, and joined xQc on Team Canada at the 2026 Creator World Championship.",
+   "url": "https://vip-develop.dotesports.com/?p=1516984",
+   "star": true,
+   "teams": [
+    "hour-zero",
+    "kaizen"
+   ]
+  },
+  {
+   "name": "Cjay",
+   "role": "Support",
+   "era": "2024 · WISP core",
+   "now": "Dallas Fuel",
+   "tier": "T1",
+   "hi": "Spacestation in 2025, Dallas in 2026. NA Stage 3 2026 champion.",
+   "url": "https://esportsinsider.com/2026/01/dallas-fuel-return-roster-2026-season",
+   "teams": [
+    "timeless",
+    "tsm"
+   ]
+  },
+  {
+   "name": "Sugarfree",
+   "role": "DPS",
+   "era": "2023 · Flash Ops champion",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Spacestation cornerstone, re-signed for 2026. Played the 2025 World Finals.",
+   "url": "https://www.owtv.gg/news/ssg-confirm-two-statement-signings-with-sugarfree-and-christfer",
+   "star": true,
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "Hawk",
+   "role": "Tank",
+   "era": "2023 · Flash Ops champion",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Former Atlanta Reign player. Returned to OWCS and starts for Spacestation.",
+   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "Lethal",
+   "role": "DPS",
+   "era": "2024 · FACEIT S2 reverse-sweep sub",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Won NA Stage 1 and placed 3rd at Champions Clash 2025 with NTMR, then won Stage 2 with Geekay.",
+   "url": "https://www.owtv.gg/news/spacestation-gaming-sign-lethal-for-2026",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "Admiral",
+   "role": "Support",
+   "era": "2024 · EWC qualifier roster",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Former league player. Same NTMR and Geekay run as Lethal.",
+   "url": "https://owtv.gg/news/admiral-joins-spacestation-gaming",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "Vega",
+   "role": "Support",
+   "era": "2023 · Flash Ops champion",
+   "now": "Team Liquid",
+   "tier": "T1",
+   "hi": "Toronto Defiant/Ultra at EWC 2024, then Liquid. NA Stage 3 2026 finalist.",
+   "url": "https://owtv.gg/news/owcs-2026-stage-1-north-america-preview",
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "zeruhh",
+   "role": "DPS",
+   "era": "2024 · EWC qualifier roster",
+   "now": "Team Liquid",
+   "tier": "T1",
+   "hi": "Part of Liquid's DPS core with TR33.",
+   "url": "https://owtv.gg/news/team-liquid-part-ways-with-longtime-tank-infekted",
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "Rokit",
+   "role": "DPS",
+   "era": "2024–25 · WISP core",
+   "now": "Disguised",
+   "tier": "T1",
+   "hi": "Joined Disguised Toast's partner team for 2026.",
+   "url": "https://ghost.owtv.gg/disguised-unveil-roster-for-2026/",
+   "teams": [
+    "timeless",
+    "tsm",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "xten",
+   "role": "Support",
+   "era": "2024 · Timeless Ethereal, CAH champion",
+   "now": "LuneX Gaming",
+   "tier": "T1",
+   "hi": "From Calling All Heroes champion to OWCS NA Stage 1.",
+   "url": "https://owtv.gg/news/owcs-stage-1-na-week-2-preview",
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "Infekted",
+   "role": "Tank",
+   "era": "2024 · EWC loan",
+   "now": "Free agent",
+   "tier": "FA",
+   "hi": "Became one of NA's best tanks with Liquid in 2025. Moved off Liquid's roster in fall 2026.",
+   "url": "https://owtv.gg/news/team-liquid-part-ways-with-longtime-tank-infekted",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "Rupal",
+   "role": "Support",
+   "era": "2023 · Flash Ops champion",
+   "now": "Released",
+   "tier": "—",
+   "hi": "Liquid starter in 2024–25. Released in March 2026 after using a slur in a scrim.",
+   "url": "https://esports.gg/news/overwatch/team-liquid-signs-escanor-as-emergency-sub-for-owcs-stage-1/",
+   "teams": [
+    "timeless"
+   ]
+  },
+  {
+   "name": "Raikker",
+   "role": "Tank",
+   "era": "2024–25 · WISP core",
+   "now": "Released by Disguised",
+   "tier": "—",
+   "hi": "Disguised substitute in Stage 1 2026.",
+   "url": "https://owtv.gg/news",
+   "teams": [
+    "timeless",
+    "tsm"
+   ]
+  },
+  {
+   "name": "Seeker",
+   "role": "DPS",
+   "era": "2023–24 · Flash Ops and EWC qualifier",
+   "now": "NTMR (2025)",
+   "tier": "T2",
+   "hi": "Moved between NTMR and Spacestation in 2025.",
+   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  },
+  {
+   "name": "Chase",
+   "role": "Co-founder",
+   "era": "2022–25 · owner",
+   "now": "Social media, LuneX & Team USA OWWC",
+   "tier": "Staff",
+   "hi": "Took the roster to NTMR as director for EWC 2024 and the 2024 World Finals.",
+   "url": "https://x.com/ChaseOwO",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ]
+  }
+ ]
+}

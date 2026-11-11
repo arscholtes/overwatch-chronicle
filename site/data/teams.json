@@ -1,0 +1,917 @@
+[
+ {
+  "id": "crazy-raccoon",
+  "name": "Crazy Raccoon",
+  "m": "CR",
+  "c": "#f2c12e",
+  "region": "Asia · Korea",
+  "status": "active",
+  "blurb": "Japanese org with a Korean roster. EWC 2024 champions, two Champions Clash titles, and a Korea Stages 1–3 three-peat in 2025.",
+  "titles": [
+   "EWC 2024",
+   "Champions Clash 2025",
+   "Champions Clash 2026"
+  ],
+  "x": "crazyraccoon406",
+  "tier": "T1",
+  "aliases": [
+   "CR"
+  ]
+ },
+ {
+  "id": "team-falcons",
+  "name": "Team Falcons",
+  "m": "FLC",
+  "c": "#2bb673",
+  "region": "Asia · Korea",
+  "status": "active",
+  "blurb": "First OWCS world champions (2024) and 2025 Midseason champions after a run from the Last Chance Qualifier.",
+  "titles": [
+   "OWCS World Finals 2024",
+   "Midseason 2025"
+  ],
+  "x": "FalconsEsport",
+  "tier": "T1",
+  "aliases": [
+   "Falcons"
+  ]
+ },
+ {
+  "id": "twisted-minds",
+  "name": "Twisted Minds",
+  "m": "TM",
+  "c": "#9b5cff",
+  "region": "EMEA",
+  "status": "active",
+  "blurb": "Saudi org. 2025 world champions, the first non-Korean team to win an OWCS LAN, and finalists at three straight 2026 internationals.",
+  "titles": [
+   "OWCS World Finals 2025",
+   "Pre-Season Bootcamp 2026"
+  ],
+  "x": "TwisMinds",
+  "tier": "T1",
+  "aliases": [
+   "TM"
+  ]
+ },
+ {
+  "id": "zeta-division",
+  "name": "ZETA DIVISION",
+  "m": "ZETA",
+  "c": "#e8e8e8",
+  "region": "Asia · Korea",
+  "status": "active",
+  "blurb": "Won OWCS Korea Stages 1 and 2 and Asia Stage 1, then the 2026 Midseason Championship in Paris.",
+  "titles": [
+   "Midseason 2026"
+  ],
+  "tier": "T1",
+  "aliases": [
+   "ZETA"
+  ]
+ },
+ {
+  "id": "al-qadsiah",
+  "name": "Al Qadsiah",
+  "m": "AQ",
+  "c": "#f5d000",
+  "region": "EMEA",
+  "status": "active",
+  "blurb": "Runners-up at both the 2025 Midseason Championship and the 2025 World Finals, and Twisted Minds' fiercest rival.",
+  "titles": [],
+  "x": "AlQadsiahES",
+  "tier": "T1"
+ },
+ {
+  "id": "virtus-pro",
+  "name": "Virtus.pro",
+  "m": "VP",
+  "c": "#ff7a00",
+  "region": "EMEA",
+  "status": "active",
+  "blurb": "OWCS partner team. Took 2nd in EMEA Stage 1 2026 behind Twisted Minds.",
+  "titles": [],
+  "x": "virtuspro_OW2",
+  "tier": "T1",
+  "aliases": [
+   "VP"
+  ]
+ },
+ {
+  "id": "t1",
+  "name": "T1",
+  "m": "T1",
+  "c": "#e2012d",
+  "region": "Asia · Korea",
+  "status": "active",
+  "blurb": "Korean powerhouse. Reached the 2025 World Finals and the 2026 Midseason playoffs.",
+  "titles": [],
+  "tier": "T1"
+ },
+ {
+  "id": "weibo-gaming",
+  "name": "Weibo Gaming",
+  "m": "WBG",
+  "c": "#e94b3c",
+  "region": "China",
+  "status": "active",
+  "blurb": "Leading Chinese team on the circuit. Finished top six at the 2025 World Finals.",
+  "titles": [],
+  "tier": "T1"
+ },
+ {
+  "id": "all-gamers",
+  "name": "All Gamers",
+  "m": "AG",
+  "c": "#3aa0ff",
+  "region": "China",
+  "status": "active",
+  "blurb": "China's #2 seed at Champions Clash 2026.",
+  "titles": [],
+  "tier": "T1"
+ },
+ {
+  "id": "team-liquid",
+  "name": "Team Liquid",
+  "m": "TL",
+  "c": "#2f6fdc",
+  "region": "North America",
+  "status": "active",
+  "blurb": "NA partner team, near the top of the NA Stage 3 2026 standings.",
+  "titles": [],
+  "x": "TeamLiquid",
+  "tier": "T1",
+  "aliases": [
+   "Liquid"
+  ]
+ },
+ {
+  "id": "dallas-fuel",
+  "name": "Dallas Fuel",
+  "m": "DAL",
+  "c": "#2c8ad8",
+  "region": "North America",
+  "status": "active",
+  "blurb": "2022 league champions and one of the few franchise brands still competing in OWCS NA.",
+  "titles": [
+   "OWL 2022"
+  ],
+  "x": "DallasFuel",
+  "tier": "T1",
+  "aliases": [
+   "Dallas"
+  ]
+ },
+ {
+  "id": "spacestation",
+  "name": "Spacestation Gaming",
+  "m": "SSG",
+  "c": "#f5a623",
+  "region": "North America",
+  "status": "active",
+  "blurb": "Veteran NA org and OWCS partner team. Played the 2024 EWC.",
+  "titles": [],
+  "x": "Spacestation",
+  "tier": "T1",
+  "aliases": [
+   "Spacestation",
+   "SSG"
+  ]
+ },
+ {
+  "id": "disguised",
+  "name": "Disguised",
+  "m": "DSG",
+  "c": "#ff5f8f",
+  "region": "North America",
+  "status": "active",
+  "blurb": "Disguised Toast's org. Made its Overwatch debut as an NA partner team in 2026.",
+  "titles": [],
+  "tier": "T1"
+ },
+ {
+  "id": "lunex",
+  "name": "LuneX Gaming",
+  "m": "LNX",
+  "c": "#7fd1ff",
+  "region": "North America",
+  "status": "active",
+  "blurb": "In OWCS NA Stage 3 2026.",
+  "titles": [],
+  "x": "LuneXGG",
+  "tier": "T1"
+ },
+ {
+  "id": "team-peps",
+  "name": "Team Peps",
+  "m": "PEPS",
+  "c": "#2f6fdc",
+  "region": "EMEA",
+  "status": "2024–now",
+  "tier": "T1",
+  "blurb": "Fan-favourite French team. Qualified for the 2025 World Finals, became a partner in 2026 and kept its whole roster.",
+  "titles": []
+ },
+ {
+  "id": "gen-g",
+  "name": "Gen.G",
+  "m": "GEN",
+  "c": "#aa8b2f",
+  "region": "EMEA",
+  "status": "2025",
+  "tier": "T1",
+  "blurb": "2025 EMEA partner team.",
+  "titles": []
+ },
+ {
+  "id": "geekay",
+  "name": "Geekay Esports",
+  "m": "GK",
+  "c": "#ff6a00",
+  "region": "NA → EMEA",
+  "status": "2025–now",
+  "tier": "T1",
+  "blurb": "Won NA Stage 2 2025 with the ex-NTMR trio. Moved to EMEA in 2026 and won the Open Qualifier.",
+  "titles": [],
+  "aliases": [
+   "Geekay"
+  ]
+ },
+ {
+  "id": "varrel",
+  "name": "VARREL",
+  "m": "VAR",
+  "c": "#ffd36b",
+  "region": "Japan",
+  "status": "2024–now",
+  "tier": "T1",
+  "blurb": "Japanese org. Won OWCS 2026 Japan Stage 2 and played the Midseason Championship.",
+  "titles": []
+ },
+ {
+  "id": "onside",
+  "name": "RØDE ONSIDE GAMING",
+  "m": "ONS",
+  "c": "#5be3a6",
+  "region": "Korea",
+  "status": "2025–now",
+  "tier": "T1",
+  "blurb": "Korean OWCS regular known for upsets, including over T1. Merged with ZAN Esports in 2026.",
+  "titles": []
+ },
+ {
+  "id": "wae",
+  "name": "WAE / WAY",
+  "m": "WAE",
+  "c": "#9b5cff",
+  "region": "Korea",
+  "status": "2025–now",
+  "tier": "T1",
+  "blurb": "Won the G-Star Cup 2025 as WAY. SeonJun played here before Dallas.",
+  "titles": [],
+  "aliases": [
+   "WAY"
+  ]
+ },
+ {
+  "id": "jd-gaming",
+  "name": "JD Gaming",
+  "m": "JDG",
+  "c": "#c8102e",
+  "region": "China",
+  "status": "2026–now",
+  "tier": "T1",
+  "blurb": "OWCS China partner team.",
+  "titles": []
+ },
+ {
+  "id": "extinction",
+  "name": "Extinction",
+  "m": "EXN",
+  "c": "#7fd1ff",
+  "region": "North America",
+  "status": "2025–now",
+  "tier": "T2",
+  "blurb": "NA OWCS team through 2025 and Stage 1 2026. Dropped to FACEIT League and missed promotion in August 2026.",
+  "titles": []
+ },
+ {
+  "id": "ntmr",
+  "name": "NTMR",
+  "m": "NTMR",
+  "c": "#b16cff",
+  "region": "North America",
+  "status": "active",
+  "blurb": "Signed the ex-Timeless roster for EWC 2024, took Timeless' OWCS slot in 2025, and won promotion back to OWCS in August 2026.",
+  "titles": [
+   "FACEIT S9 NA Master"
+  ],
+  "x": "NTMRgg",
+  "tier": "T2"
+ },
+ {
+  "id": "timeless",
+  "name": "Timeless",
+  "m": "TL",
+  "c": "#c9a7ff",
+  "region": "North America",
+  "status": "revived 2026",
+  "blurb": "Founded by th3mfg and Chase in 2022. NA Stage 1 runners-up and FACEIT S2 champions, it qualified for the 2024 EWC and won Calling All Heroes in 2024 and 2026.",
+  "titles": [
+   "Flash Ops Holiday Showdown 2023",
+   "CAH Championship 2024",
+   "CAH Minor 1 2024",
+   "FACEIT League S2",
+   "Calling All Heroes 2026"
+  ],
+  "x": "Timeless_OW",
+  "featured": true,
+  "tier": "T2",
+  "aliases": [
+   "Timeless Ethereal"
+  ],
+  "overview": "Timeless was a North American org founded in October 2022 by th3mfg and Chase. It grew out of the group behind Hour Zero and Kaizen. On a small budget it finished 2nd in OWCS NA Stage 1 2024 (losing only to Toronto Defiant), beat NRG Shock for North America's 3rd Esports World Cup seed, reverse-swept TSM from 0–3 for the FACEIT Season 2 title, and won Calling All Heroes titles in 2024 and 2026. Its time-themed social voice made it one of the most recognizable tier 2 brands, and its roster pipeline fed Dallas Fuel, Spacestation Gaming, Team Liquid, TSM and NTMR. The 2024 split over the EWC and several shutdowns cost it stability. Timeless came back in 2026."
+ },
+ {
+  "id": "tsm",
+  "name": "TSM",
+  "m": "TSM",
+  "c": "#dfe8fb",
+  "region": "North America",
+  "status": "inactive",
+  "blurb": "Returned to Overwatch in 2024 by signing the Timeless roster, then lost the FACEIT S2 final to Timeless after leading 3–0.",
+  "titles": [],
+  "x": "TSM",
+  "tier": "T2"
+ },
+ {
+  "id": "hour-zero",
+  "name": "Hour Zero",
+  "m": "HZ",
+  "c": "#c9a7ff",
+  "region": "North America",
+  "status": "2020–2021",
+  "tier": "T2",
+  "blurb": "The team's first org. Won Trial of Champions in October 2020 and played Contenders 2020 Season 2 qualifiers.",
+  "titles": [
+   "Trial of Champions Oct 2020"
+  ]
+ },
+ {
+  "id": "kaizen",
+  "name": "Kaizen",
+  "m": "KZ",
+  "c": "#c9a7ff",
+  "region": "North America",
+  "status": "before Timeless",
+  "tier": "T2",
+  "blurb": "The team's second org, between Hour Zero and Timeless.",
+  "titles": []
+ },
+ {
+  "id": "poker-face",
+  "name": "Poker Face",
+  "m": "PF",
+  "c": "#e33c4c",
+  "region": "Korea",
+  "status": "2024–2025",
+  "tier": "T2",
+  "blurb": "Korean challenger that finished 4th in 2024 Stage 2 and was relegated in 2025.",
+  "titles": []
+ },
+ {
+  "id": "bleed",
+  "name": "Bleed Esports",
+  "m": "BLD",
+  "c": "#e0344b",
+  "region": "Pacific",
+  "status": "2024",
+  "tier": "T2",
+  "blurb": "Pacific representative at EWC 2024.",
+  "titles": []
+ },
+ {
+  "id": "shikigami",
+  "name": "Shikigami",
+  "m": "SHK",
+  "c": "#c9a7ff",
+  "region": "North America",
+  "status": "–2025",
+  "tier": "T2",
+  "blurb": "NA OWCS team relegated to FACEIT League after 2025 Stage 1.",
+  "titles": []
+ },
+ {
+  "id": "amplify",
+  "name": "Amplify",
+  "m": "AMP",
+  "c": "#43c6ff",
+  "region": "North America",
+  "status": "2024–now",
+  "tier": "T2",
+  "blurb": "NA OWCS team relegated in 2025 and still in FACEIT League Master in 2026.",
+  "titles": []
+ },
+ {
+  "id": "dhillducks",
+  "name": "DhillDucks",
+  "m": "DHIL",
+  "c": "#ffd36b",
+  "region": "North America",
+  "status": "2025",
+  "tier": "T2",
+  "blurb": "Promoted from FACEIT League to OWCS NA Stage 2 2025.",
+  "titles": []
+ },
+ {
+  "id": "sakura",
+  "name": "Sakura Esports",
+  "m": "SAK",
+  "c": "#ff7fb0",
+  "region": "NA / EMEA",
+  "status": "2025",
+  "tier": "T2",
+  "blurb": "Played OWCS in both EMEA and NA during 2025.",
+  "titles": []
+ },
+ {
+  "id": "team-vision",
+  "name": "Team Vision",
+  "m": "VIS",
+  "c": "#5be3a6",
+  "region": "EMEA",
+  "status": "2025",
+  "tier": "T2",
+  "blurb": "EMEA OWCS team through 2025. Team Peps upset it in the Stage 3 playoffs.",
+  "titles": []
+ },
+ {
+  "id": "the-ultimates",
+  "name": "The Ultimates",
+  "m": "ULT",
+  "c": "#9aabc9",
+  "region": "EMEA",
+  "status": "2025",
+  "tier": "T2",
+  "blurb": "Finished 3rd in EMEA Stage 1 2025.",
+  "titles": []
+ },
+ {
+  "id": "m80",
+  "name": "M80",
+  "m": "M80",
+  "c": "#ff4ea3",
+  "region": "North America",
+  "status": "2022–2024",
+  "tier": "T2",
+  "blurb": "Upset favourites in 2024 Stage 2 to reach the Dallas Major. Lost to Timeless 2–3 in Stage 1.",
+  "titles": []
+ },
+ {
+  "id": "citrus-nation",
+  "name": "Citrus Nation",
+  "m": "CIT",
+  "c": "#f5a623",
+  "region": "North America",
+  "status": "2024",
+  "tier": "T2",
+  "blurb": "Ended Timeless' Dallas Major hopes, then took over its OWCS slot in September 2024.",
+  "titles": []
+ },
+ {
+  "id": "team-korea",
+  "name": "Team South Korea",
+  "m": "KOR",
+  "c": "#e33c4c",
+  "region": "National",
+  "status": "active",
+  "blurb": "Won the World Cup in 2016, 2017, 2018 and 2026.",
+  "titles": [
+   "OWWC ×4"
+  ],
+  "tier": "National",
+  "aliases": [
+   "South Korea"
+  ]
+ },
+ {
+  "id": "team-saudi",
+  "name": "Team Saudi Arabia",
+  "m": "KSA",
+  "c": "#2bb673",
+  "region": "National",
+  "status": "active",
+  "blurb": "2023 World Cup champions with a reverse sweep of China, and 2026 finalists.",
+  "titles": [
+   "OWWC 2023"
+  ],
+  "tier": "National",
+  "aliases": [
+   "Saudi Arabia"
+  ]
+ },
+ {
+  "id": "team-usa",
+  "name": "Team USA",
+  "m": "USA",
+  "c": "#3c6fd8",
+  "region": "National",
+  "status": "active",
+  "blurb": "2019 World Cup champions.",
+  "titles": [
+   "OWWC 2019"
+  ],
+  "tier": "National",
+  "aliases": [
+   "United States"
+  ]
+ },
+ {
+  "id": "toronto-defiant",
+  "name": "Toronto Defiant",
+  "m": "TOR",
+  "c": "#e4002b",
+  "region": "North America",
+  "status": "folded Dec 2024",
+  "blurb": "The only league franchise to keep its team for 2024. Won NA Stage 1 over Timeless and played EWC 2024 as Toronto Ultra.",
+  "titles": [
+   "OWCS NA Stage 1 2024"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Toronto Ultra",
+   "Defiant"
+  ]
+ },
+ {
+  "id": "sf-shock",
+  "name": "San Francisco Shock",
+  "m": "SFS",
+  "c": "#ff7a2f",
+  "region": "North America",
+  "status": "exited Dec 2024",
+  "blurb": "Two-time league champions (2019, 2020). Left Overwatch after Blizzard declined to offer them a partnership.",
+  "titles": [
+   "OWL 2019",
+   "OWL 2020"
+  ],
+  "x": "SFShock",
+  "tier": "Legacy",
+  "aliases": [
+   "SF Shock",
+   "San Francisco",
+   "NRG Shock"
+  ]
+ },
+ {
+  "id": "london-spitfire",
+  "name": "London Spitfire",
+  "m": "LDN",
+  "c": "#59cbe8",
+  "region": "Europe",
+  "status": "legacy",
+  "blurb": "Inaugural league champions in 2018, built largely from APEX champions GC Busan.",
+  "titles": [
+   "OWL 2018"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Spitfire"
+  ]
+ },
+ {
+  "id": "shanghai-dragons",
+  "name": "Shanghai Dragons",
+  "m": "SHD",
+  "c": "#e5333c",
+  "region": "China",
+  "status": "legacy",
+  "blurb": "Went 0–40 in 2018, then won the 2021 title.",
+  "titles": [
+   "OWL 2021"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Dragons"
+  ]
+ },
+ {
+  "id": "florida-mayhem",
+  "name": "Florida Mayhem",
+  "m": "FLA",
+  "c": "#ff4ea3",
+  "region": "North America",
+  "status": "legacy",
+  "blurb": "Final league champions, sweeping Houston 4–0 in 2023.",
+  "titles": [
+   "OWL 2023"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Mayhem"
+  ]
+ },
+ {
+  "id": "atlanta-reign",
+  "name": "Atlanta Reign",
+  "m": "ATL",
+  "c": "#c8102e",
+  "region": "North America",
+  "status": "legacy",
+  "blurb": "2021 finalists, 2023 Midseason Madness champions, and 2023 regular-season leaders. ATL Academy reached the first Gauntlet final.",
+  "titles": [
+   "Midseason Madness 2023"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Atlanta"
+  ]
+ },
+ {
+  "id": "houston-outlaws",
+  "name": "Houston Outlaws",
+  "m": "HOU",
+  "c": "#97d700",
+  "region": "North America",
+  "status": "legacy",
+  "blurb": "Founding 2018 franchise and 2023 Grand Finals runners-up.",
+  "titles": [],
+  "tier": "Legacy",
+  "aliases": [
+   "Houston"
+  ]
+ },
+ {
+  "id": "nyxl",
+  "name": "New York Excelsior",
+  "m": "NYXL",
+  "c": "#174b97",
+  "region": "North America",
+  "status": "legacy",
+  "blurb": "Topped the 2018 regular season, with JJoNak as league MVP.",
+  "titles": [],
+  "tier": "Legacy",
+  "aliases": [
+   "NYXL"
+  ]
+ },
+ {
+  "id": "lunatic-hai",
+  "name": "Lunatic-Hai",
+  "m": "LH",
+  "c": "#ffd36b",
+  "region": "Korea",
+  "status": "legacy",
+  "blurb": "Won APEX Seasons 2 and 3, the dynasty of the pre-league era.",
+  "titles": [
+   "APEX S2",
+   "APEX S3"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "Lunatic-Hai"
+  ]
+ },
+ {
+  "id": "envyus",
+  "name": "EnVyUs",
+  "m": "NV",
+  "c": "#4b6bff",
+  "region": "North America",
+  "status": "legacy",
+  "blurb": "Won the first APEX season in Seoul in 2016.",
+  "titles": [
+   "APEX S1"
+  ],
+  "tier": "Legacy",
+  "aliases": [
+   "EnVyUs"
+  ]
+ },
+ {
+  "id": "element-mystic",
+  "name": "Element Mystic",
+  "m": "EM",
+  "c": "#5be3a6",
+  "region": "Korea",
+  "status": "legacy",
+  "blurb": "Won the first Contenders Gauntlet in 2019.",
+  "titles": [
+   "Gauntlet 2019"
+  ],
+  "tier": "Legacy"
+ },
+ {
+  "id": "seoul-dynasty",
+  "name": "Seoul Dynasty",
+  "m": "SEO",
+  "c": "#aa8a00",
+  "region": "Korea",
+  "status": "2018–2023",
+  "tier": "Legacy",
+  "blurb": "Founding league franchise built from the Lunatic-Hai core. 2020 Grand Finals runners-up.",
+  "titles": []
+ },
+ {
+  "id": "la-gladiators",
+  "name": "Los Angeles Gladiators",
+  "m": "LAG",
+  "c": "#3c1053",
+  "region": "North America",
+  "status": "2018–2023",
+  "tier": "Legacy",
+  "blurb": "Founding league franchise. Playoff regulars, and the Dragons beat them on their 2021 title run.",
+  "titles": []
+ },
+ {
+  "id": "la-valiant",
+  "name": "Los Angeles Valiant",
+  "m": "LAV",
+  "c": "#4a7729",
+  "region": "North America",
+  "status": "2018–2022",
+  "tier": "Legacy",
+  "blurb": "Founding league franchise. Won Stage 4 in the 2018 season.",
+  "titles": []
+ },
+ {
+  "id": "boston-uprising",
+  "name": "Boston Uprising",
+  "m": "BOS",
+  "c": "#174b97",
+  "region": "North America",
+  "status": "2018–2023",
+  "tier": "Legacy",
+  "blurb": "Founding league franchise. Reached the 2023 Grand Finals bracket in Toronto.",
+  "titles": []
+ },
+ {
+  "id": "philadelphia-fusion",
+  "name": "Philadelphia Fusion",
+  "m": "PHI",
+  "c": "#000000",
+  "region": "North America",
+  "status": "2018–2023",
+  "tier": "Legacy",
+  "blurb": "Founding franchise and 2018 Grand Finals runners-up. Played 2023 as Seoul Infernal. Its academy, Fusion University, was a Contenders powerhouse.",
+  "titles": [],
+  "aliases": [
+   "Fusion",
+   "Seoul Infernal"
+  ]
+ },
+ {
+  "id": "vancouver-titans",
+  "name": "Vancouver Titans",
+  "m": "VAN",
+  "c": "#09226b",
+  "region": "North America",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Expansion team built from RunAway. Swept by San Francisco in the 2019 Grand Finals.",
+  "titles": [],
+  "aliases": [
+   "Titans"
+  ]
+ },
+ {
+  "id": "paris-eternal",
+  "name": "Paris Eternal",
+  "m": "PAR",
+  "c": "#8d042d",
+  "region": "Europe",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Expansion franchise. Became Vegas Eternal for the final 2023 season.",
+  "titles": [],
+  "aliases": [
+   "Vegas Eternal"
+  ]
+ },
+ {
+  "id": "washington-justice",
+  "name": "Washington Justice",
+  "m": "WAS",
+  "c": "#990034",
+  "region": "North America",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Expansion franchise from the 2019 class.",
+  "titles": []
+ },
+ {
+  "id": "chengdu-hunters",
+  "name": "Chengdu Hunters",
+  "m": "CDH",
+  "c": "#ffa000",
+  "region": "China",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Fan-favourite all-Chinese franchise. Left the league after Blizzard's games went offline in China in 2023.",
+  "titles": []
+ },
+ {
+  "id": "guangzhou-charge",
+  "name": "Guangzhou Charge",
+  "m": "GZC",
+  "c": "#122c42",
+  "region": "China",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Expansion franchise from the 2019 class.",
+  "titles": []
+ },
+ {
+  "id": "hangzhou-spark",
+  "name": "Hangzhou Spark",
+  "m": "HZS",
+  "c": "#fb7299",
+  "region": "China",
+  "status": "2019–2023",
+  "tier": "Legacy",
+  "blurb": "Expansion franchise. Reached the 2023 Grand Finals semifinals in Toronto.",
+  "titles": []
+ },
+ {
+  "id": "runaway",
+  "name": "RunAway",
+  "m": "RNW",
+  "c": "#ff69b4",
+  "region": "Korea",
+  "status": "2016–2021, back 2024",
+  "tier": "Legacy",
+  "blurb": "APEX finalist that lost two grand finals in seven maps. Its roster became the Vancouver Titans, and the org returned to Overwatch in 2024.",
+  "titles": []
+ },
+ {
+  "id": "gc-busan",
+  "name": "GC Busan",
+  "m": "GCB",
+  "c": "#3aa0ff",
+  "region": "Korea",
+  "status": "2017",
+  "tier": "Legacy",
+  "blurb": "APEX Season 4 champions. Its roster became the core of the London Spitfire.",
+  "titles": [
+   "APEX S4"
+  ]
+ },
+ {
+  "id": "kongdoo-panthera",
+  "name": "KongDoo Panthera",
+  "m": "KDP",
+  "c": "#7fd1ff",
+  "region": "Korea",
+  "status": "2016–2018",
+  "tier": "Legacy",
+  "blurb": "APEX-era Korean contender.",
+  "titles": []
+ },
+ {
+  "id": "talon-esports",
+  "name": "Talon Esports",
+  "m": "TLN",
+  "c": "#e0344b",
+  "region": "Pacific",
+  "status": "2019–2021",
+  "tier": "Legacy",
+  "blurb": "Broke out at the 2019 Gauntlet. Pacific Contenders champions.",
+  "titles": []
+ },
+ {
+  "id": "atl-academy",
+  "name": "ATL Academy",
+  "m": "ATA",
+  "c": "#c8102e",
+  "region": "North America",
+  "status": "2019–2020",
+  "tier": "Legacy",
+  "blurb": "Atlanta Reign's academy. Runners-up at the first Gauntlet, with Sugarfree and Hawk on the roster.",
+  "titles": [],
+  "aliases": [
+   "ATL Academy"
+  ]
+ },
+ {
+  "id": "fusion-university",
+  "name": "Fusion University",
+  "m": "FU",
+  "c": "#f99e1a",
+  "region": "North America",
+  "status": "2018–2019",
+  "tier": "Legacy",
+  "blurb": "Philadelphia's academy and a repeat Contenders champion. Moved to Korea to prove itself.",
+  "titles": []
+ },
+ {
+  "id": "team-gigantti",
+  "name": "Team Gigantti",
+  "m": "GIG",
+  "c": "#e30613",
+  "region": "Europe",
+  "status": "2017–2019",
+  "tier": "Legacy",
+  "blurb": "European Contenders fixture. Nearly all of its 2017 roster was signed into the league.",
+  "titles": []
+ }
+]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overwatch Chronicle</title>
+<meta name="description" content="An Overwatch fan archive: the lore, the esports, tier 2, the teams, community reactions and the numbers, updated weekly.">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:title" content="Overwatch Chronicle">
+<meta property="og:description" content="Every era of Overwatch lore and esports on one timeline, with VODs, community reactions and viewership.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpolygon points='20,2 36,11 36,29 20,38 4,29 4,11' fill='%230b1220' stroke='%23f99e1a' stroke-width='3'/%3E%3Cpath d='M14 25 L20 12 L26 25 M16.5 20 H23.5' fill='none' stroke='%23eaf1ff' stroke-width='2.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f99e1a"/><stop offset="1" stop-color="#ffcf6b"/></linearGradient></defs><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="none" stroke="url(#bg1)" stroke-width="2.5"/><polygon points="20,9 29,14 29,26 20,31 11,26 11,14" fill="#43c6ff" opacity=".18"/><path d="M14 25 L20 12 L26 25 M16.5 20 H23.5" fill="none" stroke="#eaf1ff" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      <div><b>Overwatch <span>Chronicle</span></b><small>Field archive · updated weekly</small></div>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Archive sections"></nav>
+  </div>
+</header>
+<main id="view">
+  <section class="hero"><canvas id="fx" aria-hidden="true"></canvas><div class="hero-inner" id="heroInner"><h1>Loading…</h1></div></section>
+  <div id="case"></div>
+  <div class="controls">
+    <div class="ribbon" id="ribbon" aria-label="Filter by era"></div>
+    <div class="search"><label for="q" style="position:absolute;left:-9999px">Search</label><input id="q" type="search" placeholder="Search heroes, teams, places…" autocomplete="off"><span class="count" id="count"></span></div>
+  </div>
+  <div class="tl" id="tl"></div>
+  <p class="empty" id="empty">No entries match. Clear the search or pick another era.</p>
+</main>
+<footer class="foot" id="foot"></footer>
+
+<div class="modal sp" id="smodal" hidden role="dialog" aria-modal="true" aria-labelledby="sTitle">
+  <div class="modal-box"><div class="sp-bar"><button class="btn" id="sClose" aria-label="Close spotlight">Close ✕</button></div><div class="sp-body" id="sBody"></div></div>
+</div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-box">
+    <div class="modal-head"><b id="mTitle"></b><a class="btn" id="mOpen" target="_blank" rel="noopener">YouTube ↗</a><button class="btn" id="mClose" aria-label="Close video">Close</button></div>
+    <div class="vchips" id="mChips"></div>
+    <div class="frame" id="mFrame"></div>
+  </div>
+</div>
+<div class="modal" id="cmodal" hidden role="dialog" aria-modal="true" aria-labelledby="cTitle">
+  <div class="modal-box">
+    <div class="modal-head"><b id="cTitle"></b><button class="btn" id="cClose" aria-label="Close">Close</button></div>
+    <div class="cbody" id="cBody"></div>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

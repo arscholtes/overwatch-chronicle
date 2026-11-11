@@ -1,0 +1,43 @@
+name: Weekly update bot
+
+on:
+  schedule:
+    - cron: "17 13 * * 1"   # Mondays 13:17 UTC (8:17am Indianapolis in winter)
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "How many older events to research community reactions for"
+        default: "6"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r bot/requirements.txt
+      - name: Research and update data
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          BACKFILL_COUNT: ${{ github.event.inputs.backfill || '6' }}
+        run: python bot/update.py
+      - name: Validate data
+        run: python bot/validate.py
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/weekly-update
+          delete-branch: true
+          commit-message: "Weekly update ${{ github.run_id }}"
+          title: "Weekly update: new events, VODs, community talk & numbers"
+          body-path: bot/out/summary.md
+          labels: bot
+          add-paths: site/data/*.json

@@ -1,0 +1,508 @@
+{
+ "eras": [
+  {
+   "id": "contenders",
+   "n": "I",
+   "name": "Contenders",
+   "c": "#7fd1ff",
+   "sub": "2017–2023 · Blizzard's official tier 2, fed by Open Division and Trials, with academy teams for league franchises."
+  },
+  {
+   "id": "open",
+   "n": "II",
+   "name": "The Open Circuit",
+   "c": "#43c6ff",
+   "sub": "2024–2025 · Contenders ends. FACEIT League sits under OWCS, with promotion and relegation between them."
+  },
+  {
+   "id": "partner",
+   "n": "III",
+   "name": "Partners & FACEIT",
+   "c": "#ffd36b",
+   "sub": "2026 · Partner teams lock in OWCS spots; FACEIT League Master is the road up for everyone else."
+  }
+ ],
+ "items": [
+  {
+   "e": "contenders",
+   "when": "May 22, 2017",
+   "t": "Contenders is announced",
+   "d": "Blizzard announces Overwatch Contenders ahead of the league's 2018 launch, with open qualifiers in North America and Europe for Season Zero.",
+   "tags": [
+    "Season Zero",
+    "Open Division"
+   ],
+   "ic": "broadcast",
+   "id": "t2-contenders-is-announced"
+  },
+  {
+   "e": "contenders",
+   "when": "2018–2019",
+   "t": "Trials and academy teams",
+   "d": "Promotion and relegation runs through Contenders Trials: top Open Division teams and bottom Contenders teams fight for the last spots each season. League franchises field academy teams such as ATL Academy and Fusion University.",
+   "tags": [
+    "Trials",
+    "Academy teams"
+   ],
+   "ic": "hex",
+   "id": "t2-trials-and-academy-teams"
+  },
+  {
+   "e": "contenders",
+   "when": "Oct 2019 · Seoul",
+   "t": "The first Gauntlet",
+   "d": "The best Contenders teams in the world meet in Korea. Element Mystic beat ATL Academy to win the first Gauntlet title. ATL Academy's roster included Hawk and Sugarfree, who later played for Timeless.",
+   "win": "Element Mystic",
+   "score": [
+    "Element Mystic",
+    "def.",
+    "ATL Academy"
+   ],
+   "tags": [
+    "Gauntlet",
+    "Talon Esports"
+   ],
+   "ic": "trophy",
+   "id": "t2-the-first-gauntlet"
+  },
+  {
+   "e": "contenders",
+   "when": "Sep 2020 – Feb 2021",
+   "t": "Hour Zero",
+   "d": "The team's first org. Hour Zero wins Trial of Champions in October 2020, plays Contenders 2020 Season 2 and Gauntlet qualifiers, and earns about $2,700 before closing after Open Division 2021 Season 1.",
+   "win": "Hour Zero · Trial of Champions",
+   "tags": [
+    "Open Division",
+    "Contenders qualifiers"
+   ],
+   "ic": "clock",
+   "tl": true,
+   "id": "t2-hour-zero"
+  },
+  {
+   "e": "contenders",
+   "when": "Before Timeless",
+   "t": "Kaizen",
+   "d": "The team's second org, between Hour Zero and Timeless, as the group kept growing. The stats sites have no public results recorded for it.",
+   "tags": [
+    "Kaizen"
+   ],
+   "ic": "hex",
+   "tl": true,
+   "id": "t2-kaizen"
+  },
+  {
+   "e": "contenders",
+   "when": "2022",
+   "t": "Moving to Overwatch 2",
+   "d": "Contenders switches to the Overwatch 2 build and is overhauled to open up the ecosystem. Trials is retired.",
+   "tags": [
+    "Overwatch 2",
+    "Path to Pro"
+   ],
+   "ic": "rocket",
+   "id": "t2-moving-to-overwatch-2"
+  },
+  {
+   "e": "contenders",
+   "when": "Oct 27, 2022",
+   "t": "Timeless is founded",
+   "d": "Timeless debuts in the Open Division, co-founded by th3mfg and Chase. It grew out of the same group behind Hour Zero and Kaizen, with players and staff who had come up together, and became the biggest of the three.",
+   "tags": [
+    "Open Division",
+    "Hour Zero",
+    "Kaizen"
+   ],
+   "ic": "clock",
+   "tl": true,
+   "id": "t2-timeless-is-founded",
+   "links": [
+    {
+     "label": "Liquipedia: Timeless",
+     "url": "https://liquipedia.net/overwatch/Timeless"
+    }
+   ],
+   "community": {
+    "mood": "celebration",
+    "summary": "Co-owner Chase marked the first anniversary with a long thread calling Timeless a passion project. From the start the brand's time puns and #ShatteredTime tag gave it a voice most tier 2 teams didn't have.",
+    "voices": [
+     {
+      "who": "@ChaseOwO",
+      "gist": "One-year anniversary thread.",
+      "url": "https://x.com/ChaseOwO"
+     }
+    ]
+   }
+  },
+  {
+   "e": "contenders",
+   "when": "2023",
+   "t": "Timeless climbs Contenders",
+   "d": "Timeless takes Uprising Academy's Contenders spot, wins its group and finishes 3rd at Run It Back. A 4th-place qualifier sends it to the league's Pro-Am, where it beats Trick Room and takes a map off the Vancouver Titans, then finishes 2nd in the Spring Contenders Series.",
+   "tags": [
+    "Pro-Am",
+    "Spring Series"
+   ],
+   "ic": "strike",
+   "tl": true,
+   "id": "t2-timeless-climbs-contenders"
+  },
+  {
+   "e": "contenders",
+   "when": "2023",
+   "t": "Contenders teams in league events",
+   "d": "For the final league season, Contenders teams can qualify for select league events, starting with a Pro-Am in the West.",
+   "tags": [
+    "Pro-Am"
+   ],
+   "ic": "arena",
+   "id": "t2-contenders-teams-in-league-events"
+  },
+  {
+   "e": "contenders",
+   "when": "Dec 17, 2023",
+   "t": "Flash Ops Holiday Showdown",
+   "d": "Timeless wins the North American Flash Ops Holiday Showdown, beating Primis Tornado over seven maps. Roster: Sugarfree, Seeker, Hawk, Rupal and Vega.",
+   "win": "Timeless",
+   "score": [
+    "Timeless",
+    "def.",
+    "Primis Tornado"
+   ],
+   "tags": [
+    "Sugarfree",
+    "Seeker",
+    "Hawk",
+    "Rupal",
+    "Vega"
+   ],
+   "ic": "trophy",
+   "tl": true,
+   "id": "t2-flash-ops-holiday-showdown"
+  },
+  {
+   "e": "open",
+   "when": "Feb 5, 2024",
+   "t": "Timeless Ethereal win Calling All Heroes",
+   "d": "Timeless' team in the Calling All Heroes circuit, made up of women and players of marginalized genders, wins the championship. Its players speak publicly about how much they love playing for the org.",
+   "win": "Timeless Ethereal",
+   "tags": [
+    "Calling All Heroes",
+    "Sniper",
+    "xten",
+    "wsps"
+   ],
+   "ic": "wings",
+   "tl": true,
+   "id": "t2-timeless-ethereal-win-calling-all-heroes",
+   "links": [
+    {
+     "label": "esports.gg interview",
+     "url": "https://esports.gg/news/overwatch/timeless-ethereal-wins-overwatch-2-calling-all-heroes-championship-crown/"
+    }
+   ]
+  },
+  {
+   "e": "open",
+   "when": "Jan 2024",
+   "t": "Contenders is discontinued",
+   "d": "With the league gone, Contenders ends too. The new OWCS folds the whole Path to Pro into a single open circuit.",
+   "tags": [
+    "OWCS"
+   ],
+   "ic": "fall",
+   "id": "t2-contenders-is-discontinued"
+  },
+  {
+   "e": "open",
+   "when": "Mar 24, 2024",
+   "t": "Timeless takes 2nd in OWCS NA",
+   "d": "Most of the Flash Ops roster leaves for Toronto Defiant, so Timeless signs the WISP core plus SeonJun and OPENER. The new team upsets M80 3–2 and reaches the NA Stage 1 grand final.",
+   "score": [
+    "Toronto Defiant",
+    "4–1",
+    "Timeless"
+   ],
+   "tags": [
+    "WISP",
+    "SeonJun",
+    "OPENER",
+    "M80 upset"
+   ],
+   "ic": "crown",
+   "tl": true,
+   "id": "t2-timeless-takes-2nd-in-owcs-na"
+  },
+  {
+   "e": "open",
+   "when": "Apr–May 2024",
+   "t": "The roster moves to TSM",
+   "d": "A 0–3 loss to Citrus Nation ends Timeless' Dallas Major hopes, and the roster is released. Three days later TSM signs it, returning to Overwatch after years away.",
+   "tags": [
+    "TSM",
+    "Citrus Nation"
+   ],
+   "ic": "split",
+   "tl": true,
+   "id": "t2-the-roster-moves-to-tsm"
+  },
+  {
+   "e": "open",
+   "when": "2024",
+   "t": "FACEIT League launches",
+   "d": "FACEIT League becomes the tier below OWCS in NA and EMEA, split into divisions with Master at the top. Its Season 1 Master playoffs also act as Esports World Cup qualifiers.",
+   "tags": [
+    "FACEIT League",
+    "Master Division"
+   ],
+   "ic": "hex",
+   "id": "t2-faceit-league-launches"
+  },
+  {
+   "e": "open",
+   "when": "Jun 2024",
+   "t": "Timeless qualifies for the Esports World Cup",
+   "d": "With a newly signed team including Seeker, Timeless loses 2–3 to NRG Shock in the upper bracket, then beats them 3–2 in the lower bracket. That earns North America's 3rd EWC seed and keeps Shock out. Infekted joins on loan from Shock.",
+   "score": [
+    "Timeless",
+    "3–2",
+    "NRG Shock"
+   ],
+   "tags": [
+    "EWC qualifier",
+    "Seeker",
+    "Infekted"
+   ],
+   "ic": "globe",
+   "tl": true,
+   "id": "t2-timeless-qualifies-for-the-esports-world-cup",
+   "links": [
+    {
+     "label": "Infekted loan post",
+     "url": "https://x.com/Timeless_OW/status/1805662257621201153"
+    }
+   ],
+   "community": {
+    "mood": "mixed",
+    "summary": "The Infekted loan post, a Shock pun announcing a player from the team Timeless had just knocked out, reached 324.6K views, Timeless' biggest post. In the same week, ariel2, whose play had helped clinch the spot, was removed after community accusations of racist remarks. The qualification and the controversy hit the timeline together.",
+    "voices": [
+     {
+      "who": "@Timeless_OW",
+      "gist": "“Shocking the world time and time again.” The Infekted loan post.",
+      "url": "https://x.com/Timeless_OW/status/1805662257621201153"
+     },
+     {
+      "who": "Liquipedia",
+      "gist": "Timeline of the qualifier, the roster removal and the loan.",
+      "url": "https://liquipedia.net/overwatch/Timeless"
+     }
+    ]
+   }
+  },
+  {
+   "e": "open",
+   "when": "Jul 2024",
+   "t": "The split over Riyadh",
+   "d": "The owners split over whether the brand should compete at the EWC. Most co-owners and most of the well-known social and creative team leave, many saying they won't cover the event. The Timeless Ethereal roster wins Calling All Heroes Minor 1 on July 7, then the brand goes on hiatus. The EWC roster is signed by NTMR, which plays the event in Riyadh.",
+   "win": "Timeless Ethereal",
+   "tags": [
+    "Calling All Heroes",
+    "NTMR",
+    "EWC 2024"
+   ],
+   "ic": "megaphone",
+   "tl": true,
+   "id": "t2-the-split-over-riyadh",
+   "links": [
+    {
+     "label": "Kryix: Out of Time?",
+     "url": "https://www.kryix.org/post/timeless-staff-departures-esports-world-cup"
+    }
+   ],
+   "community": {
+    "mood": "backlash",
+    "summary": "This was the most covered moment in Timeless' history, and the coverage was negative. Kryix reported that most of the well-known social and creative team left, many saying they wouldn't cover the EWC, and that staff felt left out of key decisions. A secondhand account (Namuwiki) claims the org expected EWC support money just from winning the seed and never applied to the Club Support Program. NTMR picked up the roster and the players made it to Riyadh.",
+    "voices": [
+     {
+      "who": "Kryix",
+      "gist": "“Out Of Time?”, the reported story of the exodus.",
+      "url": "https://www.kryix.org/post/timeless-staff-departures-esports-world-cup"
+     },
+     {
+      "who": "Namuwiki (secondhand)",
+      "gist": "The Club Support Program claim.",
+      "url": "https://en.namu.wiki/w/Esports%20World%20Cup%202024/%EC%98%A4%EB%B2%84%EC%9B%8C%EC%B9%98%202"
+     },
+     {
+      "who": "MoMoBitez",
+      "gist": "Creative Lead, stepped down June 29.",
+      "url": "https://liquipedia.net/overwatch/Timeless"
+     }
+    ]
+   }
+  },
+  {
+   "e": "open",
+   "when": "Aug 2024",
+   "t": "Back as Anomaly",
+   "d": "Timeless returns for NA Stage 3 by picking up the unsigned team Anomaly: Vision, Lukemino and squid, plus former Timeless Contenders players Doomed and cuFFa. It finishes 4th.",
+   "tags": [
+    "Vision",
+    "Lukemino",
+    "squid",
+    "Doomed",
+    "cuFFa"
+   ],
+   "ic": "rocket",
+   "tl": true,
+   "id": "t2-back-as-anomaly"
+  },
+  {
+   "e": "open",
+   "when": "Sep 2024",
+   "t": "FACEIT Season 2 · the reverse sweep",
+   "d": "Down 0–3 to TSM in the grand final, Timeless brings in Lethal as a substitute and wins four straight maps for its first FACEIT championship. Two days later the team disbands, and Citrus Nation takes its OWCS slot.",
+   "win": "Timeless",
+   "score": [
+    "Timeless",
+    "4–3",
+    "TSM"
+   ],
+   "tags": [
+    "Lethal",
+    "Reverse sweep"
+   ],
+   "ic": "trophy",
+   "tl": true,
+   "id": "t2-faceit-season-2-the-reverse-sweep",
+   "vods": [
+    {
+     "yt": "oIqpk0fHCuM",
+     "label": "FACEIT broadcast"
+    },
+    {
+     "yt": "n7Xk0ln6hy0",
+     "label": "Doomed POV"
+    }
+   ],
+   "community": {
+    "mood": "mixed",
+    "summary": "The “reverse sweep of the century” post credited every player, including Lethal, the substitute who came in at 0–3. Two days later the team disbanded, citing community confusion. Fans who had just celebrated the title were left asking whether Timeless was still a team.",
+    "voices": [
+     {
+      "who": "@Timeless_OW",
+      "gist": "The title post.",
+      "url": "https://x.com/Timeless_OW/highlights"
+     },
+     {
+      "who": "Liquipedia",
+      "gist": "The disbandment two days later.",
+      "url": "https://liquipedia.net/overwatch/Timeless"
+     }
+    ]
+   }
+  },
+  {
+   "e": "open",
+   "when": "2025",
+   "t": "Promotion and relegation",
+   "d": "The bottom OWCS teams now face the top FACEIT teams. In NA, Supernova and DhillDucks win promotion to Stage 2, while Amplify and Shikigami drop to FACEIT League Season 5.",
+   "tags": [
+    "Supernova",
+    "DhillDucks"
+   ],
+   "ic": "split",
+   "id": "t2-promotion-and-relegation"
+  },
+  {
+   "e": "open",
+   "when": "Jan–May 2025",
+   "t": "Timeless' final run",
+   "d": "Timeless returns with the WISP core, tops the Open Qualifier Swiss stage and opens the regular season by sweeping Team Liquid 3–0. A 3–1 playoff loss to NTMR keeps it out of the Hangzhou Major. On May 2 it disbands for good, and its OWCS slot, Rokit and Lukemino go to NTMR.",
+   "tags": [
+    "Team Liquid upset",
+    "NTMR",
+    "Rokit"
+   ],
+   "ic": "fall",
+   "tl": true,
+   "id": "t2-timeless-final-run"
+  },
+  {
+   "e": "partner",
+   "when": "Jan–Feb 2026",
+   "t": "Partner Program and FACEIT Season 7",
+   "d": "Partner teams get automatic OWCS places with no roster lock. FACEIT League Season 7 becomes the pre-qualifier: its top four in NA and EMEA skip to Phase 2 of the open qualifiers, which take up to 512 teams in Phase 1.",
+   "tags": [
+    "Partner Program",
+    "Open Qualifier"
+   ],
+   "ic": "seal",
+   "id": "t2-partner-program-and-faceit-season-7"
+  },
+  {
+   "e": "partner",
+   "when": "Mar 2026",
+   "t": "Disguised enters OWCS",
+   "d": "Disguised Toast's organization makes its Overwatch debut as one of the four NA partner teams.",
+   "tags": [
+    "Disguised",
+    "Partner team"
+   ],
+   "ic": "mask",
+   "id": "t2-disguised-enters-owcs"
+  },
+  {
+   "e": "partner",
+   "when": "Aug 10, 2026",
+   "t": "NTMR earns promotion",
+   "d": "As FACEIT League Season 9 NA Master champions, NTMR win the Stage 2 promotion/relegation event to reach OWCS NA Stage 3. Disguised stay up; The Kafe drop to FACEIT League Season 10.",
+   "win": "NTMR",
+   "tags": [
+    "NTMR",
+    "The Kafe",
+    "Disguised"
+   ],
+   "ic": "crown",
+   "id": "t2-ntmr-earns-promotion"
+  },
+  {
+   "e": "partner",
+   "when": "Apr 1, 2026",
+   "t": "Timeless is back",
+   "d": "Timeless reactivates its account and returns to competition.",
+   "tags": [
+    "Revival"
+   ],
+   "ic": "clock",
+   "tl": true,
+   "id": "t2-timeless-is-back"
+  },
+  {
+   "e": "partner",
+   "when": "Sep 6, 2026",
+   "t": "Calling All Heroes 2026 champions",
+   "d": "Timeless, partnered with Missing GG, wins Calling All Heroes again. Roster: Sniper, sawhill, wsps, peace, zzz, NenWhy and scuffed.",
+   "win": "Timeless x Missing GG",
+   "tags": [
+    "Calling All Heroes",
+    "Missing GG"
+   ],
+   "ic": "trophy",
+   "tl": true,
+   "id": "t2-calling-all-heroes-2026-champions"
+  },
+  {
+   "e": "partner",
+   "when": "Oct 2026",
+   "t": "FACEIT League Season 10",
+   "d": "The tier 2 season running alongside OWCS Stage 3, and the next route into the top flight for 2027.",
+   "tags": [
+    "FACEIT League"
+   ],
+   "ic": "hex",
+   "up": true,
+   "id": "t2-faceit-league-season-10"
+  }
+ ]
+}

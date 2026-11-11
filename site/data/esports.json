@@ -1,0 +1,862 @@
+{
+ "eras": [
+  {
+   "id": "early",
+   "n": "I",
+   "name": "The Early Scene",
+   "c": "#7fd1ff",
+   "sub": "2016–2017 · OGN's APEX in Seoul and the first World Cups at BlizzCon."
+  },
+  {
+   "id": "owl",
+   "n": "II",
+   "name": "Overwatch League",
+   "c": "#f99e1a",
+   "sub": "2018–2023 · A city-based franchise league with $20M slots and arena finals."
+  },
+  {
+   "id": "wc",
+   "n": "III",
+   "name": "World Cup",
+   "c": "#ffd36b",
+   "sub": "2016–2026 · National teams, usually crowned at BlizzCon in Anaheim."
+  },
+  {
+   "id": "owcs",
+   "n": "IV",
+   "name": "Champions Series",
+   "c": "#43c6ff",
+   "sub": "2024–now · An open circuit of regional stages and three international LANs a year."
+  }
+ ],
+ "items": [
+  {
+   "e": "early",
+   "when": "2016",
+   "t": "APEX Season 1",
+   "d": "OGN's Overwatch APEX launches in Seoul as the scene's premier league. The North American team EnVyUs wins the first season, a rare foreign title in Korea.",
+   "win": "EnVyUs",
+   "tags": [
+    "OGN",
+    "Seoul"
+   ],
+   "ic": "broadcast",
+   "id": "esp-apex-season-1"
+  },
+  {
+   "e": "early",
+   "when": "2017",
+   "t": "Lunatic-Hai goes back-to-back",
+   "d": "Lunatic-Hai wins APEX Seasons 2 and 3, becoming the dynasty of the pre-league era.",
+   "win": "Lunatic-Hai",
+   "tags": [
+    "APEX"
+   ],
+   "ic": "crown",
+   "id": "esp-lunatic-hai-goes-back-to-back"
+  },
+  {
+   "e": "early",
+   "when": "2017",
+   "t": "APEX Season 4 · GC Busan",
+   "d": "GC Busan wins the final APEX season. Most of its roster soon forms the core of the London Spitfire.",
+   "win": "GC Busan",
+   "tags": [
+    "APEX",
+    "London Spitfire"
+   ],
+   "ic": "trophy",
+   "id": "esp-apex-season-4-gc-busan"
+  },
+  {
+   "e": "wc",
+   "when": "Nov 2016 · BlizzCon",
+   "t": "First Overwatch World Cup",
+   "d": "South Korea dominates the first national-team tournament at BlizzCon.",
+   "win": "South Korea",
+   "score": [
+    "South Korea",
+    "4–0",
+    "Russia"
+   ],
+   "tags": [
+    "Anaheim"
+   ],
+   "ic": "cup2",
+   "id": "esp-first-overwatch-world-cup"
+  },
+  {
+   "e": "owl",
+   "when": "2016–2017",
+   "t": "The league is announced",
+   "d": "Blizzard announces a city-based league at BlizzCon 2016. Twelve teams commit to the 2018 inaugural season, each paying a reported $20 million franchise fee.",
+   "tags": [
+    "Franchising"
+   ],
+   "ic": "city",
+   "id": "esp-the-league-is-announced"
+  },
+  {
+   "e": "wc",
+   "when": "Nov 2017 · BlizzCon",
+   "t": "World Cup 2017",
+   "d": "Korea defends its title against a surging Canadian team.",
+   "win": "South Korea",
+   "score": [
+    "South Korea",
+    "4–1",
+    "Canada"
+   ],
+   "tags": [
+    "Anaheim"
+   ],
+   "ic": "cup2",
+   "id": "esp-world-cup-2017"
+  },
+  {
+   "e": "owl",
+   "when": "Jan 10, 2018",
+   "t": "Season 1 kicks off",
+   "d": "Twelve teams play at the Blizzard Arena in Los Angeles. The Shanghai Dragons finish the regular season 0–40, a record that later sets up one of esports' great redemption stories.",
+   "tags": [
+    "Blizzard Arena",
+    "Shanghai Dragons"
+   ],
+   "ic": "arena",
+   "id": "esp-season-1-kicks-off"
+  },
+  {
+   "e": "owl",
+   "when": "Jul 27–28, 2018",
+   "t": "First Grand Finals · Barclays Center",
+   "d": "In Brooklyn, in front of more than 22,000 fans over two days, London Spitfire wins both match days against Philadelphia Fusion. Profit is Finals MVP. New York Excelsior had topped the regular season, and its tank JJoNak was named league MVP.",
+   "win": "London Spitfire",
+   "score": [
+    "London Spitfire",
+    "3–1, 3–0",
+    "Philadelphia Fusion"
+   ],
+   "tags": [
+    "Profit",
+    "JJoNak",
+    "Brooklyn"
+   ],
+   "ic": "trophy",
+   "id": "esp-first-grand-finals-barclays-center",
+   "vods": [
+    {
+     "yt": "Clzvmho9lhw",
+     "label": "Day 1 highlights"
+    },
+    {
+     "yt": "2lFe5ymodRM",
+     "label": "Day 2 highlights"
+    }
+   ]
+  },
+  {
+   "e": "wc",
+   "when": "Nov 2018 · BlizzCon",
+   "t": "World Cup three-peat",
+   "d": "South Korea completes three straight World Cup titles.",
+   "win": "South Korea",
+   "score": [
+    "South Korea",
+    "4–0",
+    "China"
+   ],
+   "tags": [
+    "Anaheim"
+   ],
+   "ic": "cup2",
+   "id": "esp-world-cup-three-peat"
+  },
+  {
+   "e": "owl",
+   "when": "Sep 29, 2019",
+   "t": "Shock arrive · Philadelphia",
+   "d": "The league expands to 20 teams and adopts 2-2-2 role lock midseason. San Francisco Shock sweep the Vancouver Titans in the Grand Finals, and Shock DPS sinatraa is league MVP.",
+   "win": "San Francisco Shock",
+   "score": [
+    "SF Shock",
+    "4–0",
+    "Vancouver Titans"
+   ],
+   "tags": [
+    "sinatraa",
+    "Role lock"
+   ],
+   "ic": "trophy",
+   "id": "esp-shock-arrive-philadelphia"
+  },
+  {
+   "e": "wc",
+   "when": "Nov 2019 · BlizzCon",
+   "t": "USA ends Korea's run",
+   "d": "The United States wins its first World Cup. China is runner-up for the second straight year.",
+   "win": "United States",
+   "score": [
+    "United States",
+    "3–0",
+    "China"
+   ],
+   "tags": [
+    "Anaheim"
+   ],
+   "ic": "cup2",
+   "id": "esp-usa-ends-koreas-run"
+  },
+  {
+   "e": "owl",
+   "when": "Oct 2020",
+   "t": "Back-to-back, online",
+   "d": "The pandemic cancels homestand events and pushes the league online. San Francisco repeat as champions over Seoul Dynasty, played in Korea.",
+   "win": "San Francisco Shock",
+   "score": [
+    "SF Shock",
+    "4–2",
+    "Seoul Dynasty"
+   ],
+   "tags": [
+    "Pandemic season"
+   ],
+   "ic": "trophy",
+   "id": "esp-back-to-back-online"
+  },
+  {
+   "e": "owl",
+   "when": "Sep 2021",
+   "t": "From 0–40 to champions",
+   "d": "Three years after their winless debut, the Shanghai Dragons sweep the Atlanta Reign to win the title.",
+   "win": "Shanghai Dragons",
+   "score": [
+    "Shanghai Dragons",
+    "4–0",
+    "Atlanta Reign"
+   ],
+   "tags": [
+    "Redemption"
+   ],
+   "ic": "dragon",
+   "id": "esp-from-040-to-champions",
+   "community": {
+    "mood": "celebration",
+    "summary": "The scene treated it as the league's best redemption story. The Dragons' post thanked fans who had stuck with them through the winless season, calling the title four years in the making. “From 0–40 to 4–0” became the headline nearly everywhere, and fans revisited the 2018 jokes. It was also the last title on the original Overwatch.",
+    "voices": [
+     {
+      "who": "@ShanghaiDragons",
+      "gist": "A championship post addressed to the fans who stayed through the 0–40 year.",
+      "url": "https://thegamehaus.com/?p=168661"
+     },
+     {
+      "who": "GINX",
+      "gist": "Ran the “0–40 to 4–0” framing that everyone repeated.",
+      "url": "https://www.ginx.tv/en/?p=22431"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owl",
+   "when": "Nov 2022",
+   "t": "Dallas wins the first OW2 title",
+   "d": "The league plays an early build of Overwatch 2 all season, then the game launches publicly on October 4. Dallas Fuel beat San Francisco Shock in Anaheim for their first championship.",
+   "win": "Dallas Fuel",
+   "score": [
+    "Dallas Fuel",
+    "def.",
+    "SF Shock"
+   ],
+   "tags": [
+    "Overwatch 2",
+    "Anaheim"
+   ],
+   "ic": "trophy",
+   "id": "esp-dallas-wins-the-first-ow2-title"
+  },
+  {
+   "e": "owl",
+   "when": "Oct 1, 2023 · Toronto",
+   "t": "The final Grand Finals",
+   "d": "Florida Mayhem beat Houston Outlaws at Toronto's Mattamy Athletic Centre, with Mer1t as Finals MVP. Atlanta Reign topped the regular season and won Midseason Madness; Someone was league MVP.",
+   "win": "Florida Mayhem",
+   "score": [
+    "Florida Mayhem",
+    "def.",
+    "Houston Outlaws"
+   ],
+   "tags": [
+    "Mer1t",
+    "Someone"
+   ],
+   "ic": "trophy",
+   "id": "esp-the-final-grand-finals"
+  },
+  {
+   "e": "wc",
+   "when": "Nov 4, 2023 · BlizzCon",
+   "t": "Saudi Arabia's reverse sweep",
+   "d": "Down 0–2 in the final, Saudi Arabia wins three straight maps against China for its first World Cup. China is runner-up for the third time.",
+   "win": "Saudi Arabia",
+   "score": [
+    "Saudi Arabia",
+    "3–2",
+    "China"
+   ],
+   "tags": [
+    "Anaheim",
+    "Reverse sweep"
+   ],
+   "ic": "cup2",
+   "id": "esp-saudi-arabias-reverse-sweep",
+   "community": {
+    "mood": "mixed",
+    "summary": "On the play itself the reaction was huge. It was the first reverse sweep ever to win a World Cup, and China took a familiar second place. The win also started a longer debate: some LGBTQ community members raised concerns about Saudi Arabia's growing role in Overwatch esports, which came back when ESL FACEIT Group took over the scene.",
+    "voices": [
+     {
+      "who": "Dot Esports",
+      "gist": "Called it one of the most entertaining final days ever, with every series going to five maps.",
+      "url": "https://dotesports.com/?p=1019758"
+     },
+     {
+      "who": "Dot Esports",
+      "gist": "Reported LGBTQ players' worries about the partnership, while noting fans were still glad competitive play was back.",
+      "url": "https://vip-develop.dotesports.com/?p=1130052"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owl",
+   "when": "Nov 2023 – Jan 2024",
+   "t": "The league ends",
+   "d": "Blizzard announces Overwatch esports will move away from the league. The OWL is dissolved, and Contenders is discontinued.",
+   "tags": [
+    "End of an era"
+   ],
+   "ic": "fall",
+   "id": "esp-the-league-ends",
+   "community": {
+    "mood": "backlash",
+    "summary": "Grief mixed with a lot of 'I told you so'. Veterans had long argued that the league killed the community events that built the scene, like APEX. Coaches and players argued in public about who had soured the relationship with the developers. About 50 esports staff had already been laid off, and teams voted to exit with a reported $6 million termination fee each. Blizzard promised a “revitalized esports program” in its place.",
+    "voices": [
+     {
+      "who": "Digiday oral history",
+      "gist": "Industry voices on how the league shut out the community events that came before it.",
+      "url": "https://digiday.com/media/how-the-worlds-most-ambitious-esports-league-shrank-to-nothing-an-oral-history-of-the-overwatch-league/"
+     },
+     {
+      "who": "GGRecon",
+      "gist": "Former coaches blamed self-serving balance feedback from players for straining the relationship with the developers.",
+      "url": "https://ggrecon.com/articles/owl-coaches-slam-players-for-reportedly-souring-dev-relationship"
+     },
+     {
+      "who": "Jacob Wolf",
+      "gist": "Broke the shutdown vote and that ESL FACEIT Group would take over.",
+      "url": "https://jacobwolf.beehiiv.com/p/overwatch-league-shutdown-vote-underway-activision-blizzard-prepares-esports-future"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "2024",
+   "t": "Overwatch Champions Series launches",
+   "d": "Run with ESL FACEIT Group, the OWCS replaces franchising with an open circuit: anyone can qualify through regional stages in NA, EMEA and Asia.",
+   "tags": [
+    "ESL FACEIT Group",
+    "Open circuit"
+   ],
+   "ic": "hex",
+   "id": "esp-overwatch-champions-series-launches",
+   "community": {
+    "mood": "mixed",
+    "summary": "Fans were relieved there was still a scene, but worried about almost everything else: prize pools weren't defined, there was no clear roadmap, viewership was falling, and the operator was ESL FACEIT Group, which is owned by the Saudi state. The open circuit did let tier 2 teams like Timeless face former league players straight away.",
+    "voices": [
+     {
+      "who": "Wikipedia (OWCS)",
+      "gist": "Summarizes the early concerns: unclear prize pools, roadmap and viewership.",
+      "url": "https://en.wikipedia.org/wiki/Overwatch_Champions_Series"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Jul 28, 2024 · Riyadh",
+   "t": "First Esports World Cup",
+   "d": "Crazy Raccoon drop only two maps on the way to the title, beating Toronto Ultra in the final. Support Shu is tournament MVP.",
+   "win": "Crazy Raccoon",
+   "score": [
+    "Crazy Raccoon",
+    "4–1",
+    "Toronto Ultra"
+   ],
+   "tags": [
+    "Shu",
+    "EWC"
+   ],
+   "ic": "trophy",
+   "id": "esp-first-esports-world-cup",
+   "views": {
+    "peak": 100188,
+    "avg": 33310,
+    "hours": 1704341,
+    "src": "Esports Charts via esports.gg",
+    "url": "https://esports.gg/news/overwatch/overwatch-2-esports-world-cup-2024-viewership"
+   },
+   "community": {
+    "mood": "backlash",
+    "summary": "The sportswashing debate dominated. Ex Oblivione refused to play, saying it values inclusivity and equality, and staff at several orgs, Timeless among them, declined to cover the event. Other titles reported unpaid prize money afterward. On the server, Crazy Raccoon's run and Shu's $50K MVP award were the story.",
+    "voices": [
+     {
+      "who": "Ex Oblivione",
+      "gist": "Withdrew from the Overwatch event in protest.",
+      "url": "https://esports-news.co.uk/2024/03/29/ex-oblivione-overwatch-2-esports-world-cup"
+     },
+     {
+      "who": "Kryix",
+      "gist": "Reported staff at Timeless sitting out the EWC.",
+      "url": "https://www.kryix.org/post/timeless-staff-departures-esports-world-cup"
+     },
+     {
+      "who": "Esports.net",
+      "gist": "Reported payment problems in other EWC titles.",
+      "url": "https://www.esports.net/news/industry/esports-world-cup-non-payment-paid"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Nov 2024 · Stockholm",
+   "t": "First OWCS World Finals",
+   "d": "At DreamHack Stockholm, Team Falcons beat Crazy Raccoon in the grand final, closing it out on Esperança with Proper on Reaper.",
+   "win": "Team Falcons",
+   "score": [
+    "Team Falcons",
+    "4–1",
+    "Crazy Raccoon"
+   ],
+   "tags": [
+    "Proper",
+    "DreamHack"
+   ],
+   "ic": "trophy",
+   "id": "esp-first-owcs-world-finals",
+   "views": {
+    "peak": 160000,
+    "approx": true,
+    "src": "Esports Insider (\"nearly 160,000\")",
+    "url": "https://esportsinsider.com/2025/12/twisted-minds-win-overwatch-champions-series-2025-world-finals"
+   }
+  },
+  {
+   "id": "esp-sf-shock-exit",
+   "e": "owcs",
+   "when": "Dec 19, 2024",
+   "t": "The Shock leave Overwatch",
+   "d": "Blizzard declines to offer the two-time league champions a 2025 partnership despite strong merch and skin sales, and NRG pulls the Shock out of Overwatch after seven years.",
+   "tags": [
+    "SF Shock",
+    "Partner Program"
+   ],
+   "ic": "fall",
+   "community": {
+    "mood": "backlash",
+    "summary": "Fans were angry and accused Blizzard of “killing” Overwatch esports by snubbing one of its most successful brands. Blizzard gave no reason. The news landed the same day hero bans were announced for 2025.",
+    "voices": [
+     {
+      "who": "Cavalry Esports",
+      "gist": "Broke the news, citing the declined partnership.",
+      "url": "https://x.com/OWCEsports"
+     },
+     {
+      "who": "Win.gg",
+      "gist": "Covered the fan outrage and the viewership worries.",
+      "url": "https://win.gg/san-francisco-shock-set-to-leave-overwatch-esports/"
+     }
+    ]
+   }
+  },
+  {
+   "id": "esp-partner-teams-revealed",
+   "e": "owcs",
+   "when": "Jan 17, 2025",
+   "t": "Partner teams revealed",
+   "d": "OWCS announces its first partner teams, which get a share of revenue from their in-game team packs.",
+   "tags": [
+    "Partner Program",
+    "Gen.G",
+    "Falcons",
+    "Twisted Minds"
+   ],
+   "ic": "seal",
+   "community": {
+    "mood": "hype",
+    "summary": "The reveal post leaned into a meme, saying the scene was “SO back”, and the replies became a group celebration. Gen.G posted “used to pray for times like this 😭🙏”, and Falcons and Twisted Minds joined in. After the Shock news a month earlier, it was the first post-league moment that felt like a rebuild.",
+    "voices": [
+     {
+      "who": "@OW_Esports",
+      "gist": "The partner reveal.",
+      "url": "https://x.com/OW_Esports/status/1880284875363844190"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "2025",
+   "t": "China joins the circuit",
+   "d": "The OWCS adds a dedicated Chinese region alongside NA, EMEA and Asia.",
+   "tags": [
+    "OWCS China"
+   ],
+   "ic": "globe",
+   "id": "esp-china-joins-the-circuit"
+  },
+  {
+   "e": "owcs",
+   "when": "Apr 2025",
+   "t": "Champions Clash 2025",
+   "d": "Crazy Raccoon take revenge on Team Falcons in the grand final and qualify for the Midseason Championship.",
+   "win": "Crazy Raccoon",
+   "score": [
+    "Crazy Raccoon",
+    "4–2",
+    "Team Falcons"
+   ],
+   "tags": [
+    "Rivalry"
+   ],
+   "ic": "trophy",
+   "id": "esp-champions-clash-2025",
+   "community": {
+    "mood": "hype",
+    "summary": "This was when CR vs Falcons became the scene's biggest rivalry. Crazy Raccoon took revenge for the 2024 World Finals, and Shu's post-match message, that losing to Falcons hurt and beating them felt great, said it all.",
+    "voices": [
+     {
+      "who": "Shu (Crazy Raccoon)",
+      "gist": "Post-match message on the rivalry, quoted by esports.gg.",
+      "url": "https://esports.gg/news/overwatch/crazy-raccoon-players-win-owcs-champions-clash-2025/"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Aug 3, 2025 · Riyadh",
+   "t": "Midseason Championship 2025",
+   "d": "Team Falcons go from the Last Chance Qualifier to the title, sweeping Al Qadsiah in the final at the Esports World Cup.",
+   "win": "Team Falcons",
+   "score": [
+    "Team Falcons",
+    "4–0",
+    "Al Qadsiah"
+   ],
+   "tags": [
+    "EWC",
+    "LCQ run"
+   ],
+   "ic": "trophy",
+   "id": "esp-midseason-championship-2025"
+  },
+  {
+   "e": "owcs",
+   "when": "Nov 30, 2025 · Stockholm",
+   "t": "Twisted Minds are world champions",
+   "d": "After dropping to the lower bracket, Twisted Minds beat Crazy Raccoon and then avenge their loss to Al Qadsiah. The event draws more than 4.3 million hours watched.",
+   "win": "Twisted Minds",
+   "score": [
+    "Twisted Minds",
+    "4–1",
+    "Al Qadsiah"
+   ],
+   "tags": [
+    "DreamHack"
+   ],
+   "ic": "crown",
+   "id": "esp-twisted-minds-are-world-champions",
+   "vods": [
+    {
+     "yt": "TgoRhFCiYlY",
+     "label": "Grand Final · full broadcast"
+    },
+    {
+     "yt": "9URbsbZQ9q4",
+     "label": "Upper Final"
+    }
+   ],
+   "views": {
+    "avg": 114400,
+    "hours": 4300000,
+    "src": "Esports Charts via Esports Insider",
+    "url": "https://esportsinsider.com/2025/12/twisted-minds-win-overwatch-champions-series-2025-world-finals"
+   },
+   "community": {
+    "mood": "celebration",
+    "summary": "Coverage called it history: the first non-Korean team to win an OWCS LAN. Overwatch Esports marked it with a “brains over brawn” pun on the Twisted Minds name. Asked how they'd celebrate, the players all said “fly business class.” Quartz was named tournament MVP.",
+    "voices": [
+     {
+      "who": "@OW_Esports",
+      "gist": "The “brains over brawn” champions post.",
+      "url": "https://x.com/OW_Esports/status/1995174330255466989"
+     },
+     {
+      "who": "esports.gg",
+      "gist": "Winner interview, including the business-class promise.",
+      "url": "https://esports.gg/news/overwatch/twisted-minds-interview-winners-of-owcs-world-finals-2025"
+     },
+     {
+      "who": "OWTV",
+      "gist": "Called it the first non-Korean OWCS LAN title.",
+      "url": "https://owtv.gg/news/twisted-minds-are-on-the-hunt-for-back-to-backs"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Feb 2026 · Seoul",
+   "t": "Pre-Season Bootcamp",
+   "d": "A new preseason LAN. Twisted Minds recover from a two-map deficit in the semis and beat Crazy Raccoon in the final.",
+   "win": "Twisted Minds",
+   "score": [
+    "Twisted Minds",
+    "4–1",
+    "Crazy Raccoon"
+   ],
+   "tags": [
+    "New event"
+   ],
+   "ic": "trophy",
+   "id": "esp-pre-season-bootcamp"
+  },
+  {
+   "e": "owcs",
+   "when": "May 24, 2026 · Tokyo",
+   "t": "Champions Clash 2026",
+   "d": "At Arena Tachikawa Tachihi, Crazy Raccoon win the seventh and deciding map to defend their title. A peak of 290,600 viewers makes it the most-watched OWCS event so far.",
+   "win": "Crazy Raccoon",
+   "score": [
+    "Crazy Raccoon",
+    "4–3",
+    "Twisted Minds"
+   ],
+   "tags": [
+    "Japan",
+    "Record"
+   ],
+   "ic": "trophy",
+   "id": "esp-champions-clash-2026",
+   "vods": [
+    {
+     "yt": "pRzUHik8jbI",
+     "label": "Day 3 · Grand Final broadcast"
+    }
+   ],
+   "views": {
+    "peak": 290600,
+    "src": "Blockport / Esports Charts",
+    "url": "https://blockport.io/latest-news/crazy-raccoon-wins-owcs-champions-clash-peak-290600/"
+   },
+   "community": {
+    "mood": "hype",
+    "summary": "Seven maps, a title defense and a record peak of 290,600 viewers made this the moment people started saying OWCS might actually be growing. The CR vs Twisted Minds rematch set up the rest of the year.",
+    "voices": [
+     {
+      "who": "Blockport",
+      "gist": "Reported the 290,600 peak.",
+      "url": "https://blockport.io/latest-news/crazy-raccoon-wins-owcs-champions-clash-peak-290600/"
+     },
+     {
+      "who": "OWTV",
+      "gist": "Final-day recap.",
+      "url": "https://owtv.gg/news/crazy-raccoon-conquer-the-champions-clash-and-secure-ewc-qualification"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Aug 2, 2026 · Paris",
+   "t": "Midseason Championship 2026",
+   "d": "Part of the Esports World Cup in Paris with a $1M prize pool. ZETA DIVISION, who swept their Korean and Asian stages, beat Twisted Minds for their first major OWCS title.",
+   "win": "ZETA DIVISION",
+   "score": [
+    "ZETA DIVISION",
+    "4–2",
+    "Twisted Minds"
+   ],
+   "tags": [
+    "EWC",
+    "Paris"
+   ],
+   "ic": "trophy",
+   "id": "esp-midseason-championship-2026",
+   "vods": [
+    {
+     "yt": "A16GFMdMTac",
+     "label": "Playoffs & Grand Final broadcast"
+    }
+   ]
+  },
+  {
+   "e": "wc",
+   "when": "Sep 13, 2026 · BlizzCon",
+   "t": "World Cup returns",
+   "d": "For the game's 10th anniversary, the World Cup comes back with groups in Busan and finals in Anaheim. South Korea beats Saudi Arabia for its fourth title, eight years after its last. The final peaks at 401,068 viewers, a World Cup record.",
+   "win": "South Korea",
+   "score": [
+    "South Korea",
+    "4–1",
+    "Saudi Arabia"
+   ],
+   "tags": [
+    "Busan",
+    "Anaheim",
+    "Record"
+   ],
+   "ic": "cup2",
+   "id": "esp-world-cup-returns",
+   "vods": [
+    {
+     "yt": "YKS066sN_-o",
+     "label": "Finals Day 2 · full broadcast"
+    }
+   ],
+   "views": {
+    "peak": 401068,
+    "hours": 10000000,
+    "approx": true,
+    "src": "Blizzard via esports.gg",
+    "url": "https://esports.gg/news/esports/overwatch-world-cup-2026-viewership-record-blizzcon-2026-esports/"
+   },
+   "community": {
+    "mood": "hype",
+    "summary": "The trash talk started before the match. In a pre-final interview, Korea's MAX and Saudi Arabia's TVNT traded jabs and TVNT predicted a 4–0. Saudi Arabia won the first map, then Korea won four straight, and Simple took MVP. Blizzard called it the most-watched World Cup ever, with a 401,068 peak and more than 10 million hours watched.",
+    "voices": [
+     {
+      "who": "esports.gg",
+      "gist": "The MAX vs TVNT smack-talk interview.",
+      "url": "https://esports.gg/interviews/overwatch/the-team-south-korea-vs-saudi-arabia-rivalry-at-owwc-2026-we-will-win-it-again/"
+     },
+     {
+      "who": "GosuGamers",
+      "gist": "Simple on the duty he felt to win the title back for Korea.",
+      "url": "https://www.gosugamers.net/entertainment/news/79165-south-korea-wins-overwatch-world-cup-2026-after-defeating-saudi-arabia"
+     }
+    ]
+   }
+  },
+  {
+   "e": "owcs",
+   "when": "Dec 2–6, 2026 · China",
+   "t": "OWCS World Finals 2026",
+   "d": "The season's final LAN. Stage 3 playoffs wrapped on November 1 and the field is set. Who wins is still to be decided.",
+   "tags": [
+    "Upcoming"
+   ],
+   "ic": "globe",
+   "up": true,
+   "id": "esp-owcs-world-finals-2026"
+  }
+ ],
+ "cups": [
+  {
+   "h": "World Cup",
+   "list": [
+    [
+     "2016",
+     "South Korea"
+    ],
+    [
+     "2017",
+     "South Korea"
+    ],
+    [
+     "2018",
+     "South Korea"
+    ],
+    [
+     "2019",
+     "United States"
+    ],
+    [
+     "2023",
+     "Saudi Arabia"
+    ],
+    [
+     "2026",
+     "South Korea"
+    ]
+   ]
+  },
+  {
+   "h": "Overwatch League",
+   "list": [
+    [
+     "2018",
+     "London Spitfire"
+    ],
+    [
+     "2019",
+     "San Francisco Shock"
+    ],
+    [
+     "2020",
+     "San Francisco Shock"
+    ],
+    [
+     "2021",
+     "Shanghai Dragons"
+    ],
+    [
+     "2022",
+     "Dallas Fuel"
+    ],
+    [
+     "2023",
+     "Florida Mayhem"
+    ]
+   ]
+  },
+  {
+   "h": "OWCS majors",
+   "list": [
+    [
+     "2024",
+     "Crazy Raccoon <small>EWC</small>"
+    ],
+    [
+     "2024",
+     "Team Falcons <small>World Finals</small>"
+    ],
+    [
+     "2025",
+     "Crazy Raccoon <small>Champions Clash</small>"
+    ],
+    [
+     "2025",
+     "Team Falcons <small>Midseason</small>"
+    ],
+    [
+     "2025",
+     "Twisted Minds <small>World Finals</small>"
+    ],
+    [
+     "2026",
+     "Crazy Raccoon <small>Champions Clash</small>"
+    ],
+    [
+     "2026",
+     "ZETA DIVISION <small>Midseason</small>"
+    ],
+    [
+     "2026",
+     "<span class='pending'>To be decided · Dec 2–6</span>"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,570 @@
+{
+ "eras": [
+  {
+   "id": "rise",
+   "n": "I",
+   "name": "Rise of the Omnics",
+   "c": "#7fd1ff",
+   "sub": "Automation promises a golden century. Then the factories start thinking for themselves."
+  },
+  {
+   "id": "crisis",
+   "n": "II",
+   "name": "The Omnic Crisis",
+   "c": "#e0344b",
+   "sub": "Omnic armies pour out of the omniums. Nations fall back. A small international team is formed."
+  },
+  {
+   "id": "golden",
+   "n": "III",
+   "name": "The Golden Age",
+   "c": "#f99e1a",
+   "sub": "Overwatch becomes the world's symbol of hope, with a covert arm, Blackwatch, operating in the shadows."
+  },
+  {
+   "id": "fall",
+   "n": "IV",
+   "name": "The Fall",
+   "c": "#b07cff",
+   "sub": "Assassinations, scandal and a catastrophe in Switzerland bring the organization down."
+  },
+  {
+   "id": "shadows",
+   "n": "V",
+   "name": "The Recall",
+   "c": "#43c6ff",
+   "sub": "Years after the ban, Talon grows bolder, and a scientist in Gibraltar sends out a call."
+  },
+  {
+   "id": "ow2",
+   "n": "VI",
+   "name": "Overwatch Returns",
+   "c": "#5be3a6",
+   "sub": "A reunited team fights Null Sector's global invasion while new heroes join the fight."
+  },
+  {
+   "id": "talon",
+   "n": "VII",
+   "name": "Reign of Talon · 2026",
+   "c": "#ff4d6a",
+   "sub": "The first year-long story arc, told season by season in the live game."
+  }
+ ],
+ "items": [
+  {
+   "e": "rise",
+   "when": "Pre-Crisis",
+   "t": "Omnica builds the omniums",
+   "d": "The Omnica Corporation constructs vast self-running factories, the omniums, to mass-produce robotic workers called omnics. They drive an economic boom across the world.",
+   "tags": [
+    "Omnica Corporation",
+    "Omniums"
+   ],
+   "ic": "factory",
+   "id": "lore-omnica-builds-the-omniums"
+  },
+  {
+   "e": "rise",
+   "when": "Pre-Crisis",
+   "t": "Omnica collapses",
+   "d": "Investigations into fraud bring Omnica down. The omniums are shut off and left dormant around the globe, which turns out to be a grave mistake.",
+   "tags": [
+    "Omnica Corporation"
+   ],
+   "ic": "fall",
+   "id": "lore-omnica-collapses"
+  },
+  {
+   "e": "crisis",
+   "when": "Crisis begins",
+   "t": "The omniums wake up",
+   "d": "Without warning, the dormant factories reactivate and begin building war machines. Omnic forces turn on humanity, and conventional militaries cannot keep up.",
+   "tags": [
+    "Omniums",
+    "God Programs"
+   ],
+   "ic": "omnic",
+   "id": "lore-the-omniums-wake-up"
+  },
+  {
+   "e": "crisis",
+   "when": "Crisis",
+   "t": "Anubis is contained in Egypt",
+   "d": "Egypt's rogue AI, the Anubis God Program, is locked beneath a temple near Giza. Ana Amari makes her name as one of the finest snipers defending Egypt.",
+   "tags": [
+    "Ana",
+    "Anubis"
+   ],
+   "ic": "pyramid",
+   "id": "lore-anubis-is-contained-in-egypt"
+  },
+  {
+   "e": "crisis",
+   "when": "Crisis",
+   "t": "The last stand at Eichenwalde",
+   "d": "The Crusaders hold a castle town in Germany against an omnic assault. Their leader Balderich von Adler falls, and young Reinhardt Wilhelm survives to carry on his legacy.",
+   "tags": [
+    "Reinhardt",
+    "Crusaders",
+    "Eichenwalde"
+   ],
+   "ic": "hammer",
+   "id": "lore-the-last-stand-at-eichenwalde"
+  },
+  {
+   "e": "crisis",
+   "when": "Crisis",
+   "t": "The United Nations forms Overwatch",
+   "d": "A strike team of six is assembled: Jack Morrison, Gabriel Reyes, Ana Amari, Reinhardt Wilhelm, Torbjörn Lindholm and Liao. Their mission is to end the Omnic Crisis.",
+   "tags": [
+    "Soldier: 76",
+    "Reaper",
+    "Ana",
+    "Reinhardt",
+    "Torbjörn"
+   ],
+   "ic": "strike",
+   "id": "lore-the-united-nations-forms-overwatch"
+  },
+  {
+   "e": "crisis",
+   "when": "Crisis ends",
+   "t": "Victory over the omnics",
+   "d": "The strike team breaks the omnic forces and the crisis ends. Overwatch is made a permanent international organization, and its agents become heroes.",
+   "tags": [
+    "Overwatch"
+   ],
+   "ic": "sun",
+   "src": "Game lore",
+   "id": "lore-victory-over-the-omnics"
+  },
+  {
+   "e": "golden",
+   "when": "Post-Crisis",
+   "t": "Morrison over Reyes",
+   "d": "Jack Morrison is named Strike Commander, passing over his friend Gabriel Reyes. Reyes is given command of Blackwatch, a covert unit for the jobs Overwatch can't be seen doing.",
+   "tags": [
+    "Soldier: 76",
+    "Reaper",
+    "Blackwatch"
+   ],
+   "ic": "split",
+   "id": "lore-morrison-over-reyes"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "Watchpoints across the world",
+   "d": "Overwatch builds bases from Gibraltar to Switzerland. Science, medicine and peacekeeping flourish under its banner.",
+   "tags": [
+    "Watchpoint: Gibraltar"
+   ],
+   "ic": "tower2",
+   "id": "lore-watchpoints-across-the-world"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "Horizon Lunar Colony",
+   "d": "On a moon base where scientists study genetically enhanced apes, the subjects revolt. One gentle, brilliant gorilla named Winston builds a rocket and escapes to Earth, later joining Overwatch as a scientist.",
+   "tags": [
+    "Winston",
+    "Horizon"
+   ],
+   "ic": "moon",
+   "id": "lore-horizon-lunar-colony"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "The Australian omnium explodes",
+   "d": "An explosion destroys the omnium in the Australian outback and irradiates the land around it. The survivors, the Junkers, build Junkertown out of the wasteland.",
+   "tags": [
+    "Junkrat",
+    "Roadhog",
+    "Junker Queen"
+   ],
+   "ic": "radiation",
+   "id": "lore-the-australian-omnium-explodes"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "Brother against brother",
+   "d": "Hanzo Shimada nearly kills his younger brother Genji in Hanamura. Dr. Angela Ziegler rebuilds Genji as a cyborg, and Blackwatch uses him to take apart the Shimada criminal empire.",
+   "tags": [
+    "Genji",
+    "Hanzo",
+    "Mercy",
+    "Shimada Clan"
+   ],
+   "ic": "dragon",
+   "id": "lore-brother-against-brother"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "From outlaw to agent",
+   "d": "Young gunslinger Cole Cassidy is captured with the Deadlock Gang and given a choice: prison, or Blackwatch. He takes the badge.",
+   "tags": [
+    "Cassidy",
+    "Deadlock Gang"
+   ],
+   "ic": "hat",
+   "id": "lore-from-outlaw-to-agent"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "The Slipstream accident",
+   "d": "Test pilot Lena Oxton vanishes when an experimental teleporting jet malfunctions, leaving her unstuck in time. Winston builds the chronal accelerator that anchors her to the present.",
+   "tags": [
+    "Tracer",
+    "Winston"
+   ],
+   "ic": "clock",
+   "id": "lore-the-slipstream-accident"
+  },
+  {
+   "e": "golden",
+   "when": "Golden Age",
+   "t": "Valkyrie takes flight",
+   "d": "Angela Ziegler's breakthroughs in nanobiology become the Caduceus staff and Valkyrie suit, letting her heal the wounded in the middle of combat.",
+   "tags": [
+    "Mercy"
+   ],
+   "ic": "wings",
+   "id": "lore-valkyrie-takes-flight"
+  },
+  {
+   "e": "fall",
+   "when": "Late Golden Age",
+   "t": "Talon takes Amélie Lacroix",
+   "d": "Talon kidnaps the wife of Overwatch agent Gérard Lacroix and reconditions her into a cold assassin. Her first target is Gérard himself.",
+   "tags": [
+    "Widowmaker",
+    "Talon"
+   ],
+   "ic": "spider",
+   "id": "lore-talon-takes-amelie-lacroix"
+  },
+  {
+   "e": "fall",
+   "when": "Late Golden Age",
+   "t": "Ana's last mission",
+   "d": "Facing Widowmaker through a scope, Ana Amari hesitates. Widowmaker doesn't. Ana is shot and presumed dead, and she lets the world believe it for years.",
+   "tags": [
+    "Ana",
+    "Widowmaker"
+   ],
+   "ic": "scope",
+   "id": "lore-anas-last-mission"
+  },
+  {
+   "e": "fall",
+   "when": "Late Golden Age",
+   "t": "The Venice incident",
+   "d": "A Blackwatch raid in Rialto to capture Talon's Antonio Bartalotti goes badly wrong. Reyes kills Antonio, and the existence of Blackwatch is exposed to the world.",
+   "tags": [
+    "Reaper",
+    "Cassidy",
+    "Genji",
+    "Moira"
+   ],
+   "ic": "canal",
+   "src": "Retribution",
+   "id": "lore-the-venice-incident"
+  },
+  {
+   "e": "fall",
+   "when": "The Fall",
+   "t": "Scandal and protest",
+   "d": "Accusations of corruption, failures and human-rights abuses pile up. Crowds march against Overwatch worldwide and the UN opens investigations.",
+   "tags": [
+    "Overwatch"
+   ],
+   "ic": "megaphone",
+   "id": "lore-scandal-and-protest"
+  },
+  {
+   "e": "fall",
+   "when": "The Fall",
+   "t": "Swiss HQ destroyed",
+   "d": "An explosion levels Overwatch's headquarters in Switzerland. Jack Morrison and Gabriel Reyes are reported dead in the blast.",
+   "tags": [
+    "Soldier: 76",
+    "Reaper"
+   ],
+   "ic": "blast",
+   "id": "lore-swiss-hq-destroyed"
+  },
+  {
+   "e": "fall",
+   "when": "The Fall",
+   "t": "The Petras Act",
+   "d": "The United Nations outlaws all Overwatch activity. Agents scatter, and taking part in any Overwatch mission becomes a crime.",
+   "tags": [
+    "Petras Act"
+   ],
+   "ic": "gavel",
+   "id": "lore-the-petras-act"
+  },
+  {
+   "e": "shadows",
+   "when": "Years later",
+   "t": "Two ghosts walk the earth",
+   "d": "A masked vigilante called Soldier: 76 starts attacking corrupt targets, while a wraith named Reaper hunts down former agents. Both men survived Switzerland.",
+   "tags": [
+    "Soldier: 76",
+    "Reaper"
+   ],
+   "ic": "mask",
+   "id": "lore-two-ghosts-walk-the-earth"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "Assassination in King's Row",
+   "d": "Tekhartha Mondatta, the omnic monk preaching peace between humans and omnics, is killed in London by Widowmaker as Tracer races to stop her.",
+   "tags": [
+    "Tracer",
+    "Widowmaker",
+    "Zenyatta"
+   ],
+   "ic": "scope",
+   "src": "Alive",
+   "id": "lore-assassination-in-kings-row"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "Doomfist breaks free",
+   "d": "Talon breaks Akande Ogundimu out of a high-security prison in Numbani. He believes conflict makes humanity stronger, and he means to supply it.",
+   "tags": [
+    "Doomfist",
+    "Talon",
+    "Numbani"
+   ],
+   "ic": "fist",
+   "id": "lore-doomfist-breaks-free"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "The Recall",
+   "d": "Reaper and Widowmaker raid Watchpoint: Gibraltar. Winston fights them off, then sends out the recall, asking scattered agents to come back.",
+   "tags": [
+    "Winston",
+    "Tracer",
+    "Reaper",
+    "Widowmaker"
+   ],
+   "ic": "gorilla",
+   "src": "Recall",
+   "id": "lore-the-recall"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "Dragons in Hanamura",
+   "d": "On the anniversary of his brother's 'death', Hanzo returns to the Shimada castle and finds Genji waiting for him, alive.",
+   "tags": [
+    "Genji",
+    "Hanzo"
+   ],
+   "ic": "dragon",
+   "src": "Dragons",
+   "id": "lore-dragons-in-hanamura"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "Busan's MEKA squad",
+   "d": "South Korea fends off a recurring giant omnic called the Gwishin with MEKA, piloted by top gamers. Hana Song becomes a national hero.",
+   "tags": [
+    "D.Va",
+    "MEKA",
+    "Busan"
+   ],
+   "ic": "mech",
+   "id": "lore-busans-meka-squad"
+  },
+  {
+   "e": "shadows",
+   "when": "Present day",
+   "t": "Sombra joins Talon",
+   "d": "A hacker with her own agenda infiltrates Volskaya Industries alongside Reaper and Widowmaker, using Talon as much as it uses her.",
+   "tags": [
+    "Sombra",
+    "Talon"
+   ],
+   "ic": "skull",
+   "src": "Infiltration",
+   "id": "lore-sombra-joins-talon"
+  },
+  {
+   "e": "ow2",
+   "when": "Overwatch 2",
+   "t": "Zero Hour",
+   "d": "Null Sector, an omnic extremist force, attacks Paris. Winston and Tracer are joined by Mercy, Reinhardt, Mei and more as Overwatch openly returns.",
+   "tags": [
+    "Winston",
+    "Tracer",
+    "Mercy",
+    "Mei",
+    "Reinhardt"
+   ],
+   "ic": "eiffel",
+   "src": "Zero Hour",
+   "id": "lore-zero-hour"
+  },
+  {
+   "e": "ow2",
+   "when": "Overwatch 2",
+   "t": "Null Sector's invasion",
+   "d": "Led by Ramattra, Null Sector strikes Rio de Janeiro, Gothenburg and Toronto. Sojourn, the Overwatch officer, leads the defence alongside the returning team.",
+   "tags": [
+    "Ramattra",
+    "Sojourn",
+    "Lúcio",
+    "Torbjörn"
+   ],
+   "ic": "globe",
+   "src": "Invasion missions",
+   "id": "lore-null-sectors-invasion"
+  },
+  {
+   "e": "ow2",
+   "when": "Overwatch 2",
+   "t": "A new generation",
+   "d": "Kiriko protects Kanezaka, Junker Queen reclaims her throne, and Illari, Mauga, Venture, Juno, Hazard, Freja and Wuyang widen the fight from Peru to Mars.",
+   "tags": [
+    "Kiriko",
+    "Junker Queen",
+    "Juno",
+    "Mauga",
+    "Wuyang"
+   ],
+   "ic": "fox",
+   "id": "lore-a-new-generation"
+  },
+  {
+   "e": "talon",
+   "when": "Feb 10, 2026",
+   "t": "Season 1 · Conquest",
+   "d": "Vendetta topples Doomfist and seizes control of Talon, driving Reaper, Widowmaker and Sombra away. Five heroes arrive at once: Domina, Emre and Mizuki for Talon, Anran and Jetpack Cat for Overwatch. Players pick a side in a five-week faction war.",
+   "tags": [
+    "Vendetta",
+    "Doomfist",
+    "Anran",
+    "Mizuki",
+    "Emre",
+    "Domina",
+    "Jetpack Cat"
+   ],
+   "ic": "talon",
+   "src": "Live game",
+   "id": "lore-season-1-conquest",
+   "community": {
+    "mood": "hype",
+    "summary": "Most fans were relieved. To many, the “2” stood for the game's roughest years, and dropping it read as a reset. Blizzard rebranded its game client, launcher and every social account as a “Talon Takeover” in the run-up, which became its biggest social stunt in years. Players came back in numbers, setting a Steam record of 165,651 concurrent players.",
+    "voices": [
+     {
+      "who": "Reddit (via Strafe)",
+      "gist": "One widely shared reaction: players said they had never really called it “Overwatch 2” anyway.",
+      "url": "https://www.strafe.com/news/read/overwatch-spotlight-ow-drops-the-2-and-enters-a-new-story-driven-era/"
+     },
+     {
+      "who": "Outlook Respawn",
+      "gist": "Covered the Talon Takeover rebrand across the client, launcher and socials as the opening move of the story.",
+      "url": "https://respawn.outlookindia.com/gaming/gaming-news/talon-takes-over-overwatch-2s-biggest-social-stunt-since-sombra"
+     },
+     {
+      "who": "Overwatch directors (Destructoid)",
+      "gist": "Looking back, the team called the launch a success by every measure of player excitement.",
+      "url": "https://www.destructoid.com/overwatch-game-directors-pleased-huge-2026-excited-2027/"
+     }
+    ]
+   }
+  },
+  {
+   "e": "talon",
+   "when": "Apr 14, 2026",
+   "t": "Season 2 · Summit",
+   "d": "New Recon damage hero Sierra joins as Vendetta's war against the remnants of Overwatch spreads.",
+   "tags": [
+    "Sierra"
+   ],
+   "ic": "mountain",
+   "src": "Live game",
+   "id": "lore-season-2-summit"
+  },
+  {
+   "e": "talon",
+   "when": "June 2026",
+   "t": "Season 3 · Into the Tiger's Den",
+   "d": "Damage hero Shion arrives as the story pushes deeper into Talon's territory.",
+   "tags": [
+    "Shion"
+   ],
+   "ic": "tiger",
+   "src": "Live game",
+   "id": "lore-season-3-into-the-tigers-den"
+  },
+  {
+   "e": "talon",
+   "when": "Aug 11, 2026",
+   "t": "Season 4 · Heroes of Busan",
+   "d": "New tank D.Mon joins in a Busan-themed season with Talon and the Junkers as antagonists. Busan, Eichenwalde and Paraíso are reworked to reflect the story.",
+   "tags": [
+    "D.Mon",
+    "D.Va",
+    "Busan"
+   ],
+   "ic": "mech",
+   "src": "Live game",
+   "id": "lore-season-4-heroes-of-busan"
+  },
+  {
+   "e": "talon",
+   "when": "Oct 6, 2026",
+   "t": "Season 5 · A Grim Doctrine",
+   "d": "Doomfist returns with a new faction and an ally: Doctrine, a 77-year-old vampire-inspired support from Zimbabwe. The Icelandic escort map Watchpoint: Grímsvötn debuts, and Sombra moves to the support role.",
+   "tags": [
+    "Doctrine",
+    "Doomfist",
+    "Sombra",
+    "Roadhog"
+   ],
+   "ic": "fang",
+   "src": "Live game",
+   "id": "lore-season-5-a-grim-doctrine"
+  },
+  {
+   "e": "talon",
+   "when": "Nov 3, 2026",
+   "t": "Taking Reign",
+   "d": "Doomfist and Overwatch converge on Rialto to stop Vendetta once and for all. Doomfist wins, and Talon's former Vendetta loyalists Maximilien, Mauga and Moira fall in under his rule. The arc closes with a tease of Hero 55, an omnic support, for 2027.",
+   "tags": [
+    "Doomfist",
+    "Vendetta",
+    "Doctrine",
+    "Reaper"
+   ],
+   "ic": "crown",
+   "src": "Live game · now",
+   "id": "lore-taking-reign",
+   "community": {
+    "mood": "celebration",
+    "summary": "The arc closed with Doomfist's return and his win over Vendetta. The short story “All That Follows”, read by Doctrine's voice actor, set up a new Talon era with Reaper and Widowmaker uneasy about the former Vendetta loyalists. Fans spent the following weeks speculating about Hero 55 and where 2027 goes.",
+    "voices": [
+     {
+      "who": "esports.gg",
+      "gist": "Recap of “All That Follows” and what it means for Talon.",
+      "url": "https://esports.gg/news/overwatch/overwatch-all-that-follows-story-recap-new-talon-heroes-vendettas-fate-and-reapers-redemption/"
+     }
+    ]
+   }
+  }
+ ]
+}

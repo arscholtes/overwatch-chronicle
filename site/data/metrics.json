@@ -1,0 +1,82 @@
+{
+ "note": "Steam figures are measured (SteamCharts/SteamDB/Steam Web API). All-platform figures are third-party estimates; Blizzard does not publish player counts.",
+ "steamMonthly": [
+  {
+   "m": "2025-01",
+   "avg": 19509,
+   "src": "SteamCharts via VoxBooster"
+  },
+  {
+   "m": "2025-11",
+   "avg": 27036,
+   "src": "GameCharts"
+  },
+  {
+   "m": "2025-12",
+   "avg": 29397,
+   "src": "GameCharts"
+  },
+  {
+   "m": "2026-01",
+   "avg": 27418,
+   "src": "GameCharts"
+  },
+  {
+   "m": "2026-02",
+   "avg": 71283,
+   "src": "SteamCharts via VoxBooster"
+  },
+  {
+   "m": "2026-06",
+   "avg": 60079,
+   "src": "SteamCharts via VoxBooster"
+  },
+  {
+   "m": "2026-09",
+   "avg": 58481,
+   "src": "Dot Esports (30-day avg)"
+  }
+ ],
+ "steamPeak": {
+  "value": 165651,
+  "date": "2026-02-10",
+  "src": "SteamDB"
+ },
+ "steamSamples": [],
+ "allPlatform": {
+  "concurrentLow": 370000,
+  "concurrentHigh": 540000,
+  "mauLow": 11000000,
+  "mauHigh": 17000000,
+  "src": "Third-party modelling, summarized by Dot Esports (Sep 2026)",
+  "url": "https://dotesports.com/overwatch/news/overwatch-2-player-count",
+  "steamAtTime": 52350
+ },
+ "viewership": [
+  {
+   "event": "EWC 2024",
+   "date": "2024-07-28",
+   "peak": 100188,
+   "src": "Esports Charts"
+  },
+  {
+   "event": "OWCS World Finals 2024",
+   "date": "2024-11",
+   "peak": 160000,
+   "approx": true,
+   "src": "Esports Insider"
+  },
+  {
+   "event": "Champions Clash 2026",
+   "date": "2026-05-24",
+   "peak": 290600,
+   "src": "Esports Charts"
+  },
+  {
+   "event": "OWWC 2026 Final",
+   "date": "2026-09-13",
+   "peak": 401068,
+   "src": "Blizzard"
+  }
+ ]
+}
