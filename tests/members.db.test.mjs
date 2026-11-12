@@ -83,8 +83,8 @@ test("an address that was never invited gets no code and no account", { skip }, 
 });
 
 test("someone not logged in reads profiles and nothing else", { skip }, async () => {
-  assert.equal((await call("/rest/v1/profile?select=roster_id")).status, 200);
-  for (const table of ["member", "thread", "thread_member", "message", "block", "report"]) {
+  assert.equal((await call("/rest/v1/profile_public?select=roster_id")).status, 200);
+  for (const table of ["profile", "member", "thread", "thread_member", "message", "block", "report"]) {
     const read = await call(`/rest/v1/${table}?select=*`);
     assert.ok(read.status >= 400 || read.body.length === 0, `${table} answered ${read.status} with rows`);
     assert.notEqual(read.status, 200, `${table} is readable without logging in`);
@@ -108,8 +108,18 @@ test("a member writes their own profile and nobody else's", { skip }, async () =
   assert.ok(other.status >= 400);
   const edit = await call(`/rest/v1/profile?roster_id=eq.${roster}`, { token: people.bo.token, method: "PATCH", prefer: "return=representation", body: { bio: "defaced" } });
   assert.deepEqual(edit.body, []);
-  const seen = await call(`/rest/v1/profile?roster_id=eq.${roster}&select=bio,hidden`);
+  const seen = await call(`/rest/v1/profile_public?roster_id=eq.${roster}&select=bio,hidden`);
   assert.deepEqual(seen.body, [{ bio: "Tank player.", hidden: false }]);
+});
+
+test("a hidden profile shows the public that it is hidden and nothing it says", { skip }, async () => {
+  const { token, roster } = people.cy;
+  const saved = await call("/rest/v1/profile", { token, method: "POST", prefer: "resolution=merge-duplicates", body: { roster_id: roster, bio: "Keep this to me.", hidden: true } });
+  assert.equal(saved.status, 201, JSON.stringify(saved.body));
+  assert.deepEqual((await call(`/rest/v1/profile_public?roster_id=eq.${roster}&select=bio,hidden`)).body, [{ bio: "", hidden: true }]);
+  assert.deepEqual((await call(`/rest/v1/profile_public?roster_id=eq.${roster}&select=bio`, { token: people.ana.token })).body, [{ bio: "" }]);
+  assert.deepEqual((await call(`/rest/v1/profile?roster_id=eq.${roster}&select=bio`, { token: people.ana.token })).body, []);
+  assert.deepEqual((await call(`/rest/v1/profile?roster_id=eq.${roster}&select=bio`, { token })).body, [{ bio: "Keep this to me." }]);
 });
 
 test("a member cannot make themselves a member of anything else", { skip }, async () => {

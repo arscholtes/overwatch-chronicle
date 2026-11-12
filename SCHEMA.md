@@ -27,7 +27,8 @@ row-level security. No other app reads these tables.
 | Table | Columns | Used for | Who can read | Who can write |
 | --- | --- | --- | --- | --- |
 | `member` | `user_id` → `auth.users`, `roster_id` (an `id` in `alumni.json`), `owner`, `created_at` | Ties an invited account to one roster entry | Members | The project owner, through `add_member()` in the SQL editor |
-| `profile` | `roster_id`, `bio` (≤ 1200), `hidden`, `updated_at` | What a member adds to their own spotlight, or their choice to hide it | Everyone | The member whose `roster_id` it is |
+| `profile` | `roster_id`, `bio` (≤ 1200), `hidden`, `updated_at` | What a member adds to their own spotlight, or their choice to hide it | The member whose `roster_id` it is | That member |
+| `profile_public` (view) | `roster_id`, `hidden`, `bio` (empty when hidden), `updated_at` | What the page shows of every profile | Everyone | Nobody |
 | `thread` | `id`, `created_at` | A conversation | Its members | `start_thread()` only |
 | `thread_member` | `thread_id`, `user_id` | Who is in a conversation | Its members | `start_thread()` only |
 | `message` | `id`, `thread_id`, `sender`, `body` (1–4000), `sent_at` | What members write to each other | The conversation's members | A member of the conversation, as themselves, unless either side has blocked the other |

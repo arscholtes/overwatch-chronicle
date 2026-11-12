@@ -118,15 +118,20 @@ alter table public.block         enable row level security;
 alter table public.report        enable row level security;
 
 revoke all on public.member, public.profile, public.thread, public.thread_member, public.message, public.block, public.report from anon, authenticated;
-grant select on public.profile to anon, authenticated;
-grant insert, update on public.profile to authenticated;
+grant select, insert, update on public.profile to authenticated;
+
+-- What the page shows of every profile: whether it is hidden, and its bio only when it is not.
+create view public.profile_public as
+  select roster_id, hidden, case when hidden then '' else bio end as bio, updated_at from public.profile;
+grant select on public.profile_public to anon, authenticated;
 grant select on public.member, public.thread, public.thread_member to authenticated;
 grant select, insert on public.message, public.report to authenticated;
 grant select, insert, delete on public.block to authenticated;
 
 create policy "members see who the members are" on public.member for select to authenticated using (public.is_member());
 
-create policy "anyone reads what a member published" on public.profile for select to anon, authenticated using (true);
+create policy "a member reads their own profile" on public.profile for select to authenticated
+  using (roster_id = (select roster_id from public.member where user_id = (select auth.uid())));
 create policy "a member writes their own profile" on public.profile for insert to authenticated
   with check (roster_id = (select roster_id from public.member where user_id = (select auth.uid())));
 create policy "a member edits their own profile" on public.profile for update to authenticated
