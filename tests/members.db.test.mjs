@@ -1,12 +1,12 @@
 // The members database's promises, checked against a running Supabase stack.
-// Run `npx supabase start` then `node --test tests/members.db.test.mjs`; without a stack these are skipped.
+// Run `npx supabase start` then `MEMBERS_STACK=1 node --test tests/members.db.test.mjs`; these are skipped unless MEMBERS_STACK=1.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { before, test } from "node:test";
 
 /** @return {object | null} the local stack's address and keys, or null when none is running */
 function stack() {
-  if (process.env.SUPABASE_URL) return { url: process.env.SUPABASE_URL, anon: process.env.SUPABASE_ANON_KEY, service: process.env.SUPABASE_SERVICE_KEY, mail: process.env.MAILPIT_URL };
+  if (!process.env.MEMBERS_STACK) return null;
   try {
     const env = Object.fromEntries(execFileSync("npx", ["--yes", "supabase", "status", "-o", "env"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] })
       .split("\n").filter((line) => line.includes("=")).map((line) => { const at = line.indexOf("="); return [line.slice(0, at), line.slice(at + 1).replace(/^"|"$/g, "")]; }));
@@ -17,7 +17,7 @@ function stack() {
 }
 
 const S = stack();
-const skip = S ? false : "no Supabase stack is running";
+const skip = S ? false : "set MEMBERS_STACK=1 with a local Supabase stack running";
 const run = Date.now();
 const address = (name) => `${name}-${run}@example.test`;
 
