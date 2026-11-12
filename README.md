@@ -10,6 +10,7 @@ Built by [Alex "Th3MFG" Scholtes](https://github.com/arscholtes).
   - **Community**: a pop-up summary of how people reacted (mood, summary, linked posts and coverage)
   - links to sources and posts, plus viewership (peak / average / hours watched)
 - **Teams**: every relevant team, with Liquipedia and X links
+- **Timeless**: everyone who was ever at Timeless, Timeless Ethereal or Timeless Obsidian, each with their own spotlight: stints, placements while on the roster, and their public socials. `python3 tools/timeless_people.py` rebuilds it from Liquipedia (about three minutes; it keeps handles, never legal names or birth dates)
 - **Numbers**: event viewership, monthly Steam players, weekly Steam snapshots, and all-platform estimates (clearly labelled)
 
 All data is in `site/data/*.json`. The page (`site/index.html`, `site/assets/`) only reads it.

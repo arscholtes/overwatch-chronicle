@@ -307,3 +307,37 @@ a.tcard.alum:hover{border-color:var(--tl)}
 .tri-ch .when{font-family:var(--cond);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:var(--tc);display:block}
 .tri-ch b{font-family:var(--display);font-size:22px;font-weight:500}
 .tri-ch p{margin:2px 0 0;font-size:14.5px;color:#c6d3ea}
+
+/* ---------- profile pictures over monogram badges ---------- */
+.badge{position:relative;display:inline-flex;flex:none;line-height:0}
+.badge .av{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(50% 4.2%,91.7% 27%,91.7% 73%,50% 95.8%,8.3% 73%,8.3% 27%)}
+
+/* ---------- Timeless people ---------- */
+.tab[aria-selected="true"].ppl{background:var(--tl);color:#0b1220}
+.pplv .kicker,.pplv h1 em{color:var(--tl)}
+.psearch{margin-bottom:14px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.pcard{position:relative;display:flex;gap:12px;align-items:center;min-height:76px;padding:12px 14px;cursor:pointer;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--tl) 9%,var(--panel-2)),var(--panel) 62%);border:1px solid var(--line);border-left:3px solid color-mix(in srgb,var(--tl) 55%,var(--line));
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);transition:transform .15s ease,border-color .15s ease,background .15s ease}
+.pcard[hidden]{display:none}
+.pcard:hover,.pcard:focus-visible{transform:translateY(-2px);border-color:var(--tl);outline:none;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--tl) 20%,var(--panel-2)),var(--panel) 70%)}
+.pcard.star{border-left-color:var(--gold)}
+.pcard .badge svg{width:52px;height:52px}
+.pmeta{min-width:0;flex:1}
+.pcard h3{margin:0;font-family:var(--display);font-weight:500;font-size:25px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pcard .meta{font-family:var(--cond);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pnow{font-size:13.5px;color:#c6d3ea;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pwins{flex:none;text-align:center;font-family:var(--display);font-size:24px;line-height:.9;color:var(--gold)}
+.pwins small{display:block;font-family:var(--cond);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pp-hero .badge svg{width:112px;height:112px}
+.pp-hero .pnow{font-size:15px;margin-top:4px;white-space:normal}
+.presults{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.presults li{display:grid;grid-template-columns:86px 1fr auto;gap:10px;align-items:baseline;padding:8px 12px;background:var(--panel);border:1px solid var(--line)}
+.presults b{font-family:var(--display);font-weight:500;font-size:20px;line-height:1}
+.presults .when{font-family:var(--cond);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.presults li.won{border-color:color-mix(in srgb,var(--gold) 55%,var(--line))}
+.presults li.won b{color:var(--gold)}
+@media (max-width:560px){.pgrid{grid-template-columns:1fr}.pp-hero .badge svg{width:80px;height:80px}.presults li{grid-template-columns:64px 1fr}.presults .when{grid-column:2}}
+@media (prefers-reduced-motion:reduce){.pcard{transition:none}.pcard:hover,.pcard:focus-visible{transform:none}}

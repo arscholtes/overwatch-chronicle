@@ -1,6 +1,7 @@
 /* Overwatch Chronicle — app logic. Data lives in /data/*.json and is refreshed weekly by the bot. */
 function art(key,glow){return `<svg viewBox="0 0 100 100" style="color:#dfe8fb;--glow:${hex(glow)}" aria-hidden="true">${ICON[key]||ICON.hex}</svg>`}
 function monogram(txt,c){const size=String(txt??"").length>2?16:20;txt=esc(txt);c=hex(c);return `<svg viewBox="0 0 48 48" aria-hidden="true"><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="${c}" fill-opacity=".16" stroke="${c}" stroke-width="2"/><text x="24" y="31" text-anchor="middle" font-family="Teko,Barlow Condensed,sans-serif" font-size="${size}" font-weight="600" fill="#eaf1ff">${txt}</text></svg>`}
+function badge(m,c,x){const pic=/^[A-Za-z0-9_]{1,15}$/.test(x||"")?`<img class="av" src="https://unavatar.io/x/${x}?fallback=false" alt="" loading="lazy" referrerpolicy="no-referrer">`:"";return `<span class="badge">${monogram(m,c)}${pic}</span>`}
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const hex=c=>/^#[0-9a-fA-F]{3,8}$/.test(c)?c:"#9aabc9";
@@ -12,7 +13,7 @@ const PLAY=`<svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentCol
 
 const DATA={};
 const state={view:"lore",era:"all",q:"",tlOnly:false,region:"All"};
-const TABS=[["lore","Lore",""],["esports","Esports","esp"],["t2","Tier 2","t2"],["teams","Teams","teams"],["numbers","Numbers","nums"],["triumvirate","Triumvirate","tri"]];
+const TABS=[["lore","Lore",""],["esports","Esports","esp"],["t2","Tier 2","t2"],["teams","Teams","teams"],["numbers","Numbers","nums"],["people","Timeless","ppl"],["triumvirate","Triumvirate","tri"]];
 
 async function load(){
   const files=["lore","esports","t2","social","teams","metrics","site","meta","alumni","triumvirate"];
@@ -26,13 +27,14 @@ function tabs(){
 }
 function hero(){
   const v=state.view;
-  document.body.className={esports:"esports",t2:"t2",teams:"teamsv",numbers:"numsv",triumvirate:"triv"}[v]||"";
+  document.body.className={esports:"esports",t2:"t2",teams:"teamsv",numbers:"numsv",people:"pplv",triumvirate:"triv"}[v]||"";
   const D=DATA[v==="t2"?"t2":v]||{};
   const H={
    lore:{k:"Mission archive · Story",h:`The world could always use <em>more heroes</em>`,p:"Every major turn of the Overwatch story in order, from the first omniums to the Reign of Talon. Events before 2026 are grouped by era, since Blizzard rarely gives exact dates.",s:[[DATA.lore.items.length,"Events"],[DATA.lore.eras.length,"Eras"],[10,"Heroes in 2026"]]},
    esports:{k:"Mission archive · Competition",h:`Ten years of <em>pro Overwatch</em>`,p:"APEX, the Overwatch League, the World Cup and the Champions Series. Tap Watch to play a match here, or Community to see how people reacted at the time.",s:[[DATA.esports.items.length,"Events"],[DATA.esports.items.filter(i=>i.vods).length,"With VODs"],["401K","Peak · OWWC 2026"]]},
    t2:{k:"Mission archive · Path to Pro",h:`Where the pros <em>come from</em>`,p:"Tier 2 Overwatch, from Open Division and Contenders to FACEIT League and promotion fights. Timeless events are highlighted in violet.",s:[[DATA.t2.items.length,"Events"],[DATA.t2.items.filter(i=>i.tl).length,"Timeless moments"],["S10","FACEIT League now"]]},
    teams:{k:"Mission archive · Rosters",h:`Every team, <em>every era</em>`,p:"OWCS teams, league franchises, tier 2 orgs and national teams, with links to Liquipedia and socials. Every org that competed for a year or more. Tap a tier 2 team to see its alumni and where they play now.",s:[[DATA.teams.length,"Teams"],[DATA.teams.filter(t=>t.tier==="T1").length,"Top flight now"],[DATA.teams.filter(t=>t.tier==="T2").length,"Tier 2"]]},
+   people:{k:"Mission archive · The roster",h:`Everyone who was <em>Timeless</em>`,p:"Every player, coach, manager and creator who wore the name, across Timeless, Timeless Ethereal, Timeless Obsidian and the 2026 return. Tap anyone for their time with the org, what they won there and where to find them now.",s:[[roster().length,"People"],[roster().filter(p=>!p.staff).length,"Players"],[roster().filter(p=>p.staff).length,"Staff"],[roster().filter(p=>p.tier==="T1").length,"In OWCS now"]]},
    triumvirate:{k:"Mission archive · The founders",h:`The <em>triumvirate</em>`,p:DATA.triumvirate.intro,s:[[3,"People"],["2020","Hour Zero begins"],["2026","Timeless returns"]]},
    numbers:{k:"Mission archive · Data",h:`How many are <em>watching & playing</em>`,p:"Viewership for the biggest events and the player base over time. Steam numbers are measured; all-platform numbers are estimates.",s:[[fmt(DATA.metrics.steamPeak.value),"Steam peak"],["~"+fmt(DATA.metrics.allPlatform.concurrentLow)+"–"+fmt(DATA.metrics.allPlatform.concurrentHigh),"Est. concurrent, all platforms"]]}
   }[v];
@@ -58,6 +60,7 @@ function cases(){
   }
   if(v==="teams") h+=teamsView();
   if(v==="numbers") h+=numbersView();
+  if(v==="people") h+=peopleView();
   if(v==="triumvirate") h+=triView();
   $("#case").innerHTML=h;
 }
@@ -75,7 +78,7 @@ function teamsView(){
   const list=DATA.teams.filter(t=>(state.region==="All"||rk(t.region).includes(state.region))&&(!state.tierF||state.tierF==="All"||t.tier===state.tierF));
   return `<section class="case"><div class="tfilter">${TIERS.map(([k,l])=>`<button class="chip" data-tierf="${k}" aria-pressed="${(state.tierF||"All")===k}" style="--c:#ffd36b"><i></i>${l}</button>`).join("")}</div><div class="tfilter">${regions.map(r=>`<button class="chip" data-region="${esc(r)}" aria-pressed="${state.region===r}"><i></i>${esc(r)}</button>`).join("")}</div>
   <div class="tgrid">${list.map(t=>{const n=teamAlumni(t).length;return `<article class="tcard${t.featured?" feat":""}" style="--tc:${hex(t.c)}">
-   <header role="button" tabindex="0" data-spot="${esc(t.id)}" aria-label="Open ${esc(t.name)} spotlight">${monogram(t.m,t.c)}<div><h3>${esc(t.name)}</h3><div class="meta">${esc(t.region)} · <span class="status ${t.tier==="T1"?"active":""}">${esc(t.status)}</span></div></div><span class="chev" aria-hidden="true">›</span></header>
+   <header role="button" tabindex="0" data-spot="${esc(t.id)}" aria-label="Open ${esc(t.name)} spotlight">${badge(t.m,t.c,t.x)}<div><h3>${esc(t.name)}</h3><div class="meta">${esc(t.region)} · <span class="status ${t.tier==="T1"?"active":""}">${esc(t.status)}</span></div></div><span class="chev" aria-hidden="true">›</span></header>
    <p>${esc(t.blurb)}</p>${t.titles&&t.titles.length?`<div class="tags">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><button class="btn play" data-spot="${esc(t.id)}">Spotlight${n?` · ${n} alumni`:""}</button><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></article>`}).join("")}</div></section>`;
 }
@@ -98,13 +101,13 @@ function openSpot(id){
   if(alum.length)stats.push([alum.length,"Alumni"]);if(t1)stats.push([t1,"Alumni in OWCS now"]);
   const tierName={T1:"Top flight",T2:"Tier 2",National:"National team",Legacy:"League & legacy"}[t.tier]||t.tier;
   const overview=t.overview||t.blurb;
-  let h=`<div class="sp-hero" style="--tc:${hex(t.c)}">${monogram(t.m,t.c)}<div><div class="kicker" style="color:${hex(t.c)}">${esc(tierName)} · ${esc(t.region)}</div><h2 id="sTitle">${esc(t.name)}</h2></div></div>
+  let h=`<div class="sp-hero" style="--tc:${hex(t.c)}">${badge(t.m,t.c,t.x)}<div><div class="kicker" style="color:${hex(t.c)}">${esc(tierName)} · ${esc(t.region)}</div><h2 id="sTitle">${esc(t.name)}</h2></div></div>
   <section class="sp-sec"><h4>Overview</h4><p class="sp-ov">${esc(overview)}</p>
    <div class="stats">${stats.map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("")}</div>
    ${t.titles&&t.titles.length?`<div class="tags" style="margin-top:10px">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></section>`;
   if(ev.length)h+=`<section class="sp-sec"><h4>On the timeline</h4><ul class="sp-ev">${ev.map(({it,v,won,era})=>`<li style="--ec:${it.tl?"#c9a7ff":hex(era.c)}"><span class="when">${esc(it.when)}</span><b>${esc(it.t)}</b>${won?`<span class="tag w">Champion</span>`:""}${it.score?`<div class="score"><span>${esc(it.score[0])}</span><span class="s">${esc(it.score[1])}</span><span class="lose">${esc(it.score[2])}</span></div>`:""}<p>${esc(it.d)}</p><div class="actions">${it.vods?`<button class="btn play" data-vod="${esc(it.id)}">${PLAY}Watch</button>`:""}${it.community?`<button class="btn talk mood-${esc(it.community.mood)}" data-talk="${esc(it.id)}">${TALK}Community</button>`:""}<button class="btn" data-goto="${esc(v)}|${esc(it.id)}">Open in timeline</button></div></li>`).join("")}</ul></section>`;
-  if(alum.length)h+=`<section class="sp-sec"><h4>Alumni · where they are now</h4><div class="astats"><span><b>${alum.length}</b> alumni</span><span><b>${t1}</b> on OWCS rosters now</span></div><ul class="alist">${alum.map(p=>`<li class="${p.star?"star":""}"><div><b>${esc(p.name)}</b> <span class="status ${p.tier==="T1"?"active":""}">${esc(p.tier)}</span><span class="arole">${esc(p.role)}</span></div><div class="anow">Now: ${esc(p.now)}</div><div class="ahi">${esc(p.hi)}</div>${p.teams[0]===t.id&&p.era?`<div class="aera">With the team: ${esc(p.era)}</div>`:""}<a href="${link(p.url)}" target="_blank" rel="noopener">Source ↗</a></li>`).join("")}</ul></section>`;
+  if(alum.length)h+=`<section class="sp-sec"><h4>Alumni · where they are now</h4><div class="astats"><span><b>${alum.length}</b> alumni</span><span><b>${t1}</b> on OWCS rosters now</span></div><ul class="alist">${alum.filter(p=>p.hi).map(p=>`<li class="${p.star?"star":""}"><div><b>${esc(p.name)}</b> <span class="status ${p.tier==="T1"?"active":""}">${esc(p.tier)}</span><span class="arole">${esc(p.role)}</span></div><div class="anow">Now: ${esc(p.now)}</div><div class="ahi">${esc(p.hi)}</div>${p.teams[0]===t.id&&p.era?`<div class="aera">With the team: ${esc(p.era)}</div>`:""}<a href="${link(p.url)}" target="_blank" rel="noopener">Source ↗</a></li>`).join("")}</ul>${t.id==="timeless"?`<div class="actions"><button class="btn play" data-view="people">Everyone who was Timeless · ${roster().length}</button></div>`:""}</section>`;
   else if(t.tier==="T2")h+=`<section class="sp-sec"><h4>Alumni</h4><p class="aempty">No alumni tracked yet. The weekly bot adds them as it finds them.</p></section>`;
   if(posts.length)h+=`<section class="sp-sec"><h4>On social</h4><div class="feed">${posts.map(s=>`<a class="post${s.hot?" hot":""}" ${s.url?`href="${link(s.url)}" target="_blank" rel="noopener"`:""}><header>${monogram(s.m,s.c)}<div><b>${esc(s.who)}</b><span>${esc(s.h)} · ${esc(s.d)}</span></div><span class="k">${esc(s.k)}</span></header><p>${esc(s.x)}</p>${s.n?`<div class="n">${esc(s.n)}</div>`:""}</a>`).join("")}</div></section>`;
   if(!ev.length&&!alum.length&&!posts.length)h+=`<section class="sp-sec"><p class="aempty">More on this team is coming as the weekly bot researches it.</p></section>`;
@@ -112,6 +115,42 @@ function openSpot(id){
   document.body.style.overflow="hidden";
 }
 function closeSpot(){$("#smodal").hidden=true;document.body.style.overflow=""}
+
+/* ---------- Timeless people ---------- */
+const PURPLE="#c9a7ff";
+function roster(){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>p.stints)}
+function initials(n){return String(n).replace(/[^A-Za-z0-9]/g,"").slice(0,2).toUpperCase()||"TL"}
+function month(d){const m=/^(\d{4})-(\d\d)/.exec(d||"");return m?["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m[2]-1]+" "+m[1]:String(d||"")}
+function span(p){const a=p.stints.map(s=>s.from.slice(0,4)).sort()[0];const open=p.stints.some(s=>!s.to);const b=open?"now":p.stints.map(s=>s.to.slice(0,4)).sort().pop();return a===b?a:`${a}–${b}`}
+function titles(p){return (p.results||[]).filter(r=>r.place==="1st").length}
+function peopleView(){
+  const FILTERS=[["All","Everyone"],["Players","Players"],["Staff","Staff"],["Timeless","Timeless"],["Timeless Ethereal","Ethereal"],["Timeless Obsidian","Obsidian"],["Timeless x Missing","2026 return"]];
+  const f=state.pf||"All";
+  const list=roster().filter(p=>f==="All"||(f==="Players"&&!p.staff)||(f==="Staff"&&p.staff)||p.stints.some(s=>s.team===f));
+  return `<section class="case"><div class="tfilter">${FILTERS.map(([k,l])=>`<button class="chip" data-pf="${esc(k)}" aria-pressed="${f===k}" style="--c:${PURPLE}"><i></i>${esc(l)}</button>`).join("")}</div>
+  <div class="search psearch"><input id="pq" type="search" placeholder="Find someone by name, role or team" aria-label="Find a person"></div>
+  <div class="pgrid">${list.map(p=>{const won=titles(p);return `<article class="pcard${p.star?" star":""}" role="button" tabindex="0" data-person="${esc(p.id)}" data-find="${esc([p.name,p.role,p.now,...p.stints.map(s=>s.team)].join(" ").toLowerCase())}" aria-label="Open ${esc(p.name)}">
+   ${badge(initials(p.name),PURPLE,p.x)}<div class="pmeta"><h3>${esc(p.name)}</h3><div class="meta">${esc(p.role)} · ${esc(span(p))}</div>${p.now?`<div class="pnow">${esc(p.now)}</div>`:""}</div>${won?`<span class="pwins" title="Titles won with the org">${won}×<small>title${won>1?"s":""}</small></span>`:""}</article>`}).join("")}</div>
+  <p class="cnote">Rosters, dates and handles: <a href="${link(DATA.alumni.roster.url)}" target="_blank" rel="noopener">${esc(DATA.alumni.roster.label)}</a>, read ${esc(DATA.alumni.roster.read)}. Profile pictures load from each person's own X account. If this is you and something is wrong or you want it removed, tell Timeless and it comes down.</p></section>`;
+}
+function openPerson(id){
+  const p=roster().find(x=>x.id===id);if(!p)return;
+  const won=titles(p);
+  const stats=[[span(p),"With the org"],[p.stints.length,p.stints.length>1?"Stints":"Stint"]];
+  if(won)stats.push([won,won>1?"Titles":"Title"]);if(p.status)stats.push([p.status,"Status"]);
+  const SOC=[["x","https://x.com/","X · @"],["twitch","https://www.twitch.tv/","Twitch · "],["youtube","https://www.youtube.com/","YouTube · "],["instagram","https://www.instagram.com/","Instagram · "],["tiktok","https://www.tiktok.com/@","TikTok · "]];
+  const socials=SOC.filter(([k])=>p[k]).map(([k,u,l])=>`<a class="btn" target="_blank" rel="noopener" href="${u}${encodeURIComponent(p[k]).replace(/%40/g,"@")}">${esc(l+p[k])} ↗</a>`).join("")+(p.wiki?`<a class="btn" target="_blank" rel="noopener" href="${link(p.wiki)}">Liquipedia ↗</a>`:"");
+  const founder=["chase","th3mfg","doc"].includes(p.id);
+  let h=`<div class="sp-hero pp-hero" style="--tc:${PURPLE}">${badge(initials(p.name),PURPLE,p.x)}<div><div class="kicker" style="color:${PURPLE}">${esc([p.role,p.country].filter(Boolean).join(" · "))}</div><h2 id="sTitle">${esc(p.name)}</h2>${p.now?`<div class="pnow">Now: ${esc(p.now)}</div>`:""}</div></div>
+  <section class="sp-sec">${p.hi?`<p class="sp-ov">${esc(p.hi)} <a href="${link(p.url)}" target="_blank" rel="noopener">Source ↗</a></p>`:""}
+   <div class="stats">${stats.map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("")}</div>
+   ${socials||founder?`<div class="actions">${socials}${founder?`<button class="btn play" data-view="triumvirate">Their story · Triumvirate</button>`:""}</div>`:""}</section>
+  <section class="sp-sec"><h4>Time at Timeless</h4><ul class="sp-ev">${p.stints.slice().reverse().map(s=>`<li style="--ec:${PURPLE}"><span class="when">${esc(month(s.from))} – ${s.to?esc(month(s.to)):"now"}</span><b>${esc(s.team)}</b>${s.role?`<span class="tag">${esc(s.role)}</span>`:""}${s.next?`<p>Next: ${esc(s.next)}</p>`:""}</li>`).join("")}</ul></section>`;
+  if((p.results||[]).length)h+=`<section class="sp-sec"><h4>${p.staff?"While on staff":"On the roster for"}</h4><ul class="presults">${p.results.map(r=>`<li class="${r.place==="1st"?"won":""}"><b>${esc(r.place)}</b><span>${esc(r.event)}</span><span class="when">${esc(month(r.date))}</span></li>`).join("")}</ul></section>`;
+  if((p.heroes||[]).length)h+=`<section class="sp-sec"><h4>Signature heroes</h4><div class="tags">${p.heroes.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div></section>`;
+  $("#sBody").innerHTML=h;const m=$("#smodal");m.hidden=false;m.querySelector(".modal-box").scrollTop=0;$("#sClose").focus();
+  document.body.style.overflow="hidden";
+}
 
 function triView(){
   const T=DATA.triumvirate;
@@ -186,7 +225,7 @@ function timeline(){
 /* ---------- footer ---------- */
 function footer(){
   const S=DATA.site;
-  $("#foot").innerHTML=`<p>A fan archive. Overwatch belongs to Blizzard Entertainment. All artwork here is original, and team names appear as text with original monogram badges. Videos are embedded from YouTube, and posts link to their original source.</p>
+  $("#foot").innerHTML=`<p>A fan archive. Overwatch belongs to Blizzard Entertainment. The artwork here is original. Teams and people appear as text with monogram badges, and where one has an X account its own profile picture loads from there. Videos are embedded from YouTube, and posts link to their original source.</p>
   <div class="credit"><div>Built by <a class="me" href="${link(S.owner.url)}" target="_blank" rel="noopener">${esc(S.owner.name)}</a><div class="updated">Data updated ${esc(DATA.meta.lastUpdated)}${DATA.meta.lastBotRun?` · bot ran ${esc(DATA.meta.lastBotRun)}`:""}</div></div>
   ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>`;
 }
@@ -216,7 +255,9 @@ function openTalk(id){
 /* ---------- events ---------- */
 function render(){tabs();hero();cases();if(["lore","esports","t2"].includes(state.view))ribbon();timeline();footer();fx.retint()}
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-view]");if(t){location.hash=t.dataset.view;return}
+  const t=e.target.closest("[data-view]");if(t){closeSpot();location.hash=t.dataset.view;return}
+  const person=e.target.closest("[data-person]");if(person){openPerson(person.dataset.person);return}
+  const pf=e.target.closest("[data-pf]");if(pf){state.pf=pf.dataset.pf;cases();return}
   const vod=e.target.closest("[data-vod]");if(vod){openVod(vod.dataset.vod);return}
   const yt=e.target.closest("[data-yt]");if(yt){document.querySelectorAll(".vchip").forEach(b=>b.setAttribute("aria-pressed",b===yt));playYt(yt.dataset.yt,+yt.dataset.start);return}
   if(e.target.closest("#mClose")||e.target.id==="modal"){closeVod();return}
@@ -231,8 +272,10 @@ document.addEventListener("click",e=>{
   const tm=e.target.closest("[data-team]");if(tm){const name=tm.dataset.team;location.hash=name.toLowerCase().includes("timeless")?"t2":"esports";setTimeout(()=>{state.q=name.replace(/^Team /,"");$("#q").value=state.q;timeline();window.scrollTo({top:$(".controls").offsetTop-70,behavior:"smooth"})},0);return}
   const c=e.target.closest("[data-era]");if(c){state.era=c.dataset.era;ribbon();timeline()}
 });
-document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("header[data-spot]")){e.preventDefault();e.target.click();return}if(e.key==="Escape"){if(!$("#modal").hidden){closeVod();return}if(!$("#cmodal").hidden){$("#cmodal").hidden=true;return}closeSpot()}});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("header[data-spot],[data-person]")){e.preventDefault();e.target.click();return}if(e.key==="Escape"){if(!$("#modal").hidden){closeVod();return}if(!$("#cmodal").hidden){$("#cmodal").hidden=true;return}closeSpot()}});
 $("#q").addEventListener("input",e=>{state.q=e.target.value;timeline()});
+document.addEventListener("input",e=>{if(e.target.id!=="pq")return;const q=e.target.value.trim().toLowerCase();document.querySelectorAll(".pcard").forEach(c=>{c.hidden=!c.dataset.find.includes(q)})});
+document.addEventListener("error",e=>{if(e.target.classList&&e.target.classList.contains("av"))e.target.remove()},true);
 function route(){const h=location.hash.slice(1);const v=TABS.some(t=>t[0]===h)?h:"lore";if(v!==state.view||!$("#tabs").children.length){state.view=v;state.era="all";state.q="";$("#q").value="";render()}}
 window.addEventListener("hashchange",route);
 
@@ -247,7 +290,7 @@ const fx=(()=>{
     if(!reduce)raf=requestAnimationFrame(frame)}
   function start(){cancelAnimationFrame(raf);size();frame()}
   window.addEventListener("resize",start);
-  return{retint(){tint={triumvirate:["#f99e1a","#c9a7ff"],lore:["#f99e1a","#43c6ff"],t2:["#c9a7ff","#43c6ff"],teams:["#ffd36b","#f99e1a"],numbers:["#5be3a6","#43c6ff"]}[state.view]||["#43c6ff","#ffd36b"];start()}};
+  return{retint(){tint={triumvirate:["#f99e1a","#c9a7ff"],lore:["#f99e1a","#43c6ff"],t2:["#c9a7ff","#43c6ff"],teams:["#ffd36b","#f99e1a"],numbers:["#5be3a6","#43c6ff"],people:["#c9a7ff","#f99e1a"]}[state.view]||["#43c6ff","#ffd36b"];start()}};
 })();
 
 load().then(()=>{route()}).catch(err=>{$("#heroInner").innerHTML=`<h1>Couldn't load data</h1><p class="lede">${esc(err.message)}. If you opened this file directly, serve the folder instead (for example: <code>python3 -m http.server</code> inside <code>site/</code>).</p>`});
