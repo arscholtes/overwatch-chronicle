@@ -359,3 +359,5 @@ a.tcard.alum:hover{border-color:var(--tl)}
 .mlog .when{font-family:var(--cond);font-size:12px;letter-spacing:.06em;color:var(--muted)}
 .mlink{appearance:none;background:none;border:0;padding:0;color:var(--muted);font:inherit;text-decoration:underline;cursor:pointer}
 .said{white-space:pre-wrap;border-left:3px solid var(--tl);padding-left:12px}
+.epigraph{margin:22px 0 0;text-align:center;font-family:var(--display);font-size:22px;letter-spacing:.04em;color:var(--gold)}
+.epigraph cite{display:block;font-family:var(--cond);font-style:normal;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}

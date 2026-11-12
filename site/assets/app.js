@@ -277,7 +277,8 @@ function footer(){
   const S=DATA.site;
   $("#foot").innerHTML=`<p>A fan archive. Overwatch belongs to Blizzard Entertainment. The artwork here is original. Teams and people appear as text with monogram badges, and where one has an X account its own profile picture loads from there. Videos are embedded from YouTube, and posts link to their original source.</p>
   <div class="credit"><div>Built by <a class="me" href="${link(S.owner.url)}" target="_blank" rel="noopener">${esc(S.owner.name)}</a><div class="updated">Data updated ${esc(DATA.meta.lastUpdated)}${DATA.meta.lastBotRun?` · bot ran ${esc(DATA.meta.lastBotRun)}`:""}</div></div>
-  ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>`;
+  ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>
+  <blockquote class="epigraph">“All that glisters is not gold.”<cite>William Shakespeare, The Merchant of Venice</cite></blockquote>`;
 }
 
 /* ---------- video modal ---------- */
