@@ -168,7 +168,7 @@ Find:
 4. For each result: the official YouTube VOD (prefer the @ow_esports channel full broadcast or grand final) and any viewership (peak, average, hours) with a source.
 5. For each new event: a community summary — how fans, players, teams and casters reacted on X/Reddit, with links to specific high-engagement posts.
 6. 2–6 notable posts from big accounts (@OW_Esports, @PlayOverwatch, team accounts, players) with exact status URLs.
-7. Hour Zero / Kaizen / Timeless alumni: any roster moves, titles or big moments for these players (in Overwatch or other games): {', '.join(p['name'] for p in json.loads((DATA/'alumni.json').read_text())['people'])}. Return them in "alumni".
+7. Hour Zero / Kaizen / Timeless alumni: any roster moves, titles or big moments for these players (in Overwatch or other games): {', '.join(p['name'] for p in json.loads((DATA/'alumni.json').read_text())['people'] if p.get('hi'))}. Return them in "alumni".
 8. Write an "overview" (4–6 sentences, sourced) for these teams that don't have one yet, returned in "teams" with the same id: {[t['id'] for t in teams if not t.get('overview')][:6]}.
 9. Team changes (new partner teams, disbandments, rebrands), plus any org (tier 1 or tier 2) that has now competed for a year or more and is not listed yet. If an "upcoming" item now has a result, report it in "resolve".
 

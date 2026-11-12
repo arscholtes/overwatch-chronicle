@@ -2,6 +2,103 @@
  "note": "Players and staff who came through this org, and where they are now. Sources: OWTV, Esports Insider, esports.gg, Dot Esports and Liquipedia.",
  "people": [
   {
+   "name": "aramori",
+   "role": "Support → Strategist",
+   "era": "Hour Zero · Kaizen",
+   "now": "Sentinels (Marvel Rivals)",
+   "tier": "Other game",
+   "hi": "Sentinels' first female pro. Won Marvel Rivals Championship Season 1 NA, played Ignite 2025 Mid-Season Finals, and joined xQc on Team Canada at the 2026 Creator World Championship.",
+   "url": "https://vip-develop.dotesports.com/?p=1516984",
+   "star": true,
+   "teams": [
+    "hour-zero",
+    "kaizen",
+    "timeless"
+   ],
+   "id": "aramori",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2022-11-16",
+     "to": "2023-01-05",
+     "next": "Timeless (Content Creator)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-02-09",
+     "to": "2023-06-28",
+     "next": "NYXL Academy"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Aramori",
+   "country": "United States",
+   "status": "Inactive",
+   "heroes": [
+    "ana",
+    "kiriko",
+    "baptiste"
+   ],
+   "x": "Aramori_",
+   "twitch": "Aramori"
+  },
+  {
+   "name": "Sugarfree",
+   "role": "DPS",
+   "era": "2023 · Flash Ops champion",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Spacestation cornerstone, re-signed for 2026. Played the 2025 World Finals.",
+   "url": "https://www.owtv.gg/news/ssg-confirm-two-statement-signings-with-sugarfree-and-christfer",
+   "star": true,
+   "teams": [
+    "timeless"
+   ],
+   "id": "sugarfree",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2023-11-10",
+     "to": "2024-01-29",
+     "next": "Toronto Defiant"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sugarfree",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "genji",
+    "echo",
+    "shion"
+   ],
+   "x": "sugarfreeOW",
+   "twitch": "sugarfree",
+   "youtube": "@sugarfree7"
+  },
+  {
    "name": "SeonJun",
    "role": "DPS",
    "era": "2024 · OWCS NA Stage 1 runners-up",
@@ -13,7 +110,36 @@
    "teams": [
     "timeless",
     "tsm"
-   ]
+   ],
+   "id": "seonjun",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/SeonJun",
+   "country": "South Korea",
+   "status": "Active",
+   "heroes": [
+    "tracer",
+    "genji",
+    "venture"
+   ],
+   "x": "seonjun_ow",
+   "twitch": "seonjun_ow",
+   "youtube": "@seonjun9451"
   },
   {
    "name": "Lukemino",
@@ -27,21 +153,377 @@
    "teams": [
     "timeless",
     "ntmr"
-   ]
+   ],
+   "id": "lukemino",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "Citrus Nation"
+    },
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Lukemino",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "lucio",
+    "brigitte"
+   ],
+   "x": "LukeminoO",
+   "twitch": "Lukemino_"
   },
   {
-   "name": "aramori",
-   "role": "Support → Strategist",
-   "era": "Hour Zero · Kaizen",
-   "now": "Sentinels (Marvel Rivals)",
-   "tier": "Other game",
-   "hi": "Sentinels' first female pro. Won Marvel Rivals Championship Season 1 NA, played Ignite 2025 Mid-Season Finals, and joined xQc on Team Canada at the 2026 Creator World Championship.",
-   "url": "https://vip-develop.dotesports.com/?p=1516984",
-   "star": true,
+   "name": "zeruhh",
+   "role": "DPS",
+   "era": "2024 · EWC qualifier roster",
+   "now": "Team Liquid",
+   "tier": "T1",
+   "hi": "Part of Liquid's DPS core with TR33.",
+   "url": "https://owtv.gg/news/team-liquid-part-ways-with-longtime-tank-infekted",
    "teams": [
-    "hour-zero",
-    "kaizen"
-   ]
+    "timeless"
+   ],
+   "id": "zeruhh",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2023-02-27",
+     "to": "2023-03-22",
+     "next": "Afterlife"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Assistant Coach",
+     "from": "2023-08-29",
+     "to": "2023-10-06",
+     "next": "Susanoo"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-06-14",
+     "to": "2024-07-06",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Zeruhh",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "genji",
+    "tracer",
+    "reaper"
+   ],
+   "x": "zeruhh7",
+   "twitch": "zeruhh7"
+  },
+  {
+   "name": "Hawk",
+   "role": "Tank",
+   "era": "2023 · Flash Ops champion",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Former Atlanta Reign player. Returned to OWCS and starts for Spacestation.",
+   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
+   "teams": [
+    "timeless"
+   ],
+   "id": "hawk",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2023-11-10",
+     "to": "2024-02-25",
+     "next": "M80"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Hawk",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "d.va",
+    "sigma",
+    "doomfist"
+   ],
+   "x": "Thee_Hawk",
+   "twitch": "TheeHawk"
+  },
+  {
+   "name": "Rupal",
+   "role": "Support",
+   "era": "2023 · Flash Ops champion",
+   "now": "Released",
+   "tier": "—",
+   "hi": "Liquid starter in 2024–25. Released in March 2026 after using a slur in a scrim.",
+   "url": "https://esports.gg/news/overwatch/team-liquid-signs-escanor-as-emergency-sub-for-owcs-stage-1/",
+   "teams": [
+    "timeless"
+   ],
+   "id": "rupal",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-11-10",
+     "to": "2024-01-29",
+     "next": "Toronto Defiant"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Rupal",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "ana",
+    "kiriko"
+   ],
+   "x": "rupalzaman",
+   "twitch": "rupalzaman",
+   "youtube": "@rupalzaman",
+   "instagram": "rupalzaman"
+  },
+  {
+   "name": "Seeker",
+   "role": "DPS",
+   "era": "2023–24 · Flash Ops and EWC qualifier",
+   "now": "NTMR (2025)",
+   "tier": "T2",
+   "hi": "Moved between NTMR and Spacestation in 2025.",
+   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
+   "teams": [
+    "timeless",
+    "ntmr"
+   ],
+   "id": "seeker",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2023-11-10",
+     "to": "2024-02-25",
+     "next": "M80"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-06-14",
+     "to": "2024-07-06",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Seeker",
+   "country": "Canada",
+   "status": "Active",
+   "heroes": [
+    "sojourn",
+    "widowmaker",
+    "bastion"
+   ],
+   "x": "seeker_ow",
+   "twitch": "seeker"
+  },
+  {
+   "name": "Vega",
+   "role": "Support",
+   "era": "2023 · Flash Ops champion",
+   "now": "Team Liquid",
+   "tier": "T1",
+   "hi": "Toronto Defiant/Ultra at EWC 2024, then Liquid. NA Stage 3 2026 finalist.",
+   "url": "https://owtv.gg/news/owcs-2026-stage-1-north-america-preview",
+   "teams": [
+    "timeless"
+   ],
+   "id": "vega",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-11-10",
+     "to": "2024-01-29",
+     "next": "Toronto Defiant"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Vega",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "illari"
+   ],
+   "x": "VegaOverwatch",
+   "twitch": "vegaoverwatchh",
+   "youtube": "@vegaoverwatch"
+  },
+  {
+   "name": "xten",
+   "role": "Support",
+   "era": "2024 · Timeless Ethereal, CAH champion",
+   "now": "LuneX Gaming",
+   "tier": "T1",
+   "hi": "From Calling All Heroes champion to OWCS NA Stage 1.",
+   "url": "https://owtv.gg/news/owcs-stage-1-na-week-2-preview",
+   "teams": [
+    "timeless"
+   ],
+   "id": "xten",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-01-12",
+     "to": "2024-05-25",
+     "next": "Timeless Ethereal (Inactive)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-05-25",
+     "to": "2024-07-06",
+     "next": "Green Fortnite (Inactive)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "Team Z"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Xten",
+   "country": "Cambodia",
+   "status": "Active",
+   "heroes": [
+    "Sojourn",
+    "Widowmaker",
+    "Ashe"
+   ],
+   "x": "xtenOW",
+   "twitch": "xtenow",
+   "youtube": "@shima."
   },
   {
    "name": "Cjay",
@@ -54,82 +536,105 @@
    "teams": [
     "timeless",
     "tsm"
-   ]
+   ],
+   "id": "cjay",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Cjay",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "zenyatta",
+    "ana"
+   ],
+   "x": "cjayow",
+   "twitch": "cjay_ow"
   },
   {
-   "name": "Sugarfree",
-   "role": "DPS",
-   "era": "2023 · Flash Ops champion",
-   "now": "Spacestation Gaming",
-   "tier": "T1",
-   "hi": "Spacestation cornerstone, re-signed for 2026. Played the 2025 World Finals.",
-   "url": "https://www.owtv.gg/news/ssg-confirm-two-statement-signings-with-sugarfree-and-christfer",
-   "star": true,
-   "teams": [
-    "timeless"
-   ]
-  },
-  {
-   "name": "Hawk",
+   "name": "Raikker",
    "role": "Tank",
-   "era": "2023 · Flash Ops champion",
-   "now": "Spacestation Gaming",
-   "tier": "T1",
-   "hi": "Former Atlanta Reign player. Returned to OWCS and starts for Spacestation.",
-   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
-   "teams": [
-    "timeless"
-   ]
-  },
-  {
-   "name": "Lethal",
-   "role": "DPS",
-   "era": "2024 · FACEIT S2 reverse-sweep sub",
-   "now": "Spacestation Gaming",
-   "tier": "T1",
-   "hi": "Won NA Stage 1 and placed 3rd at Champions Clash 2025 with NTMR, then won Stage 2 with Geekay.",
-   "url": "https://www.owtv.gg/news/spacestation-gaming-sign-lethal-for-2026",
+   "era": "2024–25 · WISP core",
+   "now": "Released by Disguised",
+   "tier": "—",
+   "hi": "Disguised substitute in Stage 1 2026.",
+   "url": "https://owtv.gg/news",
    "teams": [
     "timeless",
-    "ntmr"
-   ]
-  },
-  {
-   "name": "Admiral",
-   "role": "Support",
-   "era": "2024 · EWC qualifier roster",
-   "now": "Spacestation Gaming",
-   "tier": "T1",
-   "hi": "Former league player. Same NTMR and Geekay run as Lethal.",
-   "url": "https://owtv.gg/news/admiral-joins-spacestation-gaming",
-   "teams": [
-    "timeless",
-    "ntmr"
-   ]
-  },
-  {
-   "name": "Vega",
-   "role": "Support",
-   "era": "2023 · Flash Ops champion",
-   "now": "Team Liquid",
-   "tier": "T1",
-   "hi": "Toronto Defiant/Ultra at EWC 2024, then Liquid. NA Stage 3 2026 finalist.",
-   "url": "https://owtv.gg/news/owcs-2026-stage-1-north-america-preview",
-   "teams": [
-    "timeless"
-   ]
-  },
-  {
-   "name": "zeruhh",
-   "role": "DPS",
-   "era": "2024 · EWC qualifier roster",
-   "now": "Team Liquid",
-   "tier": "T1",
-   "hi": "Part of Liquid's DPS core with TR33.",
-   "url": "https://owtv.gg/news/team-liquid-part-ways-with-longtime-tank-infekted",
-   "teams": [
-    "timeless"
-   ]
+    "tsm"
+   ],
+   "id": "raikker",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    },
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-08-13",
+     "to": "2024-09-17",
+     "next": "TSM"
+    },
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "The Kafe (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Raikker",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "wrecking ball",
+    "winston",
+    "doomfist"
+   ],
+   "x": "Raikker_",
+   "twitch": "raikker_"
   },
   {
    "name": "Rokit",
@@ -143,19 +648,88 @@
     "timeless",
     "tsm",
     "ntmr"
-   ]
+   ],
+   "id": "rokit",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Rokit",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "tracer",
+    "genji",
+    "ashe"
+   ],
+   "x": "Rokit_OW",
+   "twitch": "rokitow2",
+   "youtube": "@rokit600"
   },
   {
-   "name": "xten",
+   "name": "Admiral",
    "role": "Support",
-   "era": "2024 · Timeless Ethereal, CAH champion",
-   "now": "LuneX Gaming",
+   "era": "2024 · EWC qualifier roster",
+   "now": "Spacestation Gaming",
    "tier": "T1",
-   "hi": "From Calling All Heroes champion to OWCS NA Stage 1.",
-   "url": "https://owtv.gg/news/owcs-stage-1-na-week-2-preview",
+   "hi": "Former league player. Same NTMR and Geekay run as Lethal.",
+   "url": "https://owtv.gg/news/admiral-joins-spacestation-gaming",
    "teams": [
-    "timeless"
-   ]
+    "timeless",
+    "ntmr"
+   ],
+   "id": "admiral",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-06-14",
+     "to": "2024-07-06",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Admiral",
+   "country": "Estonia",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "lifeweaver"
+   ],
+   "x": "AdmiralRaptr"
   },
   {
    "name": "Infekted",
@@ -168,45 +742,76 @@
    "teams": [
     "timeless",
     "ntmr"
-   ]
+   ],
+   "id": "infekted",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-06-25",
+     "to": "2024-07-06",
+     "next": "NRG Shock"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Infekted",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "reinhardt",
+    "wrecking ball",
+    "winston"
+   ],
+   "x": "InfektedOW",
+   "twitch": "infekted_ow",
+   "instagram": "boston_0213"
   },
   {
-   "name": "Rupal",
-   "role": "Support",
-   "era": "2023 · Flash Ops champion",
-   "now": "Released",
-   "tier": "—",
-   "hi": "Liquid starter in 2024–25. Released in March 2026 after using a slur in a scrim.",
-   "url": "https://esports.gg/news/overwatch/team-liquid-signs-escanor-as-emergency-sub-for-owcs-stage-1/",
-   "teams": [
-    "timeless"
-   ]
-  },
-  {
-   "name": "Raikker",
-   "role": "Tank",
-   "era": "2024–25 · WISP core",
-   "now": "Released by Disguised",
-   "tier": "—",
-   "hi": "Disguised substitute in Stage 1 2026.",
-   "url": "https://owtv.gg/news",
-   "teams": [
-    "timeless",
-    "tsm"
-   ]
-  },
-  {
-   "name": "Seeker",
+   "name": "Lethal",
    "role": "DPS",
-   "era": "2023–24 · Flash Ops and EWC qualifier",
-   "now": "NTMR (2025)",
-   "tier": "T2",
-   "hi": "Moved between NTMR and Spacestation in 2025.",
-   "url": "https://owtv.gg/news/spacestation-gaming-sign-hawk-kronik-lep-and-christfer-with-the-departure-of-kellan-bliss-squid-and-unter",
+   "era": "2024 · FACEIT S2 reverse-sweep sub",
+   "now": "Spacestation Gaming",
+   "tier": "T1",
+   "hi": "Won NA Stage 1 and placed 3rd at Champions Clash 2025 with NTMR, then won Stage 2 with Geekay.",
+   "url": "https://www.owtv.gg/news/spacestation-gaming-sign-lethal-for-2026",
    "teams": [
     "timeless",
     "ntmr"
-   ]
+   ],
+   "id": "lethal",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "NTMR"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Lethal",
+   "country": "Turkey",
+   "status": "Active",
+   "heroes": [
+    "ashe",
+    "widowmaker",
+    "cassidy"
+   ],
+   "x": "Lethal_ow",
+   "twitch": "lethal__ow",
+   "youtube": "@lethal6641"
   },
   {
    "name": "Chase",
@@ -219,7 +824,4893 @@
    "teams": [
     "timeless",
     "ntmr"
+   ],
+   "id": "chase",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Co-Owner",
+     "from": "2022-10-27",
+     "to": "2024-07-06",
+     "next": "Timeless (Owner)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Owner",
+     "from": "2024-07-06",
+     "to": "2024-09-17",
+     "next": "Timeless (Owner)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Owner",
+     "from": "2025-01-17"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
    ]
+  },
+  {
+   "name": "Arrow",
+   "teams": [
+    "timeless"
+   ],
+   "id": "arrow",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2022-10-27",
+     "to": "2023-02-21",
+     "next": "Uprising Academy (Inactive)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Arrow",
+   "url": "https://liquipedia.net/overwatch/Arrow",
+   "country": "South Korea",
+   "status": "Retired",
+   "heroes": [
+    "widowmaker",
+    "tracer",
+    "hanzo"
+   ],
+   "x": "Arrow_OW",
+   "twitch": "arrow2_ow",
+   "instagram": "arrow2331",
+   "now": "Retired"
+  },
+  {
+   "name": "cal",
+   "teams": [
+    "timeless"
+   ],
+   "id": "cal",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2022-10-27",
+     "to": "2023-07-04",
+     "next": "Saints"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2022-12-11",
+     "to": "2023-07-24",
+     "next": "Timeless Ethereal (Inactive)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-07-24",
+     "to": "2023-11-29",
+     "next": "Timeless Ethereal"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-11-29",
+     "to": "2024-02-10",
+     "next": "Retired"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Cal",
+   "url": "https://liquipedia.net/overwatch/Cal",
+   "country": "Canada",
+   "status": "Retired",
+   "heroes": [
+    "zenyatta",
+    "baptiste",
+    "kiriko"
+   ],
+   "x": "calwya",
+   "twitch": "calwya",
+   "now": "Retired"
+  },
+  {
+   "name": "CLEAR",
+   "teams": [
+    "timeless"
+   ],
+   "id": "clear",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2022-10-27",
+     "to": "2024-01-10",
+     "next": "DAF"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/CLEAR",
+   "url": "https://liquipedia.net/overwatch/CLEAR",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "dva",
+    "hazard",
+    "mauga"
+   ],
+   "x": "CLEAR_OW",
+   "twitch": "clear__ow",
+   "youtube": "@clear_ow",
+   "now": "Yeah We Lost"
+  },
+  {
+   "name": "cuFFa",
+   "teams": [
+    "timeless"
+   ],
+   "id": "cuffa",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2022-10-27",
+     "to": "2023-08-27",
+     "next": "Ground Zero Gaming"
+    },
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "Citrus Nation"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/CuFFa",
+   "url": "https://liquipedia.net/overwatch/CuFFa",
+   "country": "Australia",
+   "status": "Active",
+   "heroes": [
+    "winston",
+    "wrecking ball",
+    "ramattra"
+   ],
+   "x": "cuffah",
+   "twitch": "cuffa",
+   "now": "Team Risk"
+  },
+  {
+   "name": "D0nghun",
+   "teams": [
+    "timeless"
+   ],
+   "id": "d0nghun",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2022-10-27",
+     "to": "2022-12-23",
+     "next": "Dreamers"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/D0nghun",
+   "url": "https://liquipedia.net/overwatch/D0nghun",
+   "country": "South Korea",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "wuyang"
+   ],
+   "x": "0201Donghun",
+   "twitch": "d0nghun_0201",
+   "now": "Stallions"
+  },
+  {
+   "name": "Doomed",
+   "teams": [
+    "timeless"
+   ],
+   "id": "doomed",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2022-10-27",
+     "to": "2023-11-10",
+     "next": "Amplify"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "Citrus Nation"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Doomed",
+   "url": "https://liquipedia.net/overwatch/Doomed",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "echo",
+    "venture",
+    "genji"
+   ],
+   "x": "doomedow",
+   "now": "Free agent"
+  },
+  {
+   "name": "Otters",
+   "teams": [
+    "timeless"
+   ],
+   "id": "otters",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2022-10-27",
+     "to": "2023-04-23",
+     "next": "Good Boys"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Otters",
+   "url": "https://liquipedia.net/overwatch/Otters",
+   "country": "Greece",
+   "status": "Active",
+   "heroes": [
+    "zenyatta",
+    "ana",
+    "baptiste"
+   ],
+   "x": "OttersGR",
+   "now": "Free agent"
+  },
+  {
+   "name": "Thunda",
+   "teams": [
+    "timeless"
+   ],
+   "id": "thunda",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2022-10-28",
+     "to": "2023-03-04",
+     "next": "Good Boys"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Thunda",
+   "url": "https://liquipedia.net/overwatch/Thunda",
+   "country": "United States",
+   "status": "Inactive",
+   "heroes": [
+    "cassidy",
+    "widowmaker",
+    "ashe"
+   ],
+   "now": "Inactive"
+  },
+  {
+   "name": "Azurae",
+   "teams": [
+    "timeless"
+   ],
+   "id": "azurae",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2022-11-16",
+     "to": "2023-11-29",
+     "next": "Timeless Celestial"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Azurae",
+   "url": "https://liquipedia.net/overwatch/Azurae",
+   "country": "Canada",
+   "status": "Active",
+   "heroes": [
+    "sojourn",
+    "hanzo",
+    "ashe"
+   ],
+   "x": "SnailMailLuvr",
+   "now": "Free agent"
+  },
+  {
+   "name": "jamm",
+   "teams": [
+    "timeless"
+   ],
+   "id": "jamm",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2022-11-16",
+     "to": "2023-01-02",
+     "next": "Rift Guardians"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ]
+  },
+  {
+   "name": "JiM",
+   "teams": [
+    "timeless"
+   ],
+   "id": "jim",
+   "role": "DPS · Assistant Coach",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2022-11-16",
+     "to": "2023-05-19",
+     "next": "Timeless Ethereal (Assistant Coach)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Assistant Coach",
+     "from": "2023-05-19",
+     "to": "2023-10-06"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/JiM",
+   "url": "https://liquipedia.net/overwatch/JiM",
+   "country": "United States",
+   "status": "Active",
+   "x": "moonroamer",
+   "twitch": "333jim",
+   "youtube": "@moonroamer",
+   "now": "Free agent"
+  },
+  {
+   "name": "Rubii",
+   "teams": [
+    "timeless"
+   ],
+   "id": "rubii",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2022-11-16",
+     "to": "2022-12-31",
+     "next": "Rift Guardians (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ]
+  },
+  {
+   "name": "Santana",
+   "teams": [
+    "timeless"
+   ],
+   "id": "santana",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2022-11-16",
+     "to": "2023-06-30",
+     "next": "Timeless Celestial"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Santana",
+   "url": "https://liquipedia.net/overwatch/Santana",
+   "country": "Cuba",
+   "status": "Active",
+   "heroes": [
+    "ramattra",
+    "junker queen",
+    "hazard"
+   ],
+   "x": "santanrah",
+   "twitch": "santanaqwq",
+   "now": "Amplify"
+  },
+  {
+   "name": "maple",
+   "teams": [
+    "timeless"
+   ],
+   "id": "maple",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2022-11-17",
+     "to": "2022-12-11"
+    }
+   ]
+  },
+  {
+   "name": "Baiser",
+   "teams": [
+    "timeless"
+   ],
+   "id": "baiser",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-02-18",
+     "to": "2023-04-14"
+    }
+   ]
+  },
+  {
+   "name": "wsps",
+   "teams": [
+    "timeless"
+   ],
+   "id": "wsps",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-02-18",
+     "to": "2023-04-17",
+     "next": "NYXL Academy"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-11-29",
+     "to": "2024-05-25",
+     "next": "Valentine"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Timeless x Missing"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "DPS",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Wsps",
+   "url": "https://liquipedia.net/overwatch/Wsps",
+   "country": "USA",
+   "status": "Active",
+   "heroes": [
+    "Widowmaker",
+    "Sojourn",
+    "Ashe"
+   ],
+   "x": "wsps17",
+   "twitch": "wsps",
+   "youtube": "@wsps",
+   "now": "Timeless x Missing"
+  },
+  {
+   "name": "Neptune",
+   "teams": [
+    "timeless"
+   ],
+   "id": "neptune",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-02-22",
+     "to": "2023-04-05",
+     "next": "Pirates in Pyjamas"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Neptune_%28American_player%29",
+   "url": "https://liquipedia.net/overwatch/Neptune_%28American_player%29",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "brigitte",
+    "lucio",
+    "baptiste"
+   ],
+   "x": "NeptuneCDS",
+   "twitch": "NeptuneCDS",
+   "now": "The Fallen"
+  },
+  {
+   "name": "wub",
+   "teams": [
+    "timeless"
+   ],
+   "id": "wub",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2023-02-26",
+     "to": "2023-11-10",
+     "next": "Amplify"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Wub",
+   "url": "https://liquipedia.net/overwatch/Wub",
+   "country": "United States",
+   "status": "Retired",
+   "heroes": [
+    "widowmaker",
+    "hanzo",
+    "echo"
+   ],
+   "x": "wubxii",
+   "twitch": "wubxii",
+   "youtube": "@wubxii",
+   "instagram": "wub.cam",
+   "now": "Retired"
+  },
+  {
+   "name": "Karrotz",
+   "teams": [
+    "timeless"
+   ],
+   "id": "karrotz",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-04-18",
+     "to": "2023-07-09",
+     "next": "Amplify"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Karrotz",
+   "url": "https://liquipedia.net/overwatch/Karrotz",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "mercy",
+    "brigitte"
+   ],
+   "x": "k4rrotz",
+   "now": "Free agent"
+  },
+  {
+   "name": "Günther",
+   "teams": [
+    "timeless"
+   ],
+   "id": "g-nther",
+   "role": "Support · Assistant Coach",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-04-20",
+     "to": "2023-10-06",
+     "next": "Washington Timeless (Assistant Coach)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Assistant Coach",
+     "from": "2023-10-06",
+     "to": "2023-11-29",
+     "next": "Timeless Celestial"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/G%C3%BCnther",
+   "url": "https://liquipedia.net/overwatch/G%C3%BCnther",
+   "country": "United States",
+   "status": "Retired",
+   "heroes": [
+    "lucio",
+    "baptiste",
+    "brigitte"
+   ],
+   "x": "KongDooGunthera",
+   "twitch": "kongdoogunthera",
+   "now": "Retired"
+  },
+  {
+   "name": "Orion",
+   "teams": [
+    "timeless"
+   ],
+   "id": "orion",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-04-20",
+     "to": "2023-05-26",
+     "next": "Rift Guardians"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-08-07",
+     "to": "2023-11-29",
+     "next": "Timeless Celestial"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Orion",
+   "url": "https://liquipedia.net/overwatch/Orion",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "moira",
+    "genji",
+    "ana"
+   ],
+   "x": "Oriokine",
+   "twitch": "oriokin",
+   "now": "NTMR Eclipse"
+  },
+  {
+   "name": "sawhill",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sawhill",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2023-04-20",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Timeless Ethereal"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "Tank",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    },
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sawhill",
+   "url": "https://liquipedia.net/overwatch/Sawhill",
+   "country": "Canada",
+   "status": "Active",
+   "heroes": [
+    "reinhardt",
+    "ramattra",
+    "winston"
+   ],
+   "x": "sawhillyy",
+   "twitch": "sawhilly",
+   "now": "Laika Esports"
+  },
+  {
+   "name": "vaxtru",
+   "teams": [
+    "timeless"
+   ],
+   "id": "vaxtru",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-04-20",
+     "to": "2023-06-30"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ]
+  },
+  {
+   "name": "AJMR",
+   "teams": [
+    "timeless"
+   ],
+   "id": "ajmr",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Support",
+     "from": "2023-05-23",
+     "to": "2024-03-18",
+     "next": "Valentine (Inactive)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/AJMR",
+   "url": "https://liquipedia.net/overwatch/AJMR",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "sojourn",
+    "ana"
+   ],
+   "x": "_erin777",
+   "now": "Free agent"
+  },
+  {
+   "name": "Dynasty",
+   "teams": [
+    "timeless"
+   ],
+   "id": "dynasty",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2023-05-23",
+     "to": "2024-03-18",
+     "next": "Retired"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Dynasty",
+   "url": "https://liquipedia.net/overwatch/Dynasty",
+   "country": "United States",
+   "status": "Retired",
+   "heroes": [
+    "genji",
+    "echo",
+    "hanzo"
+   ],
+   "x": "Dynasty_OW",
+   "twitch": "dynastyow",
+   "now": "Retired"
+  },
+  {
+   "name": "Frost",
+   "teams": [
+    "timeless"
+   ],
+   "id": "frost",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2023-05-23",
+     "to": "2023-11-11",
+     "next": "Boise State University"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Frost_%28American_player%29",
+   "url": "https://liquipedia.net/overwatch/Frost_%28American_player%29",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "sombra",
+    "soldier 76",
+    "hanzo"
+   ],
+   "x": "modernxslayer",
+   "now": "Free agent"
+  },
+  {
+   "name": "Hcpeful",
+   "teams": [
+    "timeless"
+   ],
+   "id": "hcpeful",
+   "role": "DPS · Content Creator",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2023-05-23",
+     "to": "2023-10-12",
+     "next": "Timeless (Content Creator)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-10-12",
+     "to": "2024-07-01",
+     "next": "Inactive"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Hcpeful",
+   "url": "https://liquipedia.net/overwatch/Hcpeful",
+   "country": "United States",
+   "status": "Inactive",
+   "heroes": [
+    "doomfist",
+    "genji",
+    "tracer"
+   ],
+   "x": "Hcpeful",
+   "twitch": "hcpefui",
+   "now": "Inactive"
+  },
+  {
+   "name": "Sloth",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sloth",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2023-05-23",
+     "to": "2024-01-28",
+     "next": "Ex Oblivione NA"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sloth",
+   "url": "https://liquipedia.net/overwatch/Sloth",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "ashe",
+    "tracer",
+    "hanzo"
+   ],
+   "x": "SlothLogicOW",
+   "now": "Free agent"
+  },
+  {
+   "name": "Sonne",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sonne",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Tank",
+     "from": "2023-05-23",
+     "to": "2024-01-09",
+     "next": "EF Flexodiax"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sonne",
+   "url": "https://liquipedia.net/overwatch/Sonne",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "winston",
+    "ramattra",
+    "dva"
+   ],
+   "x": "sonnecarver_ow",
+   "twitch": "sonnecarver",
+   "instagram": "sonnecarver",
+   "now": "Free agent"
+  },
+  {
+   "name": "Unread",
+   "teams": [
+    "timeless"
+   ],
+   "id": "unread",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Support",
+     "from": "2023-05-23",
+     "to": "2024-01-28",
+     "next": "Shikigami"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Unread_%28American_player%29",
+   "url": "https://liquipedia.net/overwatch/Unread_%28American_player%29",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "mercy"
+   ],
+   "x": "Unread_OW",
+   "twitch": "unreadd_",
+   "now": "Darkmode NA"
+  },
+  {
+   "name": "scuffed",
+   "teams": [
+    "timeless"
+   ],
+   "id": "scuffed",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-06-26",
+     "to": "2023-11-10",
+     "next": "Vice"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2024-08-16",
+     "to": "2024-08-25",
+     "next": "YFP x Supershy"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "Support",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Scuffed",
+   "url": "https://liquipedia.net/overwatch/Scuffed",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "kiriko",
+    "baptiste",
+    "Juno"
+   ],
+   "x": "scuffed_ow",
+   "twitch": "scuffed_ow",
+   "now": "Timeless x Missing"
+  },
+  {
+   "name": "Ailiseu",
+   "teams": [
+    "timeless"
+   ],
+   "id": "ailiseu",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2023-06-30",
+     "to": "2023-08-07",
+     "next": "Dsyre"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Ailiseu",
+   "url": "https://liquipedia.net/overwatch/Ailiseu",
+   "country": "Ireland",
+   "status": "Inactive",
+   "heroes": [
+    "wrecking ball",
+    "winston",
+    "orisa"
+   ],
+   "x": "Ailiseuuuuu",
+   "twitch": "ailiseuuu",
+   "now": "Inactive"
+  },
+  {
+   "name": "Bya",
+   "teams": [
+    "timeless"
+   ],
+   "id": "bya",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-06-30",
+     "to": "2023-08-07",
+     "next": "Peace and Love"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Bya",
+   "url": "https://liquipedia.net/overwatch/Bya",
+   "country": "Germany",
+   "status": "Inactive",
+   "heroes": [
+    "brigitte",
+    "mercy",
+    "lucio"
+   ],
+   "x": "ByaO_0",
+   "now": "Inactive"
+  },
+  {
+   "name": "par",
+   "teams": [
+    "timeless"
+   ],
+   "id": "par",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-06-30",
+     "to": "2023-09-27",
+     "next": "Drainers"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Par",
+   "url": "https://liquipedia.net/overwatch/Par",
+   "country": "New Zealand",
+   "status": "Retired",
+   "heroes": [
+    "sojourn",
+    "tracer",
+    "reaper"
+   ],
+   "x": "par_oce",
+   "twitch": "par_ow",
+   "youtube": "paroce",
+   "now": "Retired"
+  },
+  {
+   "name": "unlimited",
+   "teams": [
+    "timeless"
+   ],
+   "id": "unlimited",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-06-30",
+     "to": "2023-08-07",
+     "next": "R8 Esports"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Unlimited",
+   "url": "https://liquipedia.net/overwatch/Unlimited",
+   "country": "Spain",
+   "status": "Inactive",
+   "heroes": [
+    "tracer",
+    "echo",
+    "ashe"
+   ],
+   "x": "h1ra_x",
+   "twitch": "h1ra_x",
+   "now": "Inactive"
+  },
+  {
+   "name": "Pummy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "pummy",
+   "role": "Flex",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Flex",
+     "from": "2023-07-07",
+     "to": "2023-11-10"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Pummy",
+   "url": "https://liquipedia.net/overwatch/Pummy",
+   "country": "United States",
+   "status": "Inactive",
+   "heroes": [
+    "ashe",
+    "cassidy",
+    "sombra"
+   ],
+   "x": "PummyOW",
+   "now": "Inactive"
+  },
+  {
+   "name": "Sobek",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sobek",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2023-07-07",
+     "to": "2023-11-10",
+     "next": "Supershy"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sobek",
+   "url": "https://liquipedia.net/overwatch/Sobek",
+   "country": "United Kingdom",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "mercy"
+   ],
+   "x": "sobek188",
+   "twitch": "sobek_ow",
+   "now": "Free agent"
+  },
+  {
+   "name": "Bun",
+   "teams": [
+    "timeless"
+   ],
+   "id": "bun",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-08-07",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Timeless Ethereal"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Avidity Kittens"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Bun",
+   "url": "https://liquipedia.net/overwatch/Bun",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "mei",
+    "sombra",
+    "genji"
+   ],
+   "x": "bunhime_",
+   "now": "Free agent"
+  },
+  {
+   "name": "sniper",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sniper",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2023-08-07",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Timeless Ethereal"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2025-03-26",
+     "to": "2025-05-05",
+     "next": "DhillKucks"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "Tank",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    },
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sniper",
+   "url": "https://liquipedia.net/overwatch/Sniper",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "sigma",
+    "dva",
+    "zarya"
+   ],
+   "x": "Sniper_OW",
+   "twitch": "sniperman64_",
+   "now": "Team Missing"
+  },
+  {
+   "name": "Snozlar",
+   "teams": [
+    "timeless"
+   ],
+   "id": "snozlar",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2023-08-07",
+     "to": "2023-11-29",
+     "next": "Faeble"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-05-25",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "yumyumyum"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Snozlar",
+   "url": "https://liquipedia.net/overwatch/Snozlar",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "tracer",
+    "echo",
+    "widowmaker"
+   ],
+   "x": "SNOZLAR",
+   "youtube": "Snozlar",
+   "now": "Free agent"
+  },
+  {
+   "name": "luka",
+   "teams": [
+    "timeless"
+   ],
+   "id": "luka",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Tank",
+     "from": "2023-09-15",
+     "to": "2024-03-04",
+     "next": "Kaizen"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Luka",
+   "url": "https://liquipedia.net/overwatch/Luka",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "wrecking ball",
+    "winston",
+    "doomfist"
+   ],
+   "x": "LukaOnTwitch",
+   "twitch": "Luka",
+   "youtube": "@luvluka",
+   "tiktok": "thelukashow",
+   "now": "Free agent"
+  },
+  {
+   "name": "Halo",
+   "teams": [
+    "timeless"
+   ],
+   "id": "halo",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-10-06",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Timeless Ethereal"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2024-08-16",
+     "to": "2024-09-06"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Halo",
+   "url": "https://liquipedia.net/overwatch/Halo",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "mercy"
+   ],
+   "x": "HelloImHalo",
+   "twitch": "helloimhalo",
+   "now": "Free agent"
+  },
+  {
+   "name": "zzz",
+   "teams": [
+    "timeless"
+   ],
+   "id": "zzz",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2023-10-06",
+     "to": "2024-07-06",
+     "next": "NTMR"
+    },
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-06-14",
+     "to": "2024-07-07",
+     "next": "NTMR"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2025-03-26",
+     "to": "2025-05-05",
+     "next": "DhillKucks"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "Support",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Zzz",
+   "url": "https://liquipedia.net/overwatch/Zzz",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "kiriko",
+    "ana"
+   ],
+   "x": "zzz_ow_",
+   "now": "the kafe"
+  },
+  {
+   "name": "Dove",
+   "teams": [
+    "timeless"
+   ],
+   "id": "dove",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2023-11-11",
+     "to": "2024-03-18",
+     "next": "DarkMode NA"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Dove",
+   "url": "https://liquipedia.net/overwatch/Dove",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "tracer",
+    "widowmaker",
+    "ashe"
+   ],
+   "x": "dovestopher",
+   "twitch": "dovestopher",
+   "youtube": "@pacoima",
+   "now": "Darkmode NA"
+  },
+  {
+   "name": "Grapes",
+   "teams": [
+    "timeless"
+   ],
+   "id": "grapes",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Support",
+     "from": "2023-11-11",
+     "to": "2024-01-08",
+     "next": "Dreamland"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Grapes",
+   "url": "https://liquipedia.net/overwatch/Grapes",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "baptiste",
+    "brigitte"
+   ],
+   "x": "Grapes_OW",
+   "now": "team missing"
+  },
+  {
+   "name": "Ryan",
+   "teams": [
+    "timeless"
+   ],
+   "id": "ryan",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "DPS",
+     "from": "2024-01-09",
+     "to": "2024-01-28",
+     "next": "Dreamland"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Ryan_%28American_player%29",
+   "url": "https://liquipedia.net/overwatch/Ryan_%28American_player%29",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "tracer",
+    "genji",
+    "hanzo"
+   ],
+   "x": "ryy4n2",
+   "twitch": "ow_ryann",
+   "now": "Disguised"
+  },
+  {
+   "name": "Momentum",
+   "teams": [
+    "timeless"
+   ],
+   "id": "momentum",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Support",
+     "from": "2024-02-21",
+     "to": "2024-03-18",
+     "next": "Fisher College White"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Momentum",
+   "url": "https://liquipedia.net/overwatch/Momentum",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "mercy"
+   ],
+   "x": "MomentumOW",
+   "twitch": "Momentum_OW",
+   "now": "Free agent"
+  },
+  {
+   "name": "Tred",
+   "teams": [
+    "timeless"
+   ],
+   "id": "tred",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Tank",
+     "from": "2024-02-25",
+     "to": "2024-03-19",
+     "next": "Team Peps"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Tred",
+   "url": "https://liquipedia.net/overwatch/Tred",
+   "country": "United Kingdom",
+   "status": "Active",
+   "heroes": [
+    "d.va",
+    "doomfist",
+    "winston"
+   ],
+   "x": "Tred___",
+   "twitch": "tred147",
+   "now": "Disguised"
+  },
+  {
+   "name": "Chopper",
+   "teams": [
+    "timeless"
+   ],
+   "id": "chopper",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "Young and Beautiful"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Chopper",
+   "url": "https://liquipedia.net/overwatch/Chopper",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "sojourn",
+    "genji",
+    "widowmaker"
+   ],
+   "x": "ChopperOW1",
+   "twitch": "ow_chopper",
+   "youtube": "ChopperOW",
+   "now": "Free agent"
+  },
+  {
+   "name": "iCy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "icy",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/ICy",
+   "url": "https://liquipedia.net/overwatch/ICy",
+   "country": "Canada",
+   "status": "Active",
+   "heroes": [
+    "d.va",
+    "zarya",
+    "sigma"
+   ],
+   "x": "iCy_ow",
+   "twitch": "icy_ow",
+   "youtube": "icy_ow",
+   "instagram": "icy_ow",
+   "now": "NTMR"
+  },
+  {
+   "name": "OPENER",
+   "teams": [
+    "timeless"
+   ],
+   "id": "opener",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-02-26",
+     "to": "2024-04-25",
+     "next": "The Great Showmen"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/OPENER",
+   "url": "https://liquipedia.net/overwatch/OPENER",
+   "country": "South Korea",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "mercy",
+    "brigitte"
+   ],
+   "x": "OPENER_ow",
+   "twitch": "opener_ow",
+   "instagram": "opener0403",
+   "now": "Free agent"
+  },
+  {
+   "name": "Aniyun",
+   "teams": [
+    "timeless"
+   ],
+   "id": "aniyun",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2024-05-25",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Shikigami"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Aniyun",
+   "url": "https://liquipedia.net/overwatch/Aniyun",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "baptiste",
+    "ana",
+    "kiriko"
+   ],
+   "x": "Aniyun_",
+   "twitch": "Aniyun_",
+   "youtube": "@Aniyun",
+   "instagram": "aniyun_art",
+   "now": "al qadsiah corals"
+  },
+  {
+   "name": "ariel2",
+   "teams": [
+    "timeless"
+   ],
+   "id": "ariel2",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Tank",
+     "from": "2024-06-14",
+     "to": "2024-06-23"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Ariel2",
+   "url": "https://liquipedia.net/overwatch/Ariel2",
+   "country": "Israel",
+   "status": "Active",
+   "heroes": [
+    "dva",
+    "sigma",
+    "ramattra"
+   ],
+   "x": "ariel2_x",
+   "twitch": "ariel4705",
+   "now": "Free agent"
+  },
+  {
+   "name": "senna",
+   "teams": [
+    "timeless"
+   ],
+   "id": "senna",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-06-28",
+     "to": "2024-07-06",
+     "next": "Timeless"
+    },
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-07-06",
+     "to": "2024-07-07",
+     "next": "Green Fortnite (Substitute)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Senna",
+   "url": "https://liquipedia.net/overwatch/Senna",
+   "country": "Netherlands",
+   "status": "Retired",
+   "heroes": [
+    "Ashe",
+    "Sojourn",
+    "Widowmaker"
+   ],
+   "x": "Sennaxoo",
+   "twitch": "sennaxoo",
+   "youtube": "@Sennaxoo",
+   "now": "Retired"
+  },
+  {
+   "name": "squid",
+   "teams": [
+    "timeless"
+   ],
+   "id": "squid",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "TSM"
+    },
+    {
+     "team": "Timeless",
+     "role": "Support",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "Spacestation Gaming (Substitute)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Squid",
+   "url": "https://liquipedia.net/overwatch/Squid",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "kiriko",
+    "zenyatta",
+    "ana"
+   ],
+   "x": "squ2d",
+   "twitch": "squ2d",
+   "youtube": "@squidr",
+   "now": "Free agent"
+  },
+  {
+   "name": "Vision",
+   "teams": [
+    "timeless"
+   ],
+   "id": "vision",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "DPS",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "TSM"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Vision",
+   "url": "https://liquipedia.net/overwatch/Vision",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "hanzo",
+    "widowmaker",
+    "cassidy"
+   ],
+   "x": "VisionOW24",
+   "twitch": "visionlive",
+   "youtube": "visionow",
+   "now": "Free agent"
+  },
+  {
+   "name": "Hitori",
+   "teams": [
+    "timeless"
+   ],
+   "id": "hitori",
+   "role": "Tank",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Tank",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Avidity Kittens"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Hitori",
+   "url": "https://liquipedia.net/overwatch/Hitori",
+   "country": "Germany",
+   "status": "Active",
+   "heroes": [
+    "winston",
+    "ramattra",
+    "d.va"
+   ],
+   "x": "hitori_ow",
+   "twitch": "hitori_ow",
+   "now": "LAIKA Esports"
+  },
+  {
+   "name": "NenWhy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "nenwhy",
+   "role": "Support",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Support",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Avidity Kittens"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "Support",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/NenWhy",
+   "url": "https://liquipedia.net/overwatch/NenWhy",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "mercy",
+    "lucio",
+    "brigitte"
+   ],
+   "x": "NenWhyy",
+   "twitch": "nenwhy",
+   "youtube": "@nenwhy572",
+   "now": "the kafe"
+  },
+  {
+   "name": "peace",
+   "teams": [
+    "timeless"
+   ],
+   "id": "peace",
+   "role": "DPS",
+   "staff": false,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "DPS",
+     "from": "2025-03-26",
+     "to": "2025-05-05",
+     "next": "DhillKucks"
+    },
+    {
+     "team": "Timeless x Missing",
+     "role": "DPS",
+     "from": "2026"
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-09-06",
+     "place": "1st",
+     "event": "Calling All Heroes 2026"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Peace",
+   "url": "https://liquipedia.net/overwatch/Peace",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "genji",
+    "tracer",
+    "vendetta"
+   ],
+   "x": "peace7k",
+   "twitch": "peace7k",
+   "now": "team missing"
+  },
+  {
+   "name": "debit",
+   "teams": [
+    "timeless"
+   ],
+   "id": "debit",
+   "role": "Manager · Team Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2022-10-27",
+     "to": "2024-07-07",
+     "next": "NTMR (Team Manager)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Team Manager",
+     "from": "2022-11-16",
+     "to": "2024-07-06",
+     "next": "NTMR (Team Manager)"
+    },
+    {
+     "team": "Timeless Obsidian",
+     "role": "Manager",
+     "from": "2023-05-23",
+     "to": "2023-11-11",
+     "next": "Timeless AU (Manager)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless (Manager)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2025-03-26",
+     "to": "2025-05-05",
+     "next": "DhillKucks (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    },
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Debit",
+   "url": "https://liquipedia.net/overwatch/Debit",
+   "country": "United States",
+   "status": "Active",
+   "x": "d7bit",
+   "twitch": "deb1t_",
+   "now": "the kafe"
+  },
+  {
+   "name": "Th3MFG",
+   "teams": [
+    "timeless"
+   ],
+   "id": "th3mfg",
+   "role": "Co-Owner",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Co-Owner",
+     "from": "2022-10-27",
+     "to": "2024-07-01",
+     "next": "Kaizen (Co-Owner)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ]
+  },
+  {
+   "name": "Tim",
+   "teams": [
+    "timeless"
+   ],
+   "id": "tim",
+   "role": "Co-Owner",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Co-Owner",
+     "from": "2022-10-27",
+     "to": "2024-06-28"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ]
+  },
+  {
+   "name": "Urzo",
+   "teams": [
+    "timeless"
+   ],
+   "id": "urzo",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2022-10-27",
+     "to": "2023-03-20",
+     "next": "Los Angeles Valiant (Manager)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2023-11-10",
+     "to": "2024-07-07",
+     "next": "NTMR (Team Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-07-07",
+     "place": "1st",
+     "event": "Calling All Heroes 2024-25 Challengers Series Minor 1"
+    },
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Urzo",
+   "url": "https://liquipedia.net/overwatch/Urzo",
+   "country": "Canada",
+   "status": "Active",
+   "x": "Urzo__",
+   "now": "NTMR"
+  },
+  {
+   "name": "overworld",
+   "teams": [
+    "timeless"
+   ],
+   "id": "overworld",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2022-11-16",
+     "to": "2023-02-26",
+     "next": "Timeless (Coach)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2023-03-04",
+     "to": "2023-06-10",
+     "next": "Retired"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Overworld",
+   "url": "https://liquipedia.net/overwatch/Overworld",
+   "country": "United States",
+   "status": "Retired",
+   "x": "overworld04",
+   "now": "Retired"
+  },
+  {
+   "name": "psev",
+   "teams": [
+    "timeless"
+   ],
+   "id": "psev",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2022-11-16",
+     "to": "2023-01-02",
+     "next": "Shikigami Hikari (Performance Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-19",
+     "place": "3rd",
+     "event": "Calling All Heroes Challengers Cup Final"
+    }
+   ]
+  },
+  {
+   "name": "HoChiLee",
+   "teams": [
+    "timeless"
+   ],
+   "id": "hochilee",
+   "role": "Head Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Head Coach",
+     "from": "2022-11-27",
+     "to": "2023-03-04",
+     "next": "Ex Oblivione (Head Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2022-12-16",
+     "place": "3rd",
+     "event": "Overwatch Contenders 2022 Run It Back: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/HoChiLee",
+   "url": "https://liquipedia.net/overwatch/HoChiLee",
+   "country": "South Korea",
+   "status": "Active",
+   "x": "HoChiLeeOW",
+   "twitch": "hochileeowcoach",
+   "now": "Free agent"
+  },
+  {
+   "name": "RubenSargasm",
+   "teams": [
+    "timeless"
+   ],
+   "id": "rubensargasm",
+   "role": "Content Creator",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-02-11",
+     "to": "2024-09-17"
+    }
+   ]
+  },
+  {
+   "name": "Aquamarine",
+   "teams": [
+    "timeless"
+   ],
+   "id": "aquamarine",
+   "role": "Content Creator",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-02-20",
+     "to": "2024-07-07",
+     "next": "NTMR (Content Creator)"
+    }
+   ]
+  },
+  {
+   "name": "Bame1",
+   "teams": [
+    "timeless"
+   ],
+   "id": "bame1",
+   "role": "Content Creator",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-02-21",
+     "to": "2024-09-17"
+    }
+   ]
+  },
+  {
+   "name": "BastionMain",
+   "teams": [
+    "timeless"
+   ],
+   "id": "bastionmain",
+   "role": "Content Creator",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-03-01",
+     "to": "2024-07-07",
+     "next": "NTMR (Content Creator)"
+    }
+   ]
+  },
+  {
+   "name": "ShartCandy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "shartcandy",
+   "role": "Content Creator",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Content Creator",
+     "from": "2023-03-03",
+     "to": "2024-07-07",
+     "next": "NTMR (Content Creator)"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/ShartCandy",
+   "url": "https://liquipedia.net/overwatch/ShartCandy",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "moira",
+    "lucio",
+    "mercy"
+   ],
+   "x": "SO_lRUN2YOU",
+   "twitch": "ShartCandy",
+   "youtube": "ShartCandy",
+   "instagram": "aidenrcg",
+   "tiktok": "shartcandyow",
+   "now": "Cal Poly Pomona"
+  },
+  {
+   "name": "Doc",
+   "teams": [
+    "timeless"
+   ],
+   "id": "doc",
+   "role": "Manager · Owner",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2023-03-13",
+     "to": "2024-07-06",
+     "next": "NTMR (Advisor)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2023-03-13",
+     "to": "2024-07-06",
+     "next": "NTMR (Advisor)"
+    },
+    {
+     "team": "Timeless Obsidian",
+     "role": "Manager",
+     "from": "2023-05-23",
+     "to": "2024-03-28",
+     "next": "NTMR (Advisor)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Owner",
+     "from": "2025-01-17"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-06-09",
+     "place": "2nd",
+     "event": "Calling All Heroes 2024-25 Challengers Series Major 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-09",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 2"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Doc",
+   "url": "https://liquipedia.net/overwatch/Doc",
+   "country": "United States",
+   "status": "Retired",
+   "x": "SleepyDoc13",
+   "now": "Retired"
+  },
+  {
+   "name": "Bongwoori",
+   "teams": [
+    "timeless"
+   ],
+   "id": "bongwoori",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2023-03-22",
+     "to": "2023-03-26"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Bongwoori",
+   "url": "https://liquipedia.net/overwatch/Bongwoori",
+   "country": "South Korea",
+   "status": "Inactive",
+   "x": "bonggoose",
+   "now": "Inactive"
+  },
+  {
+   "name": "SaltShaker",
+   "teams": [
+    "timeless"
+   ],
+   "id": "saltshaker",
+   "role": "Head Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Head Coach",
+     "from": "2023-04-20",
+     "to": "2023-05-20"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/SaltShaker",
+   "url": "https://liquipedia.net/overwatch/SaltShaker",
+   "country": "United States",
+   "status": "Inactive",
+   "heroes": [
+    "orisa",
+    "bastion"
+   ],
+   "x": "SaltShakerJaja",
+   "twitch": "saltshakerow",
+   "now": "Inactive"
+  },
+  {
+   "name": "SNR",
+   "teams": [
+    "timeless"
+   ],
+   "id": "snr",
+   "role": "Coach · Head Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2023-04-20",
+     "to": "2023-06-30",
+     "next": "O3 Splash (Head Coach)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Head Coach",
+     "from": "2023-10-06",
+     "to": "2024-02-29",
+     "next": "YFP Gaming (Assistant Coach)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2024-06-14",
+     "to": "2024-07-06",
+     "next": "NTMR (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-04-24",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/SNR",
+   "url": "https://liquipedia.net/overwatch/SNR",
+   "country": "Canada",
+   "status": "Active",
+   "x": "SNR_OW",
+   "twitch": "snr____",
+   "now": "the kafe"
+  },
+  {
+   "name": "jun",
+   "teams": [
+    "timeless"
+   ],
+   "id": "jun",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2023-04-24",
+     "to": "2024-07-06",
+     "next": "ROC Esports (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    },
+    {
+     "date": "2023-06-10",
+     "place": "2nd",
+     "event": "Overwatch Contenders 2023 Spring Series: North America"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Jun",
+   "url": "https://liquipedia.net/overwatch/Jun",
+   "country": "United States",
+   "status": "Active",
+   "x": "junseo52",
+   "now": "Team Risk"
+  },
+  {
+   "name": "Cointree",
+   "teams": [
+    "timeless"
+   ],
+   "id": "cointree",
+   "role": "Manager · Assistant Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Manager",
+     "from": "2023-05-23",
+     "to": "2023-11-11",
+     "next": "Timeless Celestial (Manager)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Assistant Manager",
+     "from": "2023-08-29",
+     "to": "2024-05-12",
+     "next": "99DIVINE (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Cointree",
+   "url": "https://liquipedia.net/overwatch/Cointree",
+   "country": "hong kong",
+   "status": "Active",
+   "heroes": [
+    "hanzo",
+    "echo",
+    "ana"
+   ],
+   "x": "Cointree_OW",
+   "twitch": "cointree_ow",
+   "now": "Twisted Minds"
+  },
+  {
+   "name": "Tokki",
+   "teams": [
+    "timeless"
+   ],
+   "id": "tokki",
+   "role": "Coach · Analyst",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Coach",
+     "from": "2023-05-23",
+     "to": "2024-03-01",
+     "next": "Timeless Obsidian (Analyst)"
+    },
+    {
+     "team": "Timeless Obsidian",
+     "role": "Analyst",
+     "from": "2024-03-01",
+     "to": "2024-03-28"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    },
+    {
+     "date": "2023-10-08",
+     "place": "1st",
+     "event": "Atlas Fighters Standoff"
+    },
+    {
+     "date": "2023-09-16",
+     "place": "2nd",
+     "event": "September Smash"
+    },
+    {
+     "date": "2023-08-19",
+     "place": "1st",
+     "event": "August Offensive"
+    },
+    {
+     "date": "2023-08-12",
+     "place": "1st",
+     "event": "Overwatch Operation: Dive Party NA"
+    },
+    {
+     "date": "2023-07-01",
+     "place": "2nd",
+     "event": "Fiber Gaming Network Overwatch Tournament"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Tokki",
+   "url": "https://liquipedia.net/overwatch/Tokki",
+   "country": "United States",
+   "status": "Retired",
+   "heroes": [
+    "brigitte",
+    "ana",
+    "zenyatta"
+   ],
+   "x": "Tokki_GG",
+   "now": "Retired"
+  },
+  {
+   "name": "Trysome",
+   "teams": [
+    "timeless"
+   ],
+   "id": "trysome",
+   "role": "Coach · Head Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2023-07-10",
+     "to": "2023-07-25",
+     "next": "Ground Zero Gaming (Coach)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Head Coach",
+     "from": "2023-08-29",
+     "to": "2023-10-06",
+     "next": "Beluga's Platoon (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Trysome",
+   "url": "https://liquipedia.net/overwatch/Trysome",
+   "country": "South Korea",
+   "status": "Active",
+   "x": "OwTrysome",
+   "now": "Free agent"
+  },
+  {
+   "name": "Algos05",
+   "teams": [
+    "timeless"
+   ],
+   "id": "algos05",
+   "role": "Analyst",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Analyst",
+     "from": "2023-08-06",
+     "to": "2024-05-25",
+     "next": "NTMR (CFO)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    },
+    {
+     "date": "2023-10-15",
+     "place": "1st",
+     "event": "Calling All Heroes Toronto Defiant Rise Together Minor 3"
+    },
+    {
+     "date": "2023-09-11",
+     "place": "1st",
+     "event": "Calling All Heroes Washington Justice and Shenandoah University Unite Minor 2"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Algos05",
+   "url": "https://liquipedia.net/overwatch/Algos05",
+   "country": "Germany",
+   "status": "Active",
+   "x": "algos05",
+   "twitch": "Algos05_ow",
+   "now": "Al Qadsiah"
+  },
+  {
+   "name": "McGravy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "mcgravy",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2023-11-10",
+     "to": "2024-02-26",
+     "next": "M80 (Head Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2023-12-17",
+     "place": "1st",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-04",
+     "place": "1st",
+     "event": "Battle for Canada"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/McGravy",
+   "url": "https://liquipedia.net/overwatch/McGravy",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "d.va",
+    "roadhog",
+    "sigma"
+   ],
+   "x": "McGravy",
+   "twitch": "mcgravy",
+   "now": "Disguised"
+  },
+  {
+   "name": "afnleaf",
+   "teams": [
+    "timeless"
+   ],
+   "id": "afnleaf",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Coach",
+     "from": "2023-11-11",
+     "to": "2024-03-01"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Afnleaf",
+   "url": "https://liquipedia.net/overwatch/Afnleaf",
+   "country": "Canada",
+   "status": "Active",
+   "x": "afnckingleaf",
+   "youtube": "@afnckingleaf",
+   "now": "Free agent"
+  },
+  {
+   "name": "Scrubbles",
+   "teams": [
+    "timeless"
+   ],
+   "id": "scrubbles",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Manager",
+     "from": "2023-11-11",
+     "to": "2024-03-28",
+     "next": "Retired"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    },
+    {
+     "date": "2023-12-15",
+     "place": "5th - 6th",
+     "event": "Flash Ops Holiday Showdown - NA"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "3rd",
+     "event": "Mistletoe Madness"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Scrubbles",
+   "url": "https://liquipedia.net/overwatch/Scrubbles",
+   "country": "Canada",
+   "status": "Retired",
+   "x": "YT_Scrubbles",
+   "twitch": "Scrubbles_Ow",
+   "youtube": "scrubblesyt",
+   "instagram": "yt_scrubbles",
+   "now": "Retired"
+  },
+  {
+   "name": "Danny",
+   "teams": [
+    "timeless"
+   ],
+   "id": "danny",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2023-11-29",
+     "to": "2024-02-14",
+     "next": "Toronto Defiant (Analyst)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    },
+    {
+     "date": "2024-01-15",
+     "place": "1st",
+     "event": "Super Girl Gamer Pro Championship"
+    },
+    {
+     "date": "2023-12-10",
+     "place": "1st",
+     "event": "Calling All Heroes Raidiant Heroes Major 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Danny_%28Canadian_coach%29",
+   "url": "https://liquipedia.net/overwatch/Danny_%28Canadian_coach%29",
+   "country": "Canada",
+   "status": "Active",
+   "x": "ow_danny",
+   "twitch": "dannyow",
+   "now": "Team Liquid"
+  },
+  {
+   "name": "Natdoekje",
+   "teams": [
+    "timeless"
+   ],
+   "id": "natdoekje",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Coach",
+     "from": "2024-01-09",
+     "to": "2024-03-18",
+     "next": "A One Man Army (Head Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    },
+    {
+     "date": "2024-02-05",
+     "place": "3rd - 4th",
+     "event": "ILIAD INVITATIONAL S2"
+    },
+    {
+     "date": "2024-01-27",
+     "place": "9th - 12th",
+     "event": "Berry Community Blast: Encore"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Natdoekje",
+   "url": "https://liquipedia.net/overwatch/Natdoekje",
+   "country": "Netherlands",
+   "status": "Active",
+   "x": "natdoekje",
+   "now": "Wasp Esport"
+  },
+  {
+   "name": "Lep",
+   "teams": [
+    "timeless"
+   ],
+   "id": "lep",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2024-02-01",
+     "to": "2024-03-02",
+     "next": "M80"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-02-04",
+     "place": "1st",
+     "event": "Calling All Heroes Challengers Series Championship"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Lep",
+   "url": "https://liquipedia.net/overwatch/Lep",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "brigitte",
+    "mercy"
+   ],
+   "x": "lep_ow",
+   "twitch": "lep_ow",
+   "now": "NTMR"
+  },
+  {
+   "name": "ALx",
+   "teams": [
+    "timeless"
+   ],
+   "id": "alx",
+   "role": "Head Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Obsidian",
+     "role": "Head Coach",
+     "from": "2024-02-16",
+     "to": "2024-03-28",
+     "next": "Team Vision (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-03-17",
+     "place": "9th - 12th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/ALx",
+   "url": "https://liquipedia.net/overwatch/ALx",
+   "country": "Armenia",
+   "status": "Active",
+   "x": "AlexBejanyan",
+   "now": "Free agent"
+  },
+  {
+   "name": "Cap",
+   "teams": [
+    "timeless"
+   ],
+   "id": "cap",
+   "role": "Assistant Coach · Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Assistant Coach",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM (Head Coach)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2025-01-17",
+     "to": "2025-03-10",
+     "next": "NTMR (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Cap",
+   "url": "https://liquipedia.net/overwatch/Cap",
+   "country": "United States",
+   "status": "Retired",
+   "x": "Cap1tology",
+   "twitch": "capitology",
+   "now": "Retired"
+  },
+  {
+   "name": "GizmomcS",
+   "teams": [
+    "timeless"
+   ],
+   "id": "gizmomcs",
+   "role": "Coach · Analyst",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM (Analyst)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Analyst",
+     "from": "2025-01-17",
+     "to": "2025-05-02",
+     "next": "Team Z (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/GizmomcS",
+   "url": "https://liquipedia.net/overwatch/GizmomcS",
+   "country": "Portugal",
+   "status": "Active",
+   "heroes": [
+    "reinhardt"
+   ],
+   "x": "gizmomcs",
+   "now": "Free agent"
+  },
+  {
+   "name": "Tensa",
+   "teams": [
+    "timeless"
+   ],
+   "id": "tensa",
+   "role": "Head Coach · Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Head Coach",
+     "from": "2024-02-26",
+     "to": "2024-04-29",
+     "next": "TSM (Assistant Coach)"
+    },
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2025-01-17",
+     "to": "2025-05-02"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    },
+    {
+     "date": "2024-03-24",
+     "place": "2nd",
+     "event": "Overwatch Champions Series 2024 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Tensa",
+   "url": "https://liquipedia.net/overwatch/Tensa",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "lucio",
+    "mercy",
+    "baptiste"
+   ],
+   "x": "Tensa_The_Sage",
+   "twitch": "tensa",
+   "now": "Fisher Esports"
+  },
+  {
+   "name": "LnlD",
+   "teams": [
+    "timeless"
+   ],
+   "id": "lnld",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Coach",
+     "from": "2024-06-14",
+     "to": "2024-07-06",
+     "next": "NTMR (Coach)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-06-23",
+     "place": "3rd",
+     "event": "FACEIT League Season 1 - NA Master Road to EWC"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Zhang_Shukun",
+   "url": "https://liquipedia.net/overwatch/Zhang_Shukun",
+   "country": "China",
+   "status": "Active",
+   "heroes": [
+    "Ana"
+   ],
+   "x": "Shukun_Zhang",
+   "now": "Homie E"
+  },
+  {
+   "name": "ThatAFKNoob",
+   "teams": [
+    "timeless"
+   ],
+   "id": "thatafknoob",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Manager",
+     "from": "2024-08-08",
+     "to": "2024-09-17",
+     "next": "Citrus Nation (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-09-15",
+     "place": "1st",
+     "event": "FACEIT League Season 2 - NA Master"
+    },
+    {
+     "date": "2024-08-31",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/ThatAFKNoob",
+   "url": "https://liquipedia.net/overwatch/ThatAFKNoob",
+   "country": "Canada",
+   "status": "Active",
+   "x": "ThatAFKNoob",
+   "now": "Free agent"
+  },
+  {
+   "name": "sleepyemelia",
+   "teams": [
+    "timeless"
+   ],
+   "id": "sleepyemelia",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2024-08-16",
+     "to": "2024-09-06",
+     "next": "NTMR x Timeless (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2024-08-29",
+     "place": "7th - 8th",
+     "event": "Overwatch Champions Series 2024 - NA Stage 3"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Sleepyemelia",
+   "url": "https://liquipedia.net/overwatch/Sleepyemelia",
+   "country": "United States",
+   "status": "Active",
+   "x": "sleepyemelia",
+   "now": "Free agent"
+  },
+  {
+   "name": "Izzy",
+   "teams": [
+    "timeless"
+   ],
+   "id": "izzy",
+   "role": "Owner/Manager · Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless",
+     "role": "Owner/Manager",
+     "from": "2025-01-17",
+     "to": "2026-07-02",
+     "next": "Tanuki (Owner)"
+    },
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Dreamland (Manager)"
+    }
+   ],
+   "results": [
+    {
+     "date": "2025-03-08",
+     "place": "4th",
+     "event": "Overwatch Champions Series 2025 - NA Stage 1"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Izzy_%28American_manager%29",
+   "url": "https://liquipedia.net/overwatch/Izzy_%28American_manager%29",
+   "country": "United States",
+   "status": "Active",
+   "heroes": [
+    "widowmaker",
+    "ashe",
+    "cassidy"
+   ],
+   "x": "izzys_ow",
+   "now": "Fisher College"
+  },
+  {
+   "name": "Cassie",
+   "teams": [
+    "timeless"
+   ],
+   "id": "cassie",
+   "role": "Manager",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Manager",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Team Z (Manager)"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Cassie",
+   "url": "https://liquipedia.net/overwatch/Cassie",
+   "country": "United States",
+   "status": "Active",
+   "x": "stxrOW",
+   "now": "Extinction"
+  },
+  {
+   "name": "Marf",
+   "teams": [
+    "timeless"
+   ],
+   "id": "marf",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "DhillKucks (Coach)"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Marf",
+   "url": "https://liquipedia.net/overwatch/Marf",
+   "country": "Peru",
+   "status": "Active",
+   "x": "Marf_71",
+   "now": "Free agent"
+  },
+  {
+   "name": "Raelyni",
+   "teams": [
+    "timeless"
+   ],
+   "id": "raelyni",
+   "role": "Coach",
+   "staff": true,
+   "stints": [
+    {
+     "team": "Timeless Ethereal",
+     "role": "Coach",
+     "from": "2025-03-26",
+     "to": "2025-05-07",
+     "next": "Avidity Kittens (Coach)"
+    }
+   ],
+   "wiki": "https://liquipedia.net/overwatch/Raelyni",
+   "url": "https://liquipedia.net/overwatch/Raelyni",
+   "country": "United States",
+   "status": "Active",
+   "x": "raelyni",
+   "now": "Team Missing x LuneX Academy"
   }
- ]
+ ],
+ "roster": {
+  "label": "Liquipedia: Timeless",
+  "url": "https://liquipedia.net/overwatch/Timeless",
+  "read": "2026-11-11"
+ }
 }

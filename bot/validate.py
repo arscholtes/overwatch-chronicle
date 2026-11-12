@@ -44,6 +44,15 @@ for t in j("teams"):
 for p in j("triumvirate")["people"]: badge(f"triumvirate {p.get('name')}", p)
 for v in j("metrics")["viewership"]:
     if not number(v.get("peak")): err.append(f"metrics: viewership peak is not a number on {v.get('event')}")
+ids = set()
+for p in j("alumni")["people"]:
+    for k in ("x", "twitch", "youtube", "instagram", "tiktok"):
+        if k in p and not re.fullmatch(r"@?[A-Za-z0-9_.-]{1,40}", str(p[k])): err.append(f"alumni: {k} handle is not plain on {p.get('name')}")
+    if "stints" in p:
+        if not p.get("id") or p["id"] in ids: err.append(f"alumni: missing or repeated id on {p.get('name')}")
+        ids.add(p.get("id"))
+        for s in p["stints"]:
+            if not s.get("team") or not re.match(r"\d{4}", str(s.get("from", ""))): err.append(f"alumni: stint needs a team and a start on {p.get('name')}")
 j("site"); j("meta")
 if err:
     print("\n".join(err)); sys.exit(1)

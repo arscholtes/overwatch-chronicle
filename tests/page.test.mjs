@@ -21,7 +21,12 @@ function hostileData() {
   const data = shippedData();
   for (const post of data.social) Object.assign(post, { m: MARKUP, c: ATTRIBUTE, url: SCRIPT_URL });
   for (const team of data.teams) Object.assign(team, { m: MARKUP, c: ATTRIBUTE });
-  for (const person of data.alumni.people) person.url = SCRIPT_URL;
+  data.alumni.roster.url = SCRIPT_URL;
+  for (const person of data.alumni.people) {
+    Object.assign(person, { url: SCRIPT_URL, wiki: SCRIPT_URL, x: MARKUP, twitch: MARKUP, youtube: MARKUP, now: MARKUP, country: MARKUP, heroes: [MARKUP] });
+    person.stints = [{ team: MARKUP, role: MARKUP, from: MARKUP, to: MARKUP, next: MARKUP }];
+    person.results = [{ date: MARKUP, place: MARKUP, event: MARKUP }];
+  }
   for (const row of data.metrics.viewership) Object.assign(row, { src: MARKUP, peak: MARKUP });
   for (const tab of ["lore", "esports", "t2"]) {
     for (const item of data[tab].items) {
@@ -56,12 +61,16 @@ async function renderEverything(data) {
   await vm.runInContext("load()", context);
   const written = [];
   const collect = () => written.push(...[...elements.values()].map((e) => e.innerHTML));
-  for (const view of ["lore", "esports", "t2", "teams", "numbers", "triumvirate"]) {
+  for (const view of ["lore", "esports", "t2", "teams", "numbers", "people", "triumvirate"]) {
     vm.runInContext(`state.view=${JSON.stringify(view)};render()`, context);
     collect();
   }
   for (const team of data.teams) {
     vm.runInContext(`openSpot(${JSON.stringify(team.id)})`, context);
+    collect();
+  }
+  for (const person of data.alumni.people) {
+    vm.runInContext(`openPerson(${JSON.stringify(person.id)})`, context);
     collect();
   }
   for (const tab of ["lore", "esports", "t2"]) {
@@ -81,6 +90,25 @@ test("the shipped data renders", async () => {
   const html = await renderEverything(shippedData());
   assert.match(html, /class="tcard/);
   assert.match(html, /class="post/);
+});
+
+test("everyone who was at Timeless has a card and a spotlight", async () => {
+  const data = shippedData();
+  const html = await renderEverything(data);
+  const people = data.alumni.people.filter((person) => person.stints);
+  assert.ok(people.length > 100, `only ${people.length} people`);
+  for (const person of people) assert.ok(html.includes(`data-person="${person.id}"`), `${person.name} has no card`);
+  assert.equal(new Set(people.map((person) => person.id)).size, people.length, "two people share an id");
+  assert.match(html, /<h4>Time at Timeless<\/h4>/);
+});
+
+test("a profile picture loads only for a plain X handle", async () => {
+  const plain = /^[A-Za-z0-9_]{1,15}\?fallback=false"/;
+  for (const data of [hostileData(), shippedData()]) {
+    const addresses = (await renderEverything(data)).split("https://unavatar.io/x/").slice(1);
+    assert.ok(addresses.length > 0, "no profile picture was written");
+    for (const address of addresses) assert.match(address, plain);
+  }
 });
 
 test("a value from the data never becomes markup", async () => {

@@ -135,6 +135,11 @@ class Validator(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIn("link", result.stdout)
 
+    def test_a_social_handle_that_is_not_plain_fails(self):
+        result = self.run_on(("alumni", lambda d: d["people"][0].update(x=MARKUP)))
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("handle", result.stdout)
+
     def test_viewership_that_is_not_a_number_fails(self):
         result = self.run_on(("metrics", lambda d: d["viewership"][0].update(peak=MARKUP)))
         self.assertEqual(result.returncode, 1)
