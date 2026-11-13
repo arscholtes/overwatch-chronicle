@@ -53,12 +53,22 @@ X blocks bots from reading posts, so the bot keeps only well-formed X status URL
 ```
 The **Buy me a coffee** button appears in the footer once `buyMeACoffee` is set.
 
+## Members (optional backend)
+People who were at Timeless can sign in, add a bio to their own spotlight or hide it, and message each other. The page shows none of this until `site/data/site.json` has a `backend`. `SCHEMA.md` lists every table.
+
+1. Create a Supabase project. In **Authentication → Sign In / Providers**, turn **Allow new users to sign up** off.
+2. In **Authentication → Emails**, set up custom SMTP with a mail-sending service. Sign-in does not work without it: Supabase's built-in mailer [refuses any address outside the project's own team](https://supabase.com/docs/guides/auth/auth-smtp) and sends two messages an hour, and the dashboard will not let you edit a template until SMTP is set. Then under **Magic Link**, paste `supabase/templates/magic_link.html`, so the email carries a six-digit code (`{{ .Token }}`) instead of a link the page cannot use.
+3. Load the tables: `npx supabase link --project-ref <ref>` then `npx supabase db push`.
+4. Put the project URL and its publishable (anon) key in `site/data/site.json` under `backend`. That key is public by design; every table is behind row-level security. Never put the secret key in this repo.
+5. For each person: **Authentication → Users → Invite user**, then in the SQL editor run `select add_member('their@email', 'their-roster-id');` (the id is the `id` in `site/data/alumni.json`). Add `, true` for an owner, who can read reports.
+
 ## Run locally
 ```bash
 cd site && python3 -m http.server 8000   # then open http://localhost:8000
 DRY_RUN=1 python3 bot/update.py          # Steam sample + validation only, no API calls
 node --test tests/*.mjs                       # the page writes hostile data as text
 python3 -m unittest discover -s tests    # what the bot may write, and what the validator rejects (needs bot/requirements.txt)
+npx supabase start && MEMBERS_STACK=1 node --test tests/members.*.test.mjs   # the members database and the page's sign-in, profile and messages (needs Docker)
 ```
 
 ## Notes on the numbers

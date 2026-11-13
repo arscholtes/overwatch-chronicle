@@ -82,7 +82,8 @@ function teamsView(){
    <p>${esc(t.blurb)}</p>${t.titles&&t.titles.length?`<div class="tags">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><button class="btn play" data-spot="${esc(t.id)}">Spotlight${n?` · ${n} alumni`:""}</button><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></article>`}).join("")}</div></section>`;
 }
-function teamAlumni(t){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>(p.teams||[]).includes(t.id))}
+function shown(p){return !(MEM.profiles.get(p.id)||{}).hidden}
+function teamAlumni(t){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>(p.teams||[]).includes(t.id)&&shown(p))}
 function teamNames(t){const base=[t.name,...(t.aliases||[])];return base.map(n=>n.toLowerCase())}
 function mentions(t,text){const s=" "+String(text).toLowerCase()+" ";return teamNames(t).some(n=>{const i=s.indexOf(n);if(i<0)return false;const a=s[i-1],b=s[i+n.length];return !/[a-z0-9]/.test(a)&&!/[a-z0-9]/.test(b)})}
 function teamEvents(t){
@@ -118,7 +119,7 @@ function closeSpot(){$("#smodal").hidden=true;document.body.style.overflow=""}
 
 /* ---------- Timeless people ---------- */
 const PURPLE="#c9a7ff";
-function roster(){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>p.stints)}
+function roster(){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>p.stints&&shown(p))}
 function initials(n){return String(n).replace(/[^A-Za-z0-9]/g,"").slice(0,2).toUpperCase()||"TL"}
 function month(d){const m=/^(\d{4})-(\d\d)/.exec(d||"");return m?["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m[2]-1]+" "+m[1]:String(d||"")}
 function span(p){const a=p.stints.map(s=>s.from.slice(0,4)).sort()[0];const open=p.stints.some(s=>!s.to);const b=open?"now":p.stints.map(s=>s.to.slice(0,4)).sort().pop();return a===b?a:`${a}–${b}`}
@@ -141,10 +142,12 @@ function openPerson(id){
   const SOC=[["x","https://x.com/","X · @"],["twitch","https://www.twitch.tv/","Twitch · "],["youtube","https://www.youtube.com/","YouTube · "],["instagram","https://www.instagram.com/","Instagram · "],["tiktok","https://www.tiktok.com/@","TikTok · "]];
   const socials=SOC.filter(([k])=>p[k]).map(([k,u,l])=>`<a class="btn" target="_blank" rel="noopener" href="${u}${encodeURIComponent(p[k]).replace(/%40/g,"@")}">${esc(l+p[k])} ↗</a>`).join("")+(p.wiki?`<a class="btn" target="_blank" rel="noopener" href="${link(p.wiki)}">Liquipedia ↗</a>`:"");
   const founder=["chase","th3mfg","doc"].includes(p.id);
+  const said=(MEM.profiles.get(p.id)||{}).bio;const them=MEM.me&&memberOf(p.id);const reach=them&&them.user_id!==MEM.me.user_id?`<button class="btn play" data-message="${esc(them.user_id)}">Message ${esc(p.name)}</button>`:"";
   let h=`<div class="sp-hero pp-hero" style="--tc:${PURPLE}">${badge(initials(p.name),PURPLE,p.x)}<div><div class="kicker" style="color:${PURPLE}">${esc([p.role,p.country].filter(Boolean).join(" · "))}</div><h2 id="sTitle">${esc(p.name)}</h2>${p.now?`<div class="pnow">Now: ${esc(p.now)}</div>`:""}</div></div>
   <section class="sp-sec">${p.hi?`<p class="sp-ov">${esc(p.hi)} <a href="${link(p.url)}" target="_blank" rel="noopener">Source ↗</a></p>`:""}
    <div class="stats">${stats.map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("")}</div>
-   ${socials||founder?`<div class="actions">${socials}${founder?`<button class="btn play" data-view="triumvirate">Their story · Triumvirate</button>`:""}</div>`:""}</section>
+   ${said?`<p class="sp-ov said">${esc(said)}</p>`:""}
+   ${socials||founder||reach?`<div class="actions">${reach}${socials}${founder?`<button class="btn play" data-view="triumvirate">Their story · Triumvirate</button>`:""}</div>`:""}</section>
   <section class="sp-sec"><h4>Time at Timeless</h4><ul class="sp-ev">${p.stints.slice().reverse().map(s=>`<li style="--ec:${PURPLE}"><span class="when">${esc(month(s.from))} – ${s.to?esc(month(s.to)):"now"}</span><b>${esc(s.team)}</b>${s.role?`<span class="tag">${esc(s.role)}</span>`:""}${s.next?`<p>Next: ${esc(s.next)}</p>`:""}</li>`).join("")}</ul></section>`;
   if((p.results||[]).length)h+=`<section class="sp-sec"><h4>${p.staff?"While on staff":"On the roster for"}</h4><ul class="presults">${p.results.map(r=>`<li class="${r.place==="1st"?"won":""}"><b>${esc(r.place)}</b><span>${esc(r.event)}</span><span class="when">${esc(month(r.date))}</span></li>`).join("")}</ul></section>`;
   if((p.heroes||[]).length)h+=`<section class="sp-sec"><h4>Signature heroes</h4><div class="tags">${p.heroes.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div></section>`;
@@ -227,7 +230,8 @@ function footer(){
   const S=DATA.site;
   $("#foot").innerHTML=`<p>A fan archive. Overwatch belongs to Blizzard Entertainment. The artwork here is original. Teams and people appear as text with monogram badges, and where one has an X account its own profile picture loads from there. Videos are embedded from YouTube, and posts link to their original source.</p>
   <div class="credit"><div>Built by <a class="me" href="${link(S.owner.url)}" target="_blank" rel="noopener">${esc(S.owner.name)}</a><div class="updated">Data updated ${esc(DATA.meta.lastUpdated)}${DATA.meta.lastBotRun?` · bot ran ${esc(DATA.meta.lastBotRun)}`:""}</div></div>
-  ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>`;
+  ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>
+  <blockquote class="epigraph">“All that glisters is not gold.”<cite>William Shakespeare, The Merchant of Venice</cite></blockquote>`;
 }
 
 /* ---------- video modal ---------- */
@@ -293,4 +297,4 @@ const fx=(()=>{
   return{retint(){tint={triumvirate:["#f99e1a","#c9a7ff"],lore:["#f99e1a","#43c6ff"],t2:["#c9a7ff","#43c6ff"],teams:["#ffd36b","#f99e1a"],numbers:["#5be3a6","#43c6ff"],people:["#c9a7ff","#f99e1a"]}[state.view]||["#43c6ff","#ffd36b"];start()}};
 })();
 
-load().then(()=>{route()}).catch(err=>{$("#heroInner").innerHTML=`<h1>Couldn't load data</h1><p class="lede">${esc(err.message)}. If you opened this file directly, serve the folder instead (for example: <code>python3 -m http.server</code> inside <code>site/</code>).</p>`});
+load().then(()=>{route();return membersInit().then(()=>{if(MEM.profiles.size)cases()}).catch(e=>console.error("the members backend did not answer",e))}).catch(err=>{$("#heroInner").innerHTML=`<h1>Couldn't load data</h1><p class="lede">${esc(err.message)}. If you opened this file directly, serve the folder instead (for example: <code>python3 -m http.server</code> inside <code>site/</code>).</p>`});

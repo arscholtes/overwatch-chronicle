@@ -341,3 +341,23 @@ a.tcard.alum:hover{border-color:var(--tl)}
 .presults li.won b{color:var(--gold)}
 @media (max-width:560px){.pgrid{grid-template-columns:1fr}.pp-hero .badge svg{width:80px;height:80px}.presults li{grid-template-columns:64px 1fr}.presults .when{grid-column:2}}
 @media (prefers-reduced-motion:reduce){.pcard{transition:none}.pcard:hover,.pcard:focus-visible{transform:none}}
+
+/* ---------- members ---------- */
+#memberBtn{margin-left:auto;align-self:center;white-space:nowrap;border-color:color-mix(in srgb,var(--tl) 60%,var(--line));color:var(--tl)}
+.mform{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.mform.col{flex-direction:column;align-items:flex-start}
+.mform input:not([type=checkbox]),.mform textarea{flex:1;min-width:0;width:100%;background:var(--panel);border:1px solid var(--line);color:var(--ink);font:inherit;padding:10px 14px;border-radius:2px}
+.mform textarea{resize:vertical}
+.mform :focus-visible{outline:2px solid var(--tl);outline-offset:1px}
+.mcheck{display:flex;gap:8px;align-items:center;font-size:14.5px;color:#c6d3ea}
+.mnote{margin:0 0 12px;padding:8px 12px;border-left:3px solid var(--tl);background:var(--panel);font-size:14.5px}
+.mthreads{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mlog{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:8px}
+.mlog li{max-width:min(70ch,88%);padding:8px 12px;background:var(--panel);border:1px solid var(--line)}
+.mlog li.mine{justify-self:end;border-color:color-mix(in srgb,var(--tl) 50%,var(--line));background:color-mix(in srgb,var(--tl) 10%,var(--panel))}
+.mlog p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.mlog .when{font-family:var(--cond);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+.mlink{appearance:none;background:none;border:0;padding:0;color:var(--muted);font:inherit;text-decoration:underline;cursor:pointer}
+.said{white-space:pre-wrap;border-left:3px solid var(--tl);padding-left:12px}
+.epigraph{margin:22px 0 0;text-align:center;font-family:var(--display);font-size:22px;letter-spacing:.04em;color:var(--gold)}
+.epigraph cite{display:block;font-family:var(--cond);font-style:normal;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}

@@ -83,7 +83,7 @@ async function renderEverything(data) {
 }
 
 test("the built script is its sources", () => {
-  assert.equal(read("site/assets/app.js"), read("tools/icons.js") + read("tools/main.js"));
+  assert.equal(read("site/assets/app.js"), read("tools/icons.js") + read("tools/main.js") + read("tools/members.js"));
 });
 
 test("the shipped data renders", async () => {
