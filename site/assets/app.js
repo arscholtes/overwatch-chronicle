@@ -130,7 +130,8 @@ function teamsView(){
    <p>${esc(t.blurb)}</p>${t.titles&&t.titles.length?`<div class="tags">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><button class="btn play" data-spot="${esc(t.id)}">Spotlight${n?` · ${n} alumni`:""}</button><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></article>`}).join("")}</div></section>`;
 }
-function teamAlumni(t){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>(p.teams||[]).includes(t.id))}
+function shown(p){return !(MEM.profiles.get(p.id)||{}).hidden}
+function teamAlumni(t){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>(p.teams||[]).includes(t.id)&&shown(p))}
 function teamNames(t){const base=[t.name,...(t.aliases||[])];return base.map(n=>n.toLowerCase())}
 function mentions(t,text){const s=" "+String(text).toLowerCase()+" ";return teamNames(t).some(n=>{const i=s.indexOf(n);if(i<0)return false;const a=s[i-1],b=s[i+n.length];return !/[a-z0-9]/.test(a)&&!/[a-z0-9]/.test(b)})}
 function teamEvents(t){
@@ -166,7 +167,7 @@ function closeSpot(){$("#smodal").hidden=true;document.body.style.overflow=""}
 
 /* ---------- Timeless people ---------- */
 const PURPLE="#c9a7ff";
-function roster(){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>p.stints&&!(MEM.profiles.get(p.id)||{}).hidden)}
+function roster(){return ((DATA.alumni&&DATA.alumni.people)||[]).filter(p=>p.stints&&shown(p))}
 function initials(n){return String(n).replace(/[^A-Za-z0-9]/g,"").slice(0,2).toUpperCase()||"TL"}
 function month(d){const m=/^(\d{4})-(\d\d)/.exec(d||"");return m?["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m[2]-1]+" "+m[1]:String(d||"")}
 function span(p){const a=p.stints.map(s=>s.from.slice(0,4)).sort()[0];const open=p.stints.some(s=>!s.to);const b=open?"now":p.stints.map(s=>s.to.slice(0,4)).sort().pop();return a===b?a:`${a}–${b}`}

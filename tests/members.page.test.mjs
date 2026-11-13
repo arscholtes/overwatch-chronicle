@@ -94,7 +94,7 @@ async function visitor() {
 
 before(async () => {
   if (skip) return;
-  for (const roster of ["sniper", "halo"]) {
+  for (const roster of ["sniper", "halo", "hawk"]) {
     const email = `${roster}-${run}@example.test`;
     const user = await admin("/auth/v1/admin/users", "POST", { email, email_confirm: true });
     await admin("/rest/v1/rpc/add_member", "POST", { member_email: email, roster });
@@ -104,7 +104,7 @@ before(async () => {
 
 after(async () => {
   for (const { id } of Object.values(accounts)) await admin(`/auth/v1/admin/users/${id}`, "DELETE");
-  if (!skip) await admin("/rest/v1/profile?roster_id=in.(sniper,halo)", "DELETE");
+  if (!skip) await admin("/rest/v1/profile?roster_id=in.(sniper,halo,hawk)", "DELETE");
 });
 
 test("a member signs in with the emailed code and the page knows who they are", { skip }, async () => {
@@ -142,6 +142,20 @@ test("what a member writes shows on their public spotlight as text, and hiding t
   assert.ok(!later.html("#case").includes(`data-person="sniper"`), "a hidden member still has a card");
   assert.ok(later.html("#case").includes(`data-person="halo"`));
   await member.submit("profile", { bio: "Tank main." });
+});
+
+test("a hidden member is not named on a team's spotlight", { skip }, async () => {
+  const member = await visitor();
+  await member.signIn(accounts.hawk.email);
+  const before = await visitor();
+  before.run(`openSpot("timeless")`);
+  assert.match(before.html("#sBody"), /<b>hawk<\/b>/i, "hawk is not in the team's alumni list to begin with");
+
+  await member.submit("profile", { bio: "", hidden: "on" });
+  const later = await visitor();
+  later.run(`openSpot("timeless")`);
+  assert.doesNotMatch(later.html("#sBody"), /<b>hawk<\/b>/i, "a hidden member is still named in the team's alumni list");
+  await member.submit("profile", { bio: "" });
 });
 
 test("one member messages another from their spotlight and the other reads it", { skip }, async () => {
