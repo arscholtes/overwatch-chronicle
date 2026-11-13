@@ -1,0 +1,56 @@
+# Moves master up to main's newest commit once every other check on that commit has passed.
+# master only ever moves forward, never by force.
+name: promote-master
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  checks: read
+  statuses: read
+
+concurrency:
+  group: promote-master
+  cancel-in-progress: true
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      SHA: ${{ github.sha }}
+    steps:
+      - name: Wait for the other checks on this commit
+        run: |
+          # Other workflows take a few seconds to register their checks.
+          sleep 30
+          for attempt in $(seq 1 120); do
+            checks=$(gh api "repos/$REPO/commits/$SHA/check-runs?per_page=100" \
+              --jq "[.check_runs[] | select(.details_url | contains(\"/runs/$GITHUB_RUN_ID/\") | not)]")
+            statuses=$(gh api "repos/$REPO/commits/$SHA/status" --jq '.statuses')
+            failed=$(jq -r '[.[] | select(.status == "completed" and (.conclusion | IN("success", "skipped", "neutral") | not)) | .name] | join(", ")' <<<"$checks")
+            failed_statuses=$(jq -r '[.[] | select(.state == "failure" or .state == "error") | .context] | join(", ")' <<<"$statuses")
+            if [ -n "$failed$failed_statuses" ]; then
+              echo "::error::Not promoting $SHA: failed checks: $failed $failed_statuses"
+              exit 1
+            fi
+            waiting=$(jq '[.[] | select(.status != "completed")] | length' <<<"$checks")
+            waiting_statuses=$(jq '[.[] | select(.state == "pending")] | length' <<<"$statuses")
+            if [ "$waiting" = 0 ] && [ "$waiting_statuses" = 0 ]; then
+              echo "Every other check on $SHA has passed."
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "::error::Not promoting $SHA: checks were still running after 30 minutes."
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Move master to this commit
+        run: git push origin "$SHA:refs/heads/master"
