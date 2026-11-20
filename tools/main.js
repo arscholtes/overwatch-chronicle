@@ -1,9 +1,11 @@
 /* Overwatch Chronicle — app logic. Data lives in /data/*.json and is refreshed weekly by the bot. */
-function art(key,glow){return `<svg viewBox="0 0 100 100" style="color:#dfe8fb;--glow:${glow}" aria-hidden="true">${ICON[key]||ICON.hex}</svg>`}
-function monogram(txt,c){return `<svg viewBox="0 0 48 48" aria-hidden="true"><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="${c}" fill-opacity=".16" stroke="${c}" stroke-width="2"/><text x="24" y="31" text-anchor="middle" font-family="Teko,Barlow Condensed,sans-serif" font-size="${txt.length>2?16:20}" font-weight="600" fill="#eaf1ff">${txt}</text></svg>`}
+function art(key,glow){return `<svg viewBox="0 0 100 100" style="color:#dfe8fb;--glow:${hex(glow)}" aria-hidden="true">${ICON[key]||ICON.hex}</svg>`}
+function monogram(txt,c){const size=String(txt??"").length>2?16:20;txt=esc(txt);c=hex(c);return `<svg viewBox="0 0 48 48" aria-hidden="true"><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="${c}" fill-opacity=".16" stroke="${c}" stroke-width="2"/><text x="24" y="31" text-anchor="middle" font-family="Teko,Barlow Condensed,sans-serif" font-size="${size}" font-weight="600" fill="#eaf1ff">${txt}</text></svg>`}
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const fmt=n=>n>=1e6?(n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,"")+"M":n>=1e3?Math.round(n/1e3)+"K":String(n);
+const hex=c=>/^#[0-9a-fA-F]{3,8}$/.test(c)?c:"#9aabc9";
+const link=u=>/^https?:\/\//i.test(u)?esc(u):"#";
+const fmt=v=>{const n=Number(v);return n>=1e6?(n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,"")+"M":n>=1e3?Math.round(n/1e3)+"K":String(n)};
 const TALK=`<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12v8H7l-3 3v-3H2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="5.5" cy="7" r="1" fill="currentColor"/><circle cx="8" cy="7" r="1" fill="currentColor"/><circle cx="10.5" cy="7" r="1" fill="currentColor"/></svg>`;
 const MOODS={hype:"Hype",celebration:"Celebration",mixed:"Mixed",backlash:"Backlash"};
 const PLAY=`<svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg>`;
@@ -44,7 +46,7 @@ function cases(){
   const v=state.view;let h="";
   if(v==="esports"){
     const trophy=`<svg viewBox="0 0 100 100" style="color:#ffd36b;--glow:#ffd36b">${ICON.trophy}</svg>`;
-    h+=`<section class="case"><h2>Trophy case</h2><div class="case-grid">${DATA.esports.cups.map(c=>`<div class="cup"><h3>${trophy}${esc(c.h)}</h3><ol>${c.list.map(([y,w])=>`<li><b>${y}</b><span>${w}</span></li>`).join("")}</ol></div>`).join("")}</div></section>`;
+    h+=`<section class="case"><h2>Trophy case</h2><div class="case-grid">${DATA.esports.cups.map(c=>`<div class="cup"><h3>${trophy}${esc(c.h)}</h3><ol>${c.list.map(([y,w])=>`<li><b>${esc(y)}</b><span>${w}</span></li>`).join("")}</ol></div>`).join("")}</div></section>`;
     h+=feed("esports","On the timeline · how the scene talked");
   }
   if(v==="t2"){
@@ -61,7 +63,7 @@ function cases(){
 }
 function feed(v,title){
   return `<section class="case"><h2>${title}</h2><div class="feed">${DATA.social.filter(s=>s.v===v).map(s=>{
-    const tag=s.url?"a":"article";const attrs=s.url?` href="${esc(s.url)}" target="_blank" rel="noopener"`:"";
+    const tag=s.url?"a":"article";const attrs=s.url?` href="${link(s.url)}" target="_blank" rel="noopener"`:"";
     return `<${tag} class="post${s.hot?" hot":""}"${attrs}><header>${monogram(s.m,s.c)}<div><b>${esc(s.who)}</b><span>${esc(s.h)} · ${esc(s.d)}</span></div><span class="k">${esc(s.k)}</span></header><p>${esc(s.x)}</p>${s.n?`<div class="n">${esc(s.n)}</div>`:""}${s.url?`<span class="open">${s.exact?"Open post ↗":"Open account ↗"}</span>`:""}</${tag}>`}).join("")}</div></section>`;
 }
 
@@ -72,7 +74,7 @@ function teamsView(){
   const regions=["All","North America","EMEA","Korea","Japan","China","Pacific"];
   const list=DATA.teams.filter(t=>(state.region==="All"||rk(t.region).includes(state.region))&&(!state.tierF||state.tierF==="All"||t.tier===state.tierF));
   return `<section class="case"><div class="tfilter">${TIERS.map(([k,l])=>`<button class="chip" data-tierf="${k}" aria-pressed="${(state.tierF||"All")===k}" style="--c:#ffd36b"><i></i>${l}</button>`).join("")}</div><div class="tfilter">${regions.map(r=>`<button class="chip" data-region="${esc(r)}" aria-pressed="${state.region===r}"><i></i>${esc(r)}</button>`).join("")}</div>
-  <div class="tgrid">${list.map(t=>{const n=teamAlumni(t).length;return `<article class="tcard${t.featured?" feat":""}" style="--tc:${t.c}">
+  <div class="tgrid">${list.map(t=>{const n=teamAlumni(t).length;return `<article class="tcard${t.featured?" feat":""}" style="--tc:${hex(t.c)}">
    <header role="button" tabindex="0" data-spot="${esc(t.id)}" aria-label="Open ${esc(t.name)} spotlight">${monogram(t.m,t.c)}<div><h3>${esc(t.name)}</h3><div class="meta">${esc(t.region)} · <span class="status ${t.tier==="T1"?"active":""}">${esc(t.status)}</span></div></div><span class="chev" aria-hidden="true">›</span></header>
    <p>${esc(t.blurb)}</p>${t.titles&&t.titles.length?`<div class="tags">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><button class="btn play" data-spot="${esc(t.id)}">Spotlight${n?` · ${n} alumni`:""}</button><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></article>`}).join("")}</div></section>`;
@@ -96,15 +98,15 @@ function openSpot(id){
   if(alum.length)stats.push([alum.length,"Alumni"]);if(t1)stats.push([t1,"Alumni in OWCS now"]);
   const tierName={T1:"Top flight",T2:"Tier 2",National:"National team",Legacy:"League & legacy"}[t.tier]||t.tier;
   const overview=t.overview||t.blurb;
-  let h=`<div class="sp-hero" style="--tc:${t.c}">${monogram(t.m,t.c)}<div><div class="kicker" style="color:${t.c}">${esc(tierName)} · ${esc(t.region)}</div><h2 id="sTitle">${esc(t.name)}</h2></div></div>
+  let h=`<div class="sp-hero" style="--tc:${hex(t.c)}">${monogram(t.m,t.c)}<div><div class="kicker" style="color:${hex(t.c)}">${esc(tierName)} · ${esc(t.region)}</div><h2 id="sTitle">${esc(t.name)}</h2></div></div>
   <section class="sp-sec"><h4>Overview</h4><p class="sp-ov">${esc(overview)}</p>
    <div class="stats">${stats.map(([b,s])=>`<div class="stat"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("")}</div>
    ${t.titles&&t.titles.length?`<div class="tags" style="margin-top:10px">${t.titles.map(x=>`<span class="tag w">${esc(x)}</span>`).join("")}</div>`:""}
    <div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://liquipedia.net/overwatch/index.php?search=${encodeURIComponent(t.name)}">Liquipedia ↗</a>${t.x?`<a class="btn" target="_blank" rel="noopener" href="https://x.com/${esc(t.x)}">@${esc(t.x)} ↗</a>`:""}</div></section>`;
-  if(ev.length)h+=`<section class="sp-sec"><h4>On the timeline</h4><ul class="sp-ev">${ev.map(({it,v,won,era})=>`<li style="--ec:${it.tl?"#c9a7ff":era.c}"><span class="when">${esc(it.when)}</span><b>${esc(it.t)}</b>${won?`<span class="tag w">Champion</span>`:""}${it.score?`<div class="score"><span>${esc(it.score[0])}</span><span class="s">${esc(it.score[1])}</span><span class="lose">${esc(it.score[2])}</span></div>`:""}<p>${esc(it.d)}</p><div class="actions">${it.vods?`<button class="btn play" data-vod="${esc(it.id)}">${PLAY}Watch</button>`:""}${it.community?`<button class="btn talk mood-${esc(it.community.mood)}" data-talk="${esc(it.id)}">${TALK}Community</button>`:""}<button class="btn" data-goto="${esc(v)}|${esc(it.id)}">Open in timeline</button></div></li>`).join("")}</ul></section>`;
-  if(alum.length)h+=`<section class="sp-sec"><h4>Alumni · where they are now</h4><div class="astats"><span><b>${alum.length}</b> alumni</span><span><b>${t1}</b> on OWCS rosters now</span></div><ul class="alist">${alum.map(p=>`<li class="${p.star?"star":""}"><div><b>${esc(p.name)}</b> <span class="status ${p.tier==="T1"?"active":""}">${esc(p.tier)}</span><span class="arole">${esc(p.role)}</span></div><div class="anow">Now: ${esc(p.now)}</div><div class="ahi">${esc(p.hi)}</div>${p.teams[0]===t.id&&p.era?`<div class="aera">With the team: ${esc(p.era)}</div>`:""}<a href="${esc(p.url)}" target="_blank" rel="noopener">Source ↗</a></li>`).join("")}</ul></section>`;
+  if(ev.length)h+=`<section class="sp-sec"><h4>On the timeline</h4><ul class="sp-ev">${ev.map(({it,v,won,era})=>`<li style="--ec:${it.tl?"#c9a7ff":hex(era.c)}"><span class="when">${esc(it.when)}</span><b>${esc(it.t)}</b>${won?`<span class="tag w">Champion</span>`:""}${it.score?`<div class="score"><span>${esc(it.score[0])}</span><span class="s">${esc(it.score[1])}</span><span class="lose">${esc(it.score[2])}</span></div>`:""}<p>${esc(it.d)}</p><div class="actions">${it.vods?`<button class="btn play" data-vod="${esc(it.id)}">${PLAY}Watch</button>`:""}${it.community?`<button class="btn talk mood-${esc(it.community.mood)}" data-talk="${esc(it.id)}">${TALK}Community</button>`:""}<button class="btn" data-goto="${esc(v)}|${esc(it.id)}">Open in timeline</button></div></li>`).join("")}</ul></section>`;
+  if(alum.length)h+=`<section class="sp-sec"><h4>Alumni · where they are now</h4><div class="astats"><span><b>${alum.length}</b> alumni</span><span><b>${t1}</b> on OWCS rosters now</span></div><ul class="alist">${alum.map(p=>`<li class="${p.star?"star":""}"><div><b>${esc(p.name)}</b> <span class="status ${p.tier==="T1"?"active":""}">${esc(p.tier)}</span><span class="arole">${esc(p.role)}</span></div><div class="anow">Now: ${esc(p.now)}</div><div class="ahi">${esc(p.hi)}</div>${p.teams[0]===t.id&&p.era?`<div class="aera">With the team: ${esc(p.era)}</div>`:""}<a href="${link(p.url)}" target="_blank" rel="noopener">Source ↗</a></li>`).join("")}</ul></section>`;
   else if(t.tier==="T2")h+=`<section class="sp-sec"><h4>Alumni</h4><p class="aempty">No alumni tracked yet. The weekly bot adds them as it finds them.</p></section>`;
-  if(posts.length)h+=`<section class="sp-sec"><h4>On social</h4><div class="feed">${posts.map(s=>`<a class="post${s.hot?" hot":""}" ${s.url?`href="${esc(s.url)}" target="_blank" rel="noopener"`:""}><header>${monogram(s.m,s.c)}<div><b>${esc(s.who)}</b><span>${esc(s.h)} · ${esc(s.d)}</span></div><span class="k">${esc(s.k)}</span></header><p>${esc(s.x)}</p>${s.n?`<div class="n">${esc(s.n)}</div>`:""}</a>`).join("")}</div></section>`;
+  if(posts.length)h+=`<section class="sp-sec"><h4>On social</h4><div class="feed">${posts.map(s=>`<a class="post${s.hot?" hot":""}" ${s.url?`href="${link(s.url)}" target="_blank" rel="noopener"`:""}><header>${monogram(s.m,s.c)}<div><b>${esc(s.who)}</b><span>${esc(s.h)} · ${esc(s.d)}</span></div><span class="k">${esc(s.k)}</span></header><p>${esc(s.x)}</p>${s.n?`<div class="n">${esc(s.n)}</div>`:""}</a>`).join("")}</div></section>`;
   if(!ev.length&&!alum.length&&!posts.length)h+=`<section class="sp-sec"><p class="aempty">More on this team is coming as the weekly bot researches it.</p></section>`;
   $("#sBody").innerHTML=h;const m=$("#smodal");m.hidden=false;m.querySelector(".modal-box").scrollTop=0;$("#sClose").focus();
   document.body.style.overflow="hidden";
@@ -113,12 +115,12 @@ function closeSpot(){$("#smodal").hidden=true;document.body.style.overflow=""}
 
 function triView(){
   const T=DATA.triumvirate;
-  return `<section class="case"><div class="tri">${T.people.map(p=>`<article class="tri-card" style="--tc:${p.c}">
-   <header>${monogram(p.m,p.c)}<div><div class="kicker" style="color:${p.c}">${esc(p.role)}</div><h3>${esc(p.name)}</h3></div></header>
+  return `<section class="case"><div class="tri">${T.people.map(p=>`<article class="tri-card" style="--tc:${hex(p.c)}">
+   <header>${monogram(p.m,p.c)}<div><div class="kicker" style="color:${hex(p.c)}">${esc(p.role)}</div><h3>${esc(p.name)}</h3></div></header>
    <p class="tri-sum">${esc(p.summary)}</p>
    <ol class="tri-ch">${p.chapters.map(c=>`<li><span class="when">${esc(c.when)}</span><b>${esc(c.t)}</b><p>${esc(c.d)}</p></li>`).join("")}</ol>
-   <div class="actions">${(p.links||[]).map(l=>`<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<button class="btn" data-spot="timeless">Timeless spotlight</button></div></article>`).join("")}</div>
-   <p class="cnote">Sources: ${T.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}. Alex's chapters are his own account.</p></section>`;
+   <div class="actions">${(p.links||[]).map(l=>`<a class="btn" href="${link(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<button class="btn" data-spot="timeless">Timeless spotlight</button></div></article>`).join("")}</div>
+   <p class="cnote">Sources: ${T.sources.map(s=>`<a href="${link(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}. Alex's chapters are his own account.</p></section>`;
 }
 /* ---------- numbers ---------- */
 function lineChart(pts,{w=480,h=240,color="#43c6ff",label=v=>fmt(v)}={}){
@@ -140,29 +142,29 @@ function numbersView(){
   const ratioLo=AP.concurrentLow/AP.steamAtTime, ratioHi=AP.concurrentHigh/AP.steamAtTime;
   const estNow=latest?`<div class="est"><small>Latest Steam snapshot · ${esc(latest.date)}</small><b>${fmt(latest.ccu)}</b><small>Measured on Steam right now. Scaled by the ${ratioLo.toFixed(1)}–${ratioHi.toFixed(1)}× ratio implied by third-party all-platform models, that's about <strong>${fmt(latest.ccu*ratioLo)}–${fmt(latest.ccu*ratioHi)}</strong> concurrent across all platforms (estimate).</small></div>`:"";
   return `<section class="case"><div class="numgrid">
-   <div class="chart"><h3>Peak viewers · biggest events</h3>${barChart(M.viewership.map(r=>({k:r.event,v:r.peak,approx:r.approx})))}<div class="src">Sources: ${[...new Set(M.viewership.map(r=>r.src))].join(", ")}. Peak concurrent viewers across official streams.</div></div>
+   <div class="chart"><h3>Peak viewers · biggest events</h3>${barChart(M.viewership.map(r=>({k:r.event,v:r.peak,approx:r.approx})))}<div class="src">Sources: ${[...new Set(M.viewership.map(r=>r.src))].map(esc).join(", ")}. Peak concurrent viewers across official streams.</div></div>
    <div class="chart"><h3>Steam average concurrent players · monthly</h3>${lineChart(M.steamMonthly.map(r=>({x:r.m.slice(2).replace("-","/"),y:r.avg})))}<div class="src">Measured, Steam only (most PC players use Battle.net, and consoles aren't counted). Steam all-time peak: ${fmt(M.steamPeak.value)} on ${M.steamPeak.date}.</div></div>
    ${M.steamSamples.length>1?`<div class="chart"><h3>Weekly Steam snapshots (bot)</h3>${lineChart(M.steamSamples.map(r=>({x:r.date.slice(5),y:r.ccu})),{color:"#5be3a6"})}<div class="src">Steam Web API, sampled each time the bot runs.</div></div>`:""}
    <div class="chart"><h3>All-platform playerbase · estimate</h3>
     <div class="est"><small>Concurrent players, all platforms</small><b>${fmt(AP.concurrentLow)}–${fmt(AP.concurrentHigh)}</b><small>Third-party modelling, not Blizzard data.</small></div>
     <div class="est" style="margin-top:8px"><small>Monthly active players</small><b>${fmt(AP.mauLow)}–${fmt(AP.mauHigh)}</b><small>Third-party estimate band.</small></div>
     ${estNow?`<div style="margin-top:8px">${estNow}</div>`:""}
-    <div class="src">${esc(M.note)} <a href="${esc(AP.url)}" target="_blank" rel="noopener">Source ↗</a></div></div>
+    <div class="src">${esc(M.note)} <a href="${link(AP.url)}" target="_blank" rel="noopener">Source ↗</a></div></div>
   </div></section>`;
 }
 
 /* ---------- timeline ---------- */
 function ribbon(){
   const D=DATA[state.view];
-  $("#ribbon").innerHTML=`<button class="chip" aria-pressed="${state.era==="all"}" data-era="all" style="--c:#eaf1ff"><i></i>All eras</button>`+D.eras.map(e=>`<button class="chip" aria-pressed="${state.era===e.id}" data-era="${e.id}" style="--c:${e.c}"><i></i>${e.n} · ${esc(e.name)}</button>`).join("");
+  $("#ribbon").innerHTML=`<button class="chip" aria-pressed="${state.era==="all"}" data-era="all" style="--c:#eaf1ff"><i></i>All eras</button>`+D.eras.map(e=>`<button class="chip" aria-pressed="${state.era===e.id}" data-era="${esc(e.id)}" style="--c:${hex(e.c)}"><i></i>${esc(e.n)} · ${esc(e.name)}</button>`).join("");
 }
 function card(it,idx,side,era){
   const tags=(it.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")+(it.win?`<span class="tag w">Champion · ${esc(it.win)}</span>`:"")+(it.src?`<span class="tag src">${esc(it.src)}</span>`:"")+(it.tl?`<span class="tag tlm">Timeless</span>`:"")+(it.bot?`<span class="tag src">Added by bot</span>`:"");
   const sc=it.score?`<div class="score"><span>${esc(it.score[0])}</span><span class="s">${esc(it.score[1])}</span><span class="lose">${esc(it.score[2])}</span></div>`:"";
   const v=it.views;
-  const views=v?`<div class="views">${v.peak?`<span><b>${v.approx?"~":""}${fmt(v.peak)}</b>peak viewers</span>`:""}${v.avg?`<span><b>${fmt(v.avg)}</b>avg</span>`:""}${v.hours?`<span><b>${v.approx?"~":""}${fmt(v.hours)}</b>hours watched</span>`:""}${v.url?`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.src)} ↗</a>`:""}</div>`:"";
-  const acts=(it.vods||[]).length||(it.links||[]).length||it.community?`<div class="actions">${it.community?`<button class="btn talk mood-${esc(it.community.mood)}" data-talk="${esc(it.id)}" title="What the community said">${TALK}Community</button>`:""}${it.vods?`<button class="btn play" data-vod="${esc(it.id)}">${PLAY}Watch${it.vods.length>1?` (${it.vods.length})`:""}</button>`:""}${(it.links||[]).map(l=>`<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}</div>`:"";
-  const c=it.tl?"#c9a7ff":era.c;
+  const views=v?`<div class="views">${v.peak?`<span><b>${v.approx?"~":""}${fmt(v.peak)}</b>peak viewers</span>`:""}${v.avg?`<span><b>${fmt(v.avg)}</b>avg</span>`:""}${v.hours?`<span><b>${v.approx?"~":""}${fmt(v.hours)}</b>hours watched</span>`:""}${v.url?`<a href="${link(v.url)}" target="_blank" rel="noopener">${esc(v.src)} ↗</a>`:""}</div>`:"";
+  const acts=(it.vods||[]).length||(it.links||[]).length||it.community?`<div class="actions">${it.community?`<button class="btn talk mood-${esc(it.community.mood)}" data-talk="${esc(it.id)}" title="What the community said">${TALK}Community</button>`:""}${it.vods?`<button class="btn play" data-vod="${esc(it.id)}">${PLAY}Watch${it.vods.length>1?` (${it.vods.length})`:""}</button>`:""}${(it.links||[]).map(l=>`<a class="btn" href="${link(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}</div>`:"";
+  const c=it.tl?"#c9a7ff":hex(era.c);
   return `<article class="item ${side}${it.up?" upcoming":""}${it.tl?" timeless":""}" id="${esc(it.id)}" style="--ec:${c}"><div class="card">${it.up?'<span class="flag-up">UPCOMING</span>':""}
    <div class="art">${art(it.ic,c)}<span class="num">${era.n}·${String(idx).padStart(2,"0")}</span></div>
    <div class="body"><div class="when">${esc(it.when)}</div><h3>${esc(it.t)}</h3><p>${esc(it.d)}</p>${sc}${views}<div class="tags">${tags}</div>${acts}</div></div></article>`;
@@ -176,7 +178,7 @@ function timeline(){
     if(state.era!=="all"&&state.era!==era.id)return;
     const list=D.items.filter(it=>it.e===era.id).filter(it=>!(v==="t2"&&state.tlOnly)||it.tl).filter(it=>!q||[it.t,it.d,it.when,it.win||"",...(it.tags||[]),...(it.score||[])].join(" ").toLowerCase().includes(q));
     if(!list.length)return;shown+=list.length;
-    html+=`<section class="era" style="--ec:${era.c}"><div class="era-head"><div class="era-badge"><small>Era ${era.n}</small><b>${esc(era.name)}</b></div></div><p class="era-sub">${esc(era.sub)}</p><div class="items">${list.map((it,k)=>card(it,k+1,(side++%2)?"left":"right",era)).join("")}</div></section>`;
+    html+=`<section class="era" style="--ec:${hex(era.c)}"><div class="era-head"><div class="era-badge"><small>Era ${esc(era.n)}</small><b>${esc(era.name)}</b></div></div><p class="era-sub">${esc(era.sub)}</p><div class="items">${list.map((it,k)=>card(it,k+1,(side++%2)?"left":"right",era)).join("")}</div></section>`;
   });
   $("#tl").innerHTML=html;$("#count").textContent=`${shown} of ${D.items.length}`;$("#empty").style.display=shown?"none":"block";
 }
@@ -185,16 +187,16 @@ function timeline(){
 function footer(){
   const S=DATA.site;
   $("#foot").innerHTML=`<p>A fan archive. Overwatch belongs to Blizzard Entertainment. All artwork here is original, and team names appear as text with original monogram badges. Videos are embedded from YouTube, and posts link to their original source.</p>
-  <div class="credit"><div>Built by <a class="me" href="${esc(S.owner.url)}" target="_blank" rel="noopener">${esc(S.owner.name)}</a><div class="updated">Data updated ${esc(DATA.meta.lastUpdated)}${DATA.meta.lastBotRun?` · bot ran ${esc(DATA.meta.lastBotRun)}`:""}</div></div>
-  ${S.buyMeACoffee?`<a class="bmc" href="${esc(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>`;
+  <div class="credit"><div>Built by <a class="me" href="${link(S.owner.url)}" target="_blank" rel="noopener">${esc(S.owner.name)}</a><div class="updated">Data updated ${esc(DATA.meta.lastUpdated)}${DATA.meta.lastBotRun?` · bot ran ${esc(DATA.meta.lastBotRun)}`:""}</div></div>
+  ${S.buyMeACoffee?`<a class="bmc" href="${link(S.buyMeACoffee)}" target="_blank" rel="noopener">☕ Buy me a coffee</a>`:""}</div>`;
 }
 
 /* ---------- video modal ---------- */
 function openVod(id){
   const it=[...DATA.lore.items,...DATA.esports.items,...DATA.t2.items].find(i=>i.id===id);if(!it||!it.vods)return;
   const m=$("#modal");m.hidden=false;$("#mTitle").textContent=it.t;
-  $("#mChips").innerHTML=it.vods.map((v,i)=>`<button class="vchip" data-yt="${esc(v.yt)}" data-start="${v.start||0}" aria-pressed="${i===0}">${esc(v.label||"VOD "+(i+1))}</button>`).join("");
-  playYt(it.vods[0].yt,it.vods[0].start||0);$("#mClose").focus();
+  $("#mChips").innerHTML=it.vods.map((v,i)=>`<button class="vchip" data-yt="${esc(v.yt)}" data-start="${Number(v.start)||0}" aria-pressed="${i===0}">${esc(v.label||"VOD "+(i+1))}</button>`).join("");
+  playYt(it.vods[0].yt,Number(it.vods[0].start)||0);$("#mClose").focus();
 }
 function playYt(yt,start){
   const src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(yt)}?autoplay=1&rel=0${start?`&start=${start}`:""}`;
@@ -207,7 +209,7 @@ function openTalk(id){
   const it=[...DATA.lore.items,...DATA.esports.items,...DATA.t2.items].find(i=>i.id===id);if(!it||!it.community)return;const c=it.community;
   $("#cTitle").textContent=it.t;
   $("#cBody").innerHTML=`<div class="moodrow"><span class="mood mood-${esc(c.mood)}">${esc(MOODS[c.mood]||c.mood)}</span><span class="when">${esc(it.when)}</span></div><p class="csum">${esc(c.summary)}</p>
-   ${(c.voices||[]).length?`<h4>Voices &amp; posts</h4><ul class="voices">${c.voices.map(v=>`<li><b>${esc(v.who)}</b><span>${esc(v.gist)}</span>${v.url?`<a href="${esc(v.url)}" target="_blank" rel="noopener">Open ↗</a>`:""}</li>`).join("")}</ul>`:""}
+   ${(c.voices||[]).length?`<h4>Voices &amp; posts</h4><ul class="voices">${c.voices.map(v=>`<li><b>${esc(v.who)}</b><span>${esc(v.gist)}</span>${v.url?`<a href="${link(v.url)}" target="_blank" rel="noopener">Open ↗</a>`:""}</li>`).join("")}</ul>`:""}
    <p class="cnote">Summarized from posts and coverage. Quotes are kept short, so open each link for the original.${c.updated?` Updated ${esc(c.updated)}.`:""}</p>`;
   $("#cmodal").hidden=false;$("#cClose").focus();
 }

@@ -48,6 +48,8 @@ ICONS = ["factory","omnic","tower","shield","hammer","pyramid","strike","sun","s
          "wings","spider","scope","canal","megaphone","blast","gavel","mask","visor","fist","gorilla","moon","mech","skull","eiffel",
          "globe","fox","crown","talon","mountain","tiger","fang","ice","trophy","cup2","arena","broadcast","city","hex","fall","rocket","seal"]
 MOODS = {"hype", "celebration", "mixed", "backlash"}
+COLOUR = re.compile(r"#[0-9a-fA-F]{3,8}")
+MONOGRAM = re.compile(r"[A-Za-z0-9]{1,4}")
 log: list[str] = []
 
 
@@ -200,6 +202,41 @@ Include 2–6 voices per event. Skip an event entirely if you can't find real re
 
 
 # ---------------------------------------------------------------- merging
+def is_number(v) -> bool:
+    return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+def badge_ok(entry) -> bool:
+    """Whether an entry's monogram and colour are plain enough to draw as its badge."""
+    return bool(MONOGRAM.fullmatch(str(entry.get("m", ""))) and COLOUR.fullmatch(str(entry.get("c", ""))))
+
+
+def clean_vods(raw_vods):
+    """The VODs YouTube confirms, each reduced to its id and label."""
+    vods = []
+    for v in raw_vods or []:
+        title = yt_ok(v.get("yt", ""))
+        if title:
+            vods.append({"yt": v["yt"], "label": str(v.get("label") or title)[:60]})
+        else:
+            log.append(f'  - dropped VOD `{v.get("yt")}` (not found on YouTube)')
+    return vods
+
+
+def clean_views(v):
+    """Viewership reduced to its numbers, source name and a link that checks out; None when it has no number or a bad link."""
+    v = v or {}
+    views = {k: v[k] for k in ("peak", "avg", "hours") if is_number(v.get(k)) and v[k] > 0}
+    if not views or (v.get("url") and not url_ok(str(v["url"]))):
+        return None
+    for k in ("src", "url"):
+        if v.get(k):
+            views[k] = str(v[k])
+    if v.get("approx") is True:
+        views["approx"] = True
+    return views
+
+
 def clean_item(raw, tab):
     it = {k: raw[k] for k in ("when", "t", "d", "tags", "win", "score", "src", "tl", "up") if raw.get(k) not in (None, "", [])}
     it["e"] = raw.get("era")
@@ -207,13 +244,7 @@ def clean_item(raw, tab):
     prefix = {"lore": "lore", "esports": "esp", "t2": "t2"}[tab]
     it["id"] = f'{prefix}-{slug(raw.get("t", "event"))}'
     it["bot"] = TODAY
-    vods = []
-    for v in raw.get("vods") or []:
-        title = yt_ok(v.get("yt", ""))
-        if title:
-            vods.append({"yt": v["yt"], "label": v.get("label") or title[:60]})
-        else:
-            log.append(f'  - dropped VOD `{v.get("yt")}` (not found on YouTube)')
+    vods = clean_vods(raw.get("vods"))
     if vods:
         it["vods"] = vods
     links = [l for l in (raw.get("links") or []) if url_ok(l.get("url", ""))]
@@ -223,9 +254,9 @@ def clean_item(raw, tab):
     if not links and srcs:
         links = [{"label": "Source", "url": srcs[0]}]
     it["links"] = links[:4]
-    v = raw.get("views") or {}
-    if any(v.get(k) for k in ("peak", "avg", "hours")) and (not v.get("url") or url_ok(v["url"])):
-        it["views"] = {k: v[k] for k in ("peak", "avg", "hours", "src", "url", "approx") if v.get(k)}
+    views = clean_views(raw.get("views"))
+    if views:
+        it["views"] = views
     c = clean_community(raw.get("community"))
     if c:
         it["community"] = c
@@ -267,17 +298,21 @@ def merge(result, lore, esp, t2, social, teams, metrics):
                     for k in ("win", "score", "d"):
                         if r.get(k):
                             it[k] = r[k]
-                    vods = [v for v in (r.get("vods") or []) if yt_ok(v.get("yt", ""))]
+                    vods = clean_vods(r.get("vods"))
                     if vods:
                         it["vods"] = vods
-                    if (r.get("views") or {}).get("peak"):
-                        it["views"] = r["views"]
+                    views = clean_views(r.get("views"))
+                    if views:
+                        it["views"] = views
                     it["bot"] = TODAY
                     log.append(f'- resolved upcoming: **{it["t"]}** → {it.get("win","?")}')
     # social
     have = {s.get("url") for s in social}
     for s in result.get("social") or []:
         if s.get("url") in have or not url_ok(s.get("url", "")) or s.get("v") not in ("esports", "t2"):
+            continue
+        if not badge_ok(s):
+            log.append(f'  - dropped post from {s.get("who")}: its monogram or colour is not plain')
             continue
         s["id"] = f"post-{len(social)+1}"
         s["exact"] = "/status/" in s["url"]
@@ -298,6 +333,8 @@ def merge(result, lore, esp, t2, social, teams, metrics):
             for title in t.get("titles") or []:
                 if title not in cur.setdefault("titles", []):
                     cur["titles"].append(title)
+        elif not badge_ok(t):
+            log.append(f'  - dropped team {t["name"]}: its monogram or colour is not plain')
         else:
             t["id"] = tid
             teams.append({k: t[k] for k in ("id","name","m","c","region","status","tier","blurb","overview","aliases","titles","x") if t.get(k) not in (None, "")})
@@ -315,7 +352,7 @@ def merge(result, lore, esp, t2, social, teams, metrics):
     # viewership chart
     vk = {v["event"] for v in metrics["viewership"]}
     for v in result.get("viewership") or []:
-        if v.get("event") and v.get("peak") and v["event"] not in vk:
+        if v.get("event") and is_number(v.get("peak")) and v["peak"] > 0 and v["event"] not in vk:
             metrics["viewership"].append({k: v[k] for k in ("event","date","peak","src","approx") if v.get(k)})
     metrics["viewership"].sort(key=lambda x: x.get("date", ""))
     return added
