@@ -1,0 +1,60 @@
+{{Liquipedia links/Rogue}}{{TeamTabs}}
+{{Infobox team
+|name=Rogue
+|image=Rogue logo.png
+|location=United States
+|location2=France
+|region=na
+|website=http://www.rogue.gg/
+|facebook=goingroguegg
+|twitter=Rogue
+|youtube=RogueGG
+|instagram=rogue.gg
+|snapchat=rogue.gg
+|created={{Org}}:2016-05-03 <br> {{Overwatch}}:2016-05-03
+|disbanded=2017-10-08
+}}
+
+'''Rogue''' is an [[:Category:United States|American]] esports organization.
+
+==Timeline==
+{{TimelineSquadAuto}}
+
+==Player Roster==
+===Former===
+{{FormerSquadAuto}}
+
+==Organization==
+===Former===
+{{FormerOrganizationAuto}}
+
+==Results==
+{{Tabs dynamic|hide-showall=true
+|name1=Achievements |content1={{Team achievements table|team=Rogue}}
+|name2=Recent Matches |content2={{Team recent matches table|team=Rogue}}
+}}
+
+==Gallery==
+===Logos===
+{{TeamLogoGallery}}
+
+==Interviews==
+*{{ExternalMediaLink
+|link=http://www.gosugamers.net/overwatch/features/42149-interview-with-rogue-ceo-frank-i-think-a-lot-of-the-larger-organizations-missed-the-boat
+|title=Interview with Rogue CEO Frank: "I think a lot of the larger organizations missed the boat"
+|date=2016-11-08
+|by=Wilson "scr1be" Xu
+|of=Gosugamers
+}}
+
+==Features==
+*{{ExternalMediaLink
+|link=https://www.youtube.com/watch?v=Zg6h5DnqJMQ
+|title=Sideshow on: The Legend of Rogue
+|date=2018-01-01
+|by=[[Sideshow]]
+}}
+
+==References==
+{{Reflist}}
+{{Team roster}}

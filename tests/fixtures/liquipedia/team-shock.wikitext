@@ -1,0 +1,32 @@
+{{Tabs static
+|name1={{Team|NRG}}
+|name2={{Team|NRG Shock}}
+|name3={{Team|sfs}}
+|name4={{Team|O2 Blast}}
+|This=3
+}}
+{{TeamTabs}}
+{{Infobox team
+|name=San Francisco Shock
+|image=San Francisco Shock 2020 full lightmode.png
+|imagedark=San Francisco Shock 2020 full darkmode.png
+|location=United States
+|region=North America
+|league=owl
+|achievements={{LeagueIconSmall/overwatch league 2017}} Champion: [[Overwatch League/2019/Playoffs|2019]]<br>{{LeagueIconSmall/overwatch league 2017}} Champion: [[Overwatch League/2020/Playoffs|2020]]
+|website=https://web.archive.org/web/20190621114103/https://shock.overwatchleague.com/en-us
+|twitter=SFShock
+|facebook=sfshock
+|youtube=@sanfranciscoshock
+|twitch=SFShock
+|instagram=sfshock
+|discord=sfshock
+|tiktok=sfshock
+|created=2017-07-12
+|disbanded=2023-12-01
+}}
+
+'''San Francisco Shock''' was the team representing '''San Francisco''', California, USA, in the [[Overwatch League]]. The Shock competed in the West Region.
+
+The team is owned by [[NRG Esports]].
+
