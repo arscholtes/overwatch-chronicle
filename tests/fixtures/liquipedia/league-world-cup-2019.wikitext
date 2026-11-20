@@ -1,0 +1,29 @@
+{{Infobox league
+|name=Overwatch World Cup 2019
+|image=2019_OW_World_Cup_logo.png
+|series=Overwatch World Cup
+|shortname=World Cup 2019
+|shortname2=World Cup 2019
+|tickername=World Cup Finals 2019
+|icon=Overwatch World Cup logo.png
+|organizer=Blizzard Entertainment
+|sponsor=[https://www.coca-cola.com Coca Cola] <br> [https://www8.hp.com/us/en/gaming/omen.html OMEN] <br> [https://www.t-mobile.com T-Mobile]
+|type=offline
+|country=United States
+|city=Anaheim
+|venue=Anaheim Convention Center
+|venuelink=http://www.anaheim.net/1117/Anaheim-Convention-Center-Arena
+|format=Group Stage<br>Single Elimination
+|prizepoolusd=90,000
+|sdate=2019-11-01
+|edate=2019-11-02
+|liquipediatier=1
+|publishertier=owwc
+|blizzardpremier=true
+|web=https://worldcup.playoverwatch.com/en-us/
+|twitch=overwatchleague
+|game=overwatch
+|team_number=10
+|previous=Overwatch World Cup/2018{{!}}World Cup 2018
+|next=Overwatch World Cup/2023{{!}}World Cup 2023
+}}

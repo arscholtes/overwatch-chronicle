@@ -1,0 +1,27 @@
+{{Infobox league
+|game=overwatch
+|liquipediatier=2
+|publishertier=owc
+|series=Overwatch Contenders
+|abbreviation=OWC
+|shortname=OWC 2019 S1: NAW
+|name=Overwatch Contenders 2019 Season 1: North America West
+|tickername=OWC 2019 S1: NAW
+|image=Overwatch Contenders logo 2018.png
+|icon=Overwatch Contenders 2018 allmode.png
+|organizer=Blizzard
+|type=Online
+|country=North America
+|twitch=overwatchcontenders
+|format=Trials (Promotion)<br>Season (Group Stage)<br>Playoffs
+|prizepoolusd=200,000
+|sdate=2019-03-06
+|edate=2019-05-01
+|web=https://contenders.playoverwatch.com/en-us/
+|bracket=
+|youtube=channel/UC0DomVwX-rNlogUVPqCHL_Q
+|twitter=owpathtopro
+|team_number=8
+|previous=Overwatch_Contenders/2018/Season_3/North America {{!}} OWC 2018 Season 3
+|next=Overwatch_Contenders/2019/Season_2/North America West {{!}} OWC 2019 Season 2
+}}

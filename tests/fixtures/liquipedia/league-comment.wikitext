@@ -1,0 +1,30 @@
+{{Infobox league
+|liquipediatier=4<!--Number corresponding to tier, 1 for S, 2 for A, etc.-->
+|liquipediatiertype=<!--Qualifier, Monthly, Weekly, etc.-->
+|name=Game Mason 2023
+|shortname=
+|tickername=
+|icon=
+|image=
+|organizer=George Mason University Esports
+|organizer-link=
+|sponsor=Lenovo<br>[[Washington Justice]]
+|type=Offline
+|country=United States
+|city=Fairfax, VA
+|venue=George Mason University
+|venuelink=https://www.gmu.edu/
+|game=overwatch2
+|format=Round Robin<br>Single Elimination
+|prizepoolusd=1000
+|sdate=2023-03-03
+|edate=2023-03-04
+|twitter=GMU_Esports
+|web=https://si.gmu.edu/gamemason/
+|twitch=GMU_Esports
+|discord=
+|youtube=
+|rulebook=
+|bracket=
+|team_number=4
+}}

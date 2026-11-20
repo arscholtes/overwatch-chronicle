@@ -1,0 +1,18 @@
+{{Infobox team
+|name=Team Falcons
+|image=Team Falcons 2022 full lightmode.png
+|imagedark=Team Falcons 2022 full darkmode.png
+|location=Saudi Arabia
+|region=Korea
+|achievements={{LeagueIconSmall/owcs}} World Finals: [[Overwatch Champions Series/2024/Finals|2024]]<br>{{LeagueIconSmall/owcs}} Midseason Championship: [[Overwatch_Champions_Series/2025/Midseason_Championship|2025]]
+|website=http://www.falcons.sa
+|instagram=teamfalconsgg
+|instagram2=falconsesportsgg
+|twitter=TeamFalconsGG
+|twitter2=FalconsEsport
+|twitch=TeamFalconsGG
+|youtube=@TeamFalconsGG
+|facebook=teamfalcongg
+|tiktok=falcons.esports
+|created={{Org}}: 2017-12-28 <br>{{Overwatch}}: 2021-04-04
+}}

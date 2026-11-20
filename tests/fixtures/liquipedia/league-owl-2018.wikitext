@@ -1,0 +1,41 @@
+{{Infobox league
+|name=Overwatch League - Inaugural Season
+|shortname=OWL - Inaugural Season
+|image=Overwatch League Inaugural Season 2017-2018 logo.png
+|series=Overwatch League
+|icon=Overwatch League allmode.png
+|tickername=OWL - S1
+|organizer=Blizzard Entertainment
+|sponsor=[https://www.hp.com/omen OMEN by HP]
+|sponsor2=[https://www.intel.com/content/www/us/en/homepage.html Intel]
+|sponsor3=[https://www.toyota.com/ Toyota]
+|sponsor4=[https://www.t-mobile.com/ T-Mobile]
+|sponsor5=[http://www.sourpatch.com/ Sour Patch Kids]
+|sponsor6=[https://www.dolby.com/us/en/technologies/dolby-atmos/overwatch-league.html Dolby]
+|sponsor7=[https://www.cheezit.com/en_US/home.html Cheez-It]
+|sponsor8=[https://www.spotify.com/ Spotify]
+|patch=1.18
+|epatch=1.25
+|type=Offline
+|country=United States
+|country2=United States
+|city=Los Angeles, CA
+|city2=New York City, NY
+|venuelink=https://esports.blizzard.com/en-us/blizzard-arena/los-angeles |venue=Blizzard Arena Los Angeles
+|venue2link=http://www.barclayscenter.com/ |venue2=Barclays Center
+|format=Regular Season<br>Playoffs
+|liquipediatier=1
+|publishertier=owl
+|sdate=2017-12-06
+|edate=2018-07-28
+|web=https://overwatchleague.com/en-us/
+|twitch=overwatchleague
+|twitter=overwatchleague
+|facebook=overwatchleague
+|youtube=channel/UCiAInBL9kUzz1XRxk66v-gw
+|instagram=overwatchleague
+|weibo=overwatchleague
+|game=overwatch
+|team_number=12
+|next=Overwatch League/2019 {{!}} OWL Season 2
+}}

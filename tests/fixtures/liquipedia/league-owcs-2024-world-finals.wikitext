@@ -1,0 +1,32 @@
+{{Infobox league
+|liquipediatier=1
+|publishertier=owcs
+|series=Overwatch Champions Series
+|name=Overwatch Champions Series 2024 World Finals
+|tickername=OWCS World Finals 2024
+|image=Overwatch Champions Series full lightmode.png
+|imagedark=Overwatch Champions Series full darkmode.png
+|organizer=Blizzard Entertainment
+|organizer2=FACEIT
+|type=Offline
+|country=Sweden
+|city=Stockholm
+|venue=Stockholmsmässan
+|venuelink=https://www.stockholmsmassan.se/
+|venuedesc=[[DreamHack]] Stockholm
+|game=overwatch2
+|format=Double Elimination
+|prizepoolusd=500000
+|sdate=2024-11-22
+|edate=2024-11-24
+|twitter=OW_Esports
+|twitch=ow_esports
+|youtube=@ow_esports
+|discord=owpathtopro
+|rulebook=
+|bracket=
+|team_number=8
+|previous=Overwatch_Champions_Series/2024/Major {{!}} Major
+|next=Overwatch_Champions_Series/2025/Champions Clash {{!}} 2025 Champions Clash
+|next2=Overwatch Champions Series/2025/World Finals {{!}} 2025 World Finals
+}}
