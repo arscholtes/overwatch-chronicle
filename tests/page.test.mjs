@@ -97,3 +97,26 @@ test("only http and https links are written", async () => {
   const html = await renderEverything(hostileData());
   assert.ok(!html.includes(`"javascript:`), "a javascript: address was written into a link");
 });
+
+test("the owners tab is called Owners and headed by the org", async () => {
+  const html = await renderEverything(shippedData());
+  assert.match(html, />Owners</);
+  assert.match(html, /The <em>owners<\/em>/);
+  assert.match(html, /Mission archive · Timeless/);
+  assert.ok(!/triumvirate<|>Triumvirate/.test(html), "the page still calls the owners a triumvirate");
+});
+
+test("an owner's card is a name, a job and a summary, with no career timeline", async () => {
+  const data = shippedData();
+  const html = await renderEverything(data);
+  assert.ok(!html.includes("tri-ch"), "a card still draws a chapter list");
+  for (const person of data.triumvirate.people) {
+    assert.ok(html.includes(person.summary.slice(0, 40)), `${person.name}'s summary is not on the page`);
+    assert.ok(!("chapters" in person), `${person.name} still has chapters`);
+    assert.ok(!/^The /.test(person.role), `${person.name}'s role is a title, not a job: ${person.role}`);
+  }
+});
+
+test("the owners are listed with the founder who paid last", () => {
+  assert.deepEqual(shippedData().triumvirate.people.map((person) => person.id), ["chase", "doc", "th3mfg"]);
+});

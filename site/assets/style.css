@@ -301,9 +301,3 @@ a.tcard.alum:hover{border-color:var(--tl)}
 .tri-card header svg{width:58px;height:58px;flex:none}
 .tri-card h3{margin:2px 0 0;font-family:var(--display);font-weight:500;font-size:30px;line-height:1}
 .tri-sum{margin:0;font-size:15.5px;color:#d8e3f7}
-.tri-ch{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--tc);display:grid;gap:12px}
-.tri-ch li{position:relative}
-.tri-ch li::before{content:"";position:absolute;left:-21px;top:5px;width:10px;height:10px;transform:rotate(45deg);background:var(--bg);border:2px solid var(--tc)}
-.tri-ch .when{font-family:var(--cond);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:var(--tc);display:block}
-.tri-ch b{font-family:var(--display);font-size:22px;font-weight:500}
-.tri-ch p{margin:2px 0 0;font-size:14.5px;color:#c6d3ea}
