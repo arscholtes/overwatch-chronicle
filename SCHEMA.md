@@ -43,29 +43,29 @@ edit the imported value here.
 
 | Field | Meaning |
 |---|---|
-| `id` | Slug of the Liquipedia page title |
+| `id` | Liquipedia page title in lower case, with spaces and slashes as underscores |
 | `name` | Team name from its infobox |
 | `liquipedia` | Link to the team's Liquipedia page |
-| `region` | Region as Liquipedia gives it |
+| `region` | Region, in one spelling per region; a region the importer has no spelling for is kept as Liquipedia writes it |
 | `location` | Country |
-| `created` | Date the Overwatch team was formed, `YYYY-MM-DD` |
-| `disbanded` | Date it disbanded, absent while active |
+| `created` | Date the team was formed, `YYYY-MM-DD`, or just the year or month where Liquipedia knows no more |
+| `disbanded` | Date it disbanded, in the same form; absent while active |
 | `links[]` | Social and web links: `label` (`X`, `Twitch`, `YouTube`, `Instagram`, `Facebook`, `Discord`, `TikTok`, `Website`) and `url` |
 
 ### Competition record (`bot/out/liquipedia/competitions.json`)
 
 | Field | Meaning |
 |---|---|
-| `id` | Slug of the Liquipedia page title |
+| `id` | Liquipedia page title in lower case, with spaces and slashes as underscores |
 | `name` | Tournament name from its infobox |
 | `liquipedia` | Link to the tournament's Liquipedia page |
 | `series` | The series it belongs to, such as Overwatch Contenders |
-| `tier` | Liquipedia's tier number, 1 being the highest |
+| `tier` | Liquipedia's tier number: 1 is S-tier, 2 is A-tier, down to 5 for D-tier. Absent where Liquipedia files the event as miscellaneous |
 | `tierType` | Liquipedia's tier type where it sets one, such as Qualifier |
-| `start`, `end` | Dates, `YYYY-MM-DD` |
+| `start`, `end` | Dates, `YYYY-MM-DD`; the same day for a one-day event |
 | `type` | `Online` or `Offline` |
 | `country`, `city` | Where it was held, or the region for online play |
-| `prizeUsd` | Prize pool in US dollars, a whole number |
+| `prizeUsd` | Prize pool in US dollars, rounded to a whole dollar |
 | `teams` | Number of teams |
 | `links[]` | As for a team |
 
