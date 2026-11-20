@@ -1,0 +1,29 @@
+{{Infobox league
+|game=overwatch
+|name=OVERWATCH Korea Cup September Online Qualifier #1
+|shortname=OVERWATCH Korea Cup
+|image=Overwatch Korea Cup allmode.png
+|series=Overwatch Korea Cup
+|abbreviation=Korea Cup
+|icon=Overwatch Korea Cup allmode.png
+|organizer=LVUP
+|organizer-link=https://lvup.gg/app/#/arena/all
+|organizer2=Blizzard
+|organizer2-link=http://www.blizzard.com
+|type=Online
+|country=South Korea
+|format=Single Elimination
+|localcurrency=KRW
+|prizepoolusd=75.60
+|date=2019-09-05
+|liquipediatier=5|liquipediatiertype=Weekly
+|web=https://lvup.gg/app/#/arena/all
+|stream=
+|twitch=lvupgg
+|twitter=lvupgg
+|bracket=https://lvup.gg/app/#/arena/OW/5d5214890f7c240dd40bbfd9/bracket
+|challonge=
+|team_number=9
+|previous=OVERWATCH_Korea_Cup_August_Online_Qualifier/4{{!}}#4
+|next=OVERWATCH_Korea_Cup_September_Online_Qualifier/2{{!}}#2
+}}

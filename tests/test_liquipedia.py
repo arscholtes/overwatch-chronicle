@@ -26,7 +26,7 @@ class TeamRecordTest(unittest.TestCase):
         self.assertEqual(team["id"], "rogue")
         self.assertEqual(team["name"], "Rogue")
         self.assertEqual(team["liquipedia"], "https://liquipedia.net/overwatch/Rogue")
-        self.assertEqual(team["region"], "na")
+        self.assertEqual(team["region"], "North America")
         self.assertEqual(team["location"], "United States")
         self.assertEqual(team["created"], "2016-05-03")
         self.assertEqual(team["disbanded"], "2017-10-08")
@@ -70,6 +70,17 @@ class TeamRecordTest(unittest.TestCase):
         team = liquipedia.team_record("Alter Ego", source("team-alter-ego-anz"))
         self.assertEqual((team["created"], team["disbanded"]), ("2016-08-21", "2018"))
 
+    def test_the_overwatch_team_date_wins_over_the_date_the_org_was_founded(self):
+        team = liquipedia.team_record("Team Falcons", source("team-falcons"))
+        self.assertEqual(team["created"], "2021-04-04")
+
+    def test_a_region_is_written_one_way_whatever_the_page_uses(self):
+        self.assertEqual(liquipedia.team_record("Team Falcons", source("team-falcons"))["region"], "Korea")
+        self.assertEqual(liquipedia.team_record("Alter Ego", source("team-alter-ego-anz"))["region"], "Oceania")
+        self.assertEqual(liquipedia.team_record("Alter-Ego", source("team-alter-ego-cn"))["region"], "China")
+        shock = liquipedia.team_record("San Francisco Shock", source("team-shock"))
+        self.assertEqual(shock["region"], "North America")
+
     def test_a_page_without_a_team_infobox_gives_no_record(self):
         self.assertIsNone(liquipedia.team_record("Some page", source("disambiguation")))
 
@@ -105,6 +116,17 @@ class CompetitionRecordTest(unittest.TestCase):
         event = liquipedia.competition_record("Overwatch League/2018", source("league-owl-2018"))
         self.assertEqual(event["name"], "Overwatch League - Inaugural Season")
         self.assertNotIn("prizeUsd", event)
+        self.assertNotIn("tierType", event)
+
+    def test_a_one_day_event_starts_and_ends_on_its_date_and_its_prize_is_whole_dollars(self):
+        event = liquipedia.competition_record("OVERWATCH Korea Cup September Online Qualifier/1", source("league-cents"))
+        self.assertEqual((event["start"], event["end"]), ("2019-09-05", "2019-09-05"))
+        self.assertEqual(event["prizeUsd"], 76)
+        self.assertEqual((event["tier"], event["tierType"]), (5, "Weekly"))
+
+    def test_an_editor_comment_inside_a_field_is_not_part_of_its_value(self):
+        event = liquipedia.competition_record("Game Mason 2023", source("league-comment"))
+        self.assertEqual(event["tier"], 4)
         self.assertNotIn("tierType", event)
 
     def test_a_page_without_a_league_infobox_gives_no_record(self):
