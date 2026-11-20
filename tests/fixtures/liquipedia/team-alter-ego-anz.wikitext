@@ -1,0 +1,13 @@
+{{TeamTabs}}
+{{Infobox team
+|name=Alter Ego
+|image=Alter Ego purple.png
+|location= Australia
+|region=ANZ
+|twitter=AlterEgoPro
+|created=2016-08-21
+|disbanded=2018-??-??
+}}
+
+'''Alter Ego''' is an unsponsored [[:category:Australia|Australian]] ''[[Overwatch]]'' team.
+

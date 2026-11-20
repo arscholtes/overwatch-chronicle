@@ -61,6 +61,15 @@ class TeamRecordTest(unittest.TestCase):
         text = text.replace("|region=na", "|region=na\n|website=javascript:alert(1)")
         self.assertEqual(set(urls(liquipedia.team_record("Timeless", text))), {"Twitch", "Discord"})
 
+    def test_two_teams_whose_names_differ_only_by_a_hyphen_get_different_ids(self):
+        spaced = liquipedia.team_record("Alter Ego", source("team-alter-ego-anz"))
+        hyphenated = liquipedia.team_record("Alter-Ego", source("team-alter-ego-cn"))
+        self.assertEqual((spaced["id"], hyphenated["id"]), ("alter_ego", "alter-ego"))
+
+    def test_a_team_disbanded_on_an_unknown_day_keeps_the_year(self):
+        team = liquipedia.team_record("Alter Ego", source("team-alter-ego-anz"))
+        self.assertEqual((team["created"], team["disbanded"]), ("2016-08-21", "2018"))
+
     def test_a_page_without_a_team_infobox_gives_no_record(self):
         self.assertIsNone(liquipedia.team_record("Some page", source("disambiguation")))
 
@@ -69,7 +78,7 @@ class CompetitionRecordTest(unittest.TestCase):
     def test_a_contenders_season_keeps_its_series_tier_dates_and_prize(self):
         title = "Overwatch Contenders/2019/Season 1/North America West"
         event = liquipedia.competition_record(title, source("league-contenders-2019-naw"))
-        self.assertEqual(event["id"], "overwatch-contenders-2019-season-1-north-america-west")
+        self.assertEqual(event["id"], "overwatch_contenders_2019_season_1_north_america_west")
         self.assertEqual(event["name"], "Overwatch Contenders 2019 Season 1: North America West")
         self.assertEqual(event["liquipedia"], "https://liquipedia.net/overwatch/Overwatch_Contenders/2019/Season_1/North_America_West")
         self.assertEqual(event["series"], "Overwatch Contenders")
