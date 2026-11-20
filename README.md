@@ -56,6 +56,8 @@ The **Buy me a coffee** button appears in the footer once `buyMeACoffee` is set.
 ```bash
 cd site && python3 -m http.server 8000   # then open http://localhost:8000
 DRY_RUN=1 python3 bot/update.py          # Steam sample + validation only, no API calls
+node --test tests/*.mjs                       # the page writes hostile data as text
+python3 -m unittest discover -s tests    # what the bot may write, and what the validator rejects (needs bot/requirements.txt)
 ```
 
 ## Notes on the numbers
