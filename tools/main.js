@@ -12,7 +12,7 @@ const PLAY=`<svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentCol
 
 const DATA={};
 const state={view:"lore",era:"all",q:"",tlOnly:false,region:"All"};
-const TABS=[["lore","Lore",""],["esports","Esports","esp"],["t2","Tier 2","t2"],["teams","Teams","teams"],["numbers","Numbers","nums"],["triumvirate","Triumvirate","tri"]];
+const TABS=[["lore","Lore",""],["esports","Esports","esp"],["t2","Tier 2","t2"],["teams","Teams","teams"],["numbers","Numbers","nums"],["triumvirate","Owners","tri"]];
 
 async function load(){
   const files=["lore","esports","t2","social","teams","metrics","site","meta","alumni","triumvirate"];
@@ -33,7 +33,7 @@ function hero(){
    esports:{k:"Mission archive · Competition",h:`Ten years of <em>pro Overwatch</em>`,p:"APEX, the Overwatch League, the World Cup and the Champions Series. Tap Watch to play a match here, or Community to see how people reacted at the time.",s:[[DATA.esports.items.length,"Events"],[DATA.esports.items.filter(i=>i.vods).length,"With VODs"],["401K","Peak · OWWC 2026"]]},
    t2:{k:"Mission archive · Path to Pro",h:`Where the pros <em>come from</em>`,p:"Tier 2 Overwatch, from Open Division and Contenders to FACEIT League and promotion fights. Timeless events are highlighted in violet.",s:[[DATA.t2.items.length,"Events"],[DATA.t2.items.filter(i=>i.tl).length,"Timeless moments"],["S10","FACEIT League now"]]},
    teams:{k:"Mission archive · Rosters",h:`Every team, <em>every era</em>`,p:"OWCS teams, league franchises, tier 2 orgs and national teams, with links to Liquipedia and socials. Every org that competed for a year or more. Tap a tier 2 team to see its alumni and where they play now.",s:[[DATA.teams.length,"Teams"],[DATA.teams.filter(t=>t.tier==="T1").length,"Top flight now"],[DATA.teams.filter(t=>t.tier==="T2").length,"Tier 2"]]},
-   triumvirate:{k:"Mission archive · The founders",h:`The <em>triumvirate</em>`,p:DATA.triumvirate.intro,s:[[3,"People"],["2020","Hour Zero begins"],["2026","Timeless returns"]]},
+   triumvirate:{k:"Mission archive · Timeless",h:`The <em>owners</em>`,p:DATA.triumvirate.intro,s:[["2022","Founded"],["2nd","OWCS NA Stage 1, 2024"],["2026","Timeless returns"]]},
    numbers:{k:"Mission archive · Data",h:`How many are <em>watching & playing</em>`,p:"Viewership for the biggest events and the player base over time. Steam numbers are measured; all-platform numbers are estimates.",s:[[fmt(DATA.metrics.steamPeak.value),"Steam peak"],["~"+fmt(DATA.metrics.allPlatform.concurrentLow)+"–"+fmt(DATA.metrics.allPlatform.concurrentHigh),"Est. concurrent, all platforms"]]}
   }[v];
   $("#heroInner").innerHTML=`<div class="kicker">${H.k}</div><h1>${H.h}</h1><p class="lede">${H.p}</p><div class="stats">${H.s.map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("")}</div>`;
@@ -118,9 +118,8 @@ function triView(){
   return `<section class="case"><div class="tri">${T.people.map(p=>`<article class="tri-card" style="--tc:${hex(p.c)}">
    <header>${monogram(p.m,p.c)}<div><div class="kicker" style="color:${hex(p.c)}">${esc(p.role)}</div><h3>${esc(p.name)}</h3></div></header>
    <p class="tri-sum">${esc(p.summary)}</p>
-   <ol class="tri-ch">${p.chapters.map(c=>`<li><span class="when">${esc(c.when)}</span><b>${esc(c.t)}</b><p>${esc(c.d)}</p></li>`).join("")}</ol>
    <div class="actions">${(p.links||[]).map(l=>`<a class="btn" href="${link(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<button class="btn" data-spot="timeless">Timeless spotlight</button></div></article>`).join("")}</div>
-   <p class="cnote">Sources: ${T.sources.map(s=>`<a href="${link(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}. Alex's chapters are his own account.</p></section>`;
+   <p class="cnote">Sources: ${T.sources.map(s=>`<a href="${link(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}. Alex's summary is his own account.</p></section>`;
 }
 /* ---------- numbers ---------- */
 function lineChart(pts,{w=480,h=240,color="#43c6ff",label=v=>fmt(v)}={}){

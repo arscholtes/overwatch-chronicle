@@ -1,41 +1,14 @@
 {
- "intro": "Timeless had no formal titles. It was run by three people who came at Overwatch from different directions: a voice, an operator and a builder. These are their stories up to November 2026.",
+ "intro": "Timeless finished 2nd in OWCS North America, qualified for the Esports World Cup, won a FACEIT League title from 0–3 down and won Calling All Heroes twice. The players and staff did that. Three people owned the org and kept it running, with no formal titles. This page says who they are and what each one did.",
  "people": [
   {
    "id": "chase",
    "name": "Chase",
    "handle": "ChaseOwO",
-   "role": "The voice",
+   "role": "Co-founder, social media",
    "c": "#43c6ff",
    "m": "CH",
-   "summary": "Chase came to Timeless as a working Overwatch social media pro. His résumé includes Dallas Fuel, NRG and zoned. He co-founded Timeless, stayed through every version of it, and today runs social for LuneX and the US World Cup team.",
-   "chapters": [
-    {
-     "when": "2019 onward",
-     "t": "Working in Overwatch",
-     "d": "By late 2024 Chase had worked in Overwatch for about five years, on social for teams including Dallas Fuel and NRG."
-    },
-    {
-     "when": "Oct 2022–Jul 2024",
-     "t": "Co-owner of Timeless",
-     "d": "Co-owner from day one. For the first anniversary he wrote a long thread calling Timeless a passion project."
-    },
-    {
-     "when": "Jul–Dec 2024",
-     "t": "Director at NTMR",
-     "d": "When the roster moved to NTMR for the EWC, Chase went with it as director. He called fielding a team at an international LAN a dream come true as NTMR headed to the 2024 World Finals in Stockholm."
-    },
-    {
-     "when": "Jan 2025",
-     "t": "Back as owner",
-     "d": "Returned as a Timeless owner for the 2025 OWCS run with the WISP core."
-    },
-    {
-     "when": "Now",
-     "t": "Social media manager",
-     "d": "Social for LuneX Gaming, the US World Cup team and Point of View."
-    }
-   ],
+   "summary": "Chase co-founded Timeless in October 2022 and ran its social media. He went with the roster to NTMR as director in 2024 and came back as an owner for 2025. He now runs social for LuneX Gaming and the US World Cup team.",
    "links": [
     {
      "label": "@ChaseOwO",
@@ -47,27 +20,10 @@
    "id": "doc",
    "name": "Jacob \"Doc\" Scott",
    "handle": "Doc",
-   "role": "The operator",
+   "role": "Owner, operations",
    "c": "#c9a7ff",
    "m": "DOC",
-   "summary": "Doc brought the operations side. He advised NTMR during its EWC and World Finals run, then helped run its expansion into other games. He came back to Timeless as an owner for 2025.",
-   "chapters": [
-    {
-     "when": "Jul–Dec 2024",
-     "t": "Advisor at NTMR",
-     "d": "Joined NTMR as an advisor alongside the ex-Timeless roster, through the EWC and the 2024 World Finals."
-    },
-    {
-     "when": "Late 2024",
-     "t": "Esports operator",
-     "d": "Named one of NTMR's esports operators for its Valve titles and future games as the org expanded beyond Overwatch."
-    },
-    {
-     "when": "Jan 2025",
-     "t": "Timeless owner",
-     "d": "Listed with Chase as a Timeless owner for the 2025 OWCS season."
-    }
-   ],
+   "summary": "Doc handled operations. He advised NTMR during its 2024 run and was a Timeless owner for the 2025 season.",
    "links": [
     {
      "label": "Liquipedia: Timeless staff",
@@ -79,55 +35,14 @@
    "id": "th3mfg",
    "name": "Alex \"th3mfg\" Scholtes",
    "handle": "th3mfg",
-   "role": "The builder",
+   "role": "Co-founder, funding",
    "c": "#f99e1a",
    "m": "MFG",
-   "summary": "Alex built the group that became Timeless. He started with Hour Zero in 2020, kept going through Kaizen, and co-founded Timeless with Chase in October 2022. Away from Overwatch he is a software engineer.",
-   "chapters": [
-    {
-     "when": "2017 onward",
-     "t": "Software engineering",
-     "d": "Alex has worked as a software engineer since 2017, mostly on Ruby on Rails platforms: multi-tenant data models, background job pipelines and the integrations that connect a product to other companies' software. He designed and built Hour Zero's website, the first software he shipped for an operation with real money and real users behind it. He now builds his own tools as well, among them FPS, a set of AI coding agents that each hold one job, which helps maintain this archive."
-    },
-    {
-     "when": "2020–2021",
-     "t": "Hour Zero",
-     "d": "The first team. Hour Zero won Trial of Champions in October 2020 and played Contenders qualifiers. It doubled as a classroom: several of the people who later ran Timeless came up through it."
-    },
-    {
-     "when": "Before 2022",
-     "t": "Kaizen",
-     "d": "The second team, as the group kept growing. aramori, now Sentinels' first female Marvel Rivals pro, came through Hour Zero and Kaizen."
-    },
-    {
-     "when": "Oct 2022",
-     "t": "Co-founding Timeless",
-     "d": "Alex and Chase launched Timeless. Alex's job was building: figuring out what was fixed and what could change, clearing space for people with creative ideas, and backing an individual against the group when he thought they were right."
-    },
-    {
-     "when": "2023–2024",
-     "t": "The climb",
-     "d": "Contenders, the league's Pro-Am, a Flash Ops title, then 2nd in OWCS NA Stage 1 behind Toronto Defiant, all on a fraction of what the established orgs spent."
-    },
-    {
-     "when": "Jun–Jul 2024",
-     "t": "The Riyadh vote",
-     "d": "After the team beat NRG Shock for an Esports World Cup seed, the owners split over whether to go. Alex voted to go. Most of the co-owners and much of the staff chose not to, and the roster went to Riyadh under NTMR. He says he's still on good terms with everyone from that period."
-    },
-    {
-     "when": "2026",
-     "t": "What's next",
-     "d": "With Timeless back competing and its alumni across OWCS, Alex is working on bringing in sponsors to build the next version properly."
-    }
-   ],
+   "summary": "Alex co-founded Timeless with Chase in October 2022, after Hour Zero and Kaizen. He paid for it, brought ideas and was always there. In 2024 he voted to go to Riyadh; most of the owners and staff chose not to.",
    "links": [
     {
      "label": "GitHub",
      "url": "https://github.com/arscholtes"
-    },
-    {
-     "label": "FPS",
-     "url": "https://arscholtes.github.io/fps/"
     }
    ]
   }
